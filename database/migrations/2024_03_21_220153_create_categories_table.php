@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->text('description')->nullable();
+            $table->unsignedBigInteger('parent_id')->nullable(); // for nested categories
+            $table->foreign('parent_id')->references('id')->on('categories')->onDelete('cascade'); // Foreign key constraint for self-referencing
             $table->timestamps();
         });
     }
