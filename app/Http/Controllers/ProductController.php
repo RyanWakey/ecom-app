@@ -38,7 +38,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        return Product::findOrFail($id);
+        return Product::findOrFail($product->id);
     }
 
     /**
@@ -64,7 +64,7 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        Product::destroy($id);
+        $product->delete();
         return response()->json(null, 204);
     }
 }

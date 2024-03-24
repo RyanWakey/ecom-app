@@ -21,4 +21,4 @@ Route::post('/products', [ProductController::class, 'store'])->middleware('auth:
 Route::put('/products/{product}', [ProductController::class, 'update'])->middleware('auth:sanctum');
 
 // Delete a product (protected route)
-Route::delete('/products/{product}', [ProductController::class, 'destroy'])->middleware('auth:sanctum');
+Route::delete('/products/{product}', [ProductController::class, 'destroy']);
