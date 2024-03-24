@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use App\Enums\OrderStatus;
 
 class StoreOrderRequest extends FormRequest
 {
@@ -22,7 +23,9 @@ class StoreOrderRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'status' => ['required', Rule::in(OrderStatus::cases())],
+            'total' => 'required|numeric|min:0',
+            'user_id' => 'required|exists:users,id',
         ];
     }
 }
