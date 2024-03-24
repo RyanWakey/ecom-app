@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
-
+use App\Http\Controllers\CartItemController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -58,18 +58,31 @@ Route::delete('/categories/{category}', [CategoryController::class], 'destroy')-
 Route::get('/orders', [OrderController::class], 'index');
 
 // Fetch a single category 
-Route::get('/orders', [CategoryController::class], 'show');
+Route::get('/orders', [OrderController::class], 'show');
 
 // Create a new category 
-Route::post('/orders', [CategoryController::class], 'store')->middleware('auth:sanctum');
+Route::post('/orders', [OrderController::class], 'store')->middleware('auth:sanctum');
 
 // Update a category 
-Route::put('/orders/{order}', [CategoryController::class], 'update')->middleware('auth:sanctum');
+Route::put('/orders/{order}', [OrderController::class], 'update')->middleware('auth:sanctum');
 
 // Delete a category 
-Route::delete('/orders/{order}', [CategoryController::class], 'destroy')->middleware('auth:sanctum');
+Route::delete('/orders/{order}', [OrderController::class], 'destroy')->middleware('auth:sanctum');
 
 
 
 // CartItem Routes
 
+Route::get('/cartItems', [CartItemController::class], 'index');
+
+// Fetch a single category 
+Route::get('/cartItems', [CartItemController::class], 'show');
+
+// Create a new category 
+Route::post('/cartItems', [CartItemController::class], 'store')->middleware('auth:sanctum');
+
+// Update a category 
+Route::put('/cartItems/{cartItem}', [CartItemController::class], 'update')->middleware('auth:sanctum');
+
+// Delete a category 
+Route::delete('/cartItems/{cartItem}', [CartItemController::class], 'destroy')->middleware('auth:sanctum');
