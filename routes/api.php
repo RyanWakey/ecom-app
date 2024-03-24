@@ -27,4 +27,20 @@ Route::put('/products/{product}', [ProductController::class, 'update'])->middlew
 Route::delete('/products/{product}', [ProductController::class, 'destroy'])->middleware('auth:sanctum');
 
 
+
 // Category Routes
+
+// Fetch all categories
+Route::get('/categories', [CategoryController::class], 'index');
+
+// Fetch a single category 
+Route::get('/categories', [CategoryController::class], 'show');
+
+// Create a new category 
+Route::post('/categories', [CategoryController::class], 'store')->middleware('auth:sanctum');
+
+// Update a category 
+Route::put('/categories/{category}', [CategoryController::class], 'update')->middleware('auth:sanctum');
+
+// Delete a category 
+Route::delete('/categories/{category}', [CategoryController::class], 'destroy')->middleware('auth:sanctum');
