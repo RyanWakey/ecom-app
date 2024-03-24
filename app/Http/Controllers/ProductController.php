@@ -29,7 +29,22 @@ class ProductController extends Controller
      */
     public function store(StoreProductRequest $request)
     {
-        $product = Product::create($request->all());
+        $validatedData = $request->validate([
+            'name' => 'required|max:100', 
+            'description' => 'max:250',
+            'price' => 'required|numeric|regex:/^\d{1,8}(\.\d{1,2})?$/',
+            'stock' => 'required|numeric|max:1000000',
+            'category_id' => 'required|exists:categories,id',
+        ]);
+
+        $product = new Product;
+        $product->name = $validatedData['name'];
+        $product->description = $validatedData['description'];
+        $product->price = $validatedData['price'];
+        $product->stock = $validatedData['stock'];
+        $product->category_id = $validatedData['category_id'];
+        $product->save();
+
         return response()->json($product, 201);       
     }
 
@@ -45,8 +60,8 @@ class ProductController extends Controller
      * Show the form for editing the specified resource.
      */
     public function edit(Product $product)
-    {
-      
+    { 
+
     }
 
     /**
@@ -54,8 +69,22 @@ class ProductController extends Controller
      */
     public function update(UpdateProductRequest $request, Product $product)
     {
-        $product = Product::findOrFail($id);
-        $product->update($request->all());
+        $validatedData = $request->validate([
+            'name' => 'required|max:100', 
+            'description' => 'max:250',
+            'price' => 'required|numeric|regex:/^\d{1,8}(\.\d{1,2})?$/',
+            'stock' => 'required|numeric|max:1000000',
+            'category_id' => 'required|exists:categories,id',
+        ]);
+
+        $product = Product::find($product->id);
+        $product->name = $validatedData['name'];
+        $product->description = $validatedData['description'];
+        $product->price = $validatedData['price'];
+        $product->stock = $validatedData['stock'];
+        $product->category_id = $validatedData['category_id'];
+        $product->save();
+        
         return response()->json($product, 200);
     }
 
