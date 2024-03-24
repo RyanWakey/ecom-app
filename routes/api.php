@@ -8,6 +8,9 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+
+// Product Routes
+
 // Fetch all products
 Route::get('/products', [ProductController::class, 'index']);
 
@@ -22,3 +25,6 @@ Route::put('/products/{product}', [ProductController::class, 'update'])->middlew
 
 // Delete a product (protected route)
 Route::delete('/products/{product}', [ProductController::class, 'destroy'])->middleware('auth:sanctum');
+
+
+// Category Routes
