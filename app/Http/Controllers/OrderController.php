@@ -38,7 +38,7 @@ class OrderController extends Controller
      */
     public function show(Order $order)
     {
-        return Product::findOrFail($order->id);
+        return Order::findOrFail($order->id);
     }
 
     /**
