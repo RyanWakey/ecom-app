@@ -54,8 +54,8 @@ class CategoryController extends Controller
      */
     public function update(UpdateCategoryRequest $request, Category $category)
     {
-        $product->update($request->validated());
-        return response()->json($product, 200);
+        $category->update($request->validated());
+        return response()->json($category, 200);
     }
 
     /**
