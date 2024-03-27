@@ -31,23 +31,22 @@ Route::delete('/products/{product}', [ProductController::class, 'destroy'])->mid
 
 
 
-
-// Category Routes
-
 // Fetch all categories
-Route::get('/categories', [CategoryController::class], 'index');
+Route::get('/categories', [CategoryController::class, 'index']);
 
 // Fetch a single category 
-Route::get('/categories', [CategoryController::class], 'show');
+Route::get('/categories/{category}', [CategoryController::class, 'show']);
 
 // Create a new category 
-Route::post('/categories', [CategoryController::class], 'store')->middleware('auth:sanctum');
+Route::post('/categories', [CategoryController::class, 'store'])->middleware('auth:sanctum');
 
 // Update a category 
-Route::put('/categories/{category}', [CategoryController::class], 'update')->middleware('auth:sanctum');
+Route::put('/categories/{category}', [CategoryController::class, 'update'])->middleware('auth:sanctum');
 
 // Delete a category 
-Route::delete('/categories/{category}', [CategoryController::class], 'destroy')->middleware('auth:sanctum');
+Route::delete('/categories/{category}', [CategoryController::class, 'destroy'])->middleware('auth:sanctum');
+
+
 
 
 
@@ -55,34 +54,38 @@ Route::delete('/categories/{category}', [CategoryController::class], 'destroy')-
 // Order Routes
 
 // Fetch all orders
-Route::get('/orders', [OrderController::class], 'index');
+Route::get('/orders', [OrderController::class, 'index']);
 
-// Fetch a single category 
-Route::get('/orders', [OrderController::class], 'show');
+// Fetch a single order
+Route::get('/orders/{order}', [OrderController::class, 'show']);
 
-// Create a new category 
-Route::post('/orders', [OrderController::class], 'store')->middleware('auth:sanctum');
+// Create a new order
+Route::post('/orders', [OrderController::class, 'store'])->middleware('auth:sanctum');
 
-// Update a category 
-Route::put('/orders/{order}', [OrderController::class], 'update')->middleware('auth:sanctum');
+// Update an order
+Route::put('/orders/{order}', [OrderController::class, 'update'])->middleware('auth:sanctum');
 
-// Delete a category 
-Route::delete('/orders/{order}', [OrderController::class], 'destroy')->middleware('auth:sanctum');
+// Delete an order
+Route::delete('/orders/{order}', [OrderController::class, 'destroy'])->middleware('auth:sanctum');
+
+
+
 
 
 
 // CartItem Routes
 
-Route::get('/cartItems', [CartItemController::class], 'index');
+// Fetch all cart items
+Route::get('/cartItems', [CartItemController::class, 'index']);
 
-// Fetch a single category 
-Route::get('/cartItems', [CartItemController::class], 'show');
+// Fetch a single cart item
+Route::get('/cartItems/{cartItem}', [CartItemController::class, 'show']);
 
-// Create a new category 
-Route::post('/cartItems', [CartItemController::class], 'store')->middleware('auth:sanctum');
+// Create a new cart item
+Route::post('/cartItems', [CartItemController::class, 'store'])->middleware('auth:sanctum');
 
-// Update a category 
-Route::put('/cartItems/{cartItem}', [CartItemController::class], 'update')->middleware('auth:sanctum');
+// Update a cart item
+Route::put('/cartItems/{cartItem}', [CartItemController::class, 'update'])->middleware('auth:sanctum');
 
-// Delete a category 
-Route::delete('/cartItems/{cartItem}', [CartItemController::class], 'destroy')->middleware('auth:sanctum');
+// Delete a cart item
+Route::delete('/cartItems/{cartItem}', [CartItemController::class, 'destroy'])->middleware('auth:sanctum');
