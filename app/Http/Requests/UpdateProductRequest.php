@@ -26,6 +26,7 @@ class UpdateProductRequest extends FormRequest
             'description' => 'max:250',
             'price' => 'required|numeric|regex:/^\d{1,8}(\.\d{1,2})?$/',
             'stock' => 'required|numeric|max:1000000',
+            'imageUrl' => 'nullable|url',
             'category_id' => 'required|exists:categories,id'
         ];
     }
