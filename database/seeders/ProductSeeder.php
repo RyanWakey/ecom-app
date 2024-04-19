@@ -13,29 +13,21 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {   
-        $accessKey = config('services.unsplash.key'); // Ensure you have 'UNSPLASH_ACCESS_KEY' in your .env
-        $response = Http::get("https://api.unsplash.com/photos/random", [
-            'query' => [
-                'client_id' => $accessKey,
-                'count' => 10 // Fetch 10 random images
-            ]
-        ]);
-
-        $images = $response->json();
-
         $products = [
             [
                 'name' => "Laptop Pro",
                 'description' => "High-performance laptop suitable for professional use.",
                 'price' => 1200.99,
                 'stock' => 15,
+                'imageUrl' => '/images/Laptop.jpg',
                 'category_id' => 1
             ],
             [
-                'name' => "Smartphone X",
+                'name' => "Iphone X ",
                 'description' => "Latest smartphone with high-end features.",
                 'price' => 999.99,
                 'stock' => 25,
+                'imageUrl' => '/images/Iphone X.png',
                 'category_id' => 1
             ],
             [
@@ -43,6 +35,7 @@ class ProductSeeder extends Seeder
                 'description' => "Wireless headphones with noise cancellation.",
                 'price' => 250.50,
                 'stock' => 40,
+                'imageUrl' => '/images/Bluetooth headphones.jpg',
                 'category_id' => 1
             ],
             [
@@ -50,6 +43,7 @@ class ProductSeeder extends Seeder
                 'description' => "Comfortable and durable running shoes for all ages.",
                 'price' => 85.99,
                 'stock' => 50,
+                'imageUrl' => '/images/Running shoes.jpg',
                 'category_id' => 2
             ],
             [
@@ -57,6 +51,7 @@ class ProductSeeder extends Seeder
                 'description' => "Eco-friendly yoga mat for optimal grip.",
                 'price' => 47.99,
                 'stock' => 30,
+                'imageUrl' => '/images/Yoga mat.jpg',
                 'category_id' => 2
             ],
             [
@@ -64,13 +59,15 @@ class ProductSeeder extends Seeder
                 'description' => "Lightweight tennis racket for professional play.",
                 'price' => 199.99,
                 'stock' => 20,
+                'imageUrl' => '/images/Tennis racket.jpg',
                 'category_id' => 2
             ],
             [
-                'name' => "Classic Novel",
-                'description' => "A must-read classic novel for literature enthusiasts.",
+                'name' => "Harry Potter Collection",
+                'description' => "A must-read classic collection of the Harry Potter series.",
                 'price' => 15.99,
                 'stock' => 80,
+                'imageUrl' => '/images/Yoga mat.jpg',
                 'category_id' => 3
             ],
             [
@@ -78,22 +75,15 @@ class ProductSeeder extends Seeder
                 'description' => "Non-stick cooking pan ideal for everyday use.",
                 'price' => 35.99,
                 'stock' => 60,
+                'imageUrl' => '/images/Cooking pot.jpg',
                 'category_id' => 4
             ]
         ];
 
-        foreach ($products as $index => $product) {
-            Product::create([
-                'name' => $product['name'],
-                'description' => $product['description'],
-                'price' => $product['price'],
-                'stock' => $product['stock'],
-                'imageUrl' => $images[$index % count($images)]['urls']['regular'],
-                'category_id' => $product['category_id']     
-            ]);
+        foreach ($products as $product) {
+            Product::create($product);
         }
 
-        // Additional random products with factory
         Product::factory(10)->create(['category_id' => rand(1, 4)]);
     }
 }
