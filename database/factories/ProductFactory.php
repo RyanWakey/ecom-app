@@ -20,7 +20,7 @@ class ProductFactory extends Factory
     {
             return [
                 'name' => $this->faker->words(2, true), // Generate a two-word product name
-                'description' => $this->faker->sentence(), // Generate a random sentence for the description
+                'description' => $this->faker->paragraphs(3, true), // Generate three random paragraphs for the description
                 'price' => $this->faker->randomFloat(2, 0, 1000), // Generate a random price between 0 and 1000
                 'stock' => $this->faker->numberBetween(10, 100), // Generate a random stock number between 10 and 100
                 'imageUrl' => $this->faker->imageUrl(640, 480, 'products', true), // Generate a random url.
