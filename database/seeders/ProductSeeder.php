@@ -15,7 +15,7 @@ class ProductSeeder extends Seeder
     {   
         $products = [
             [
-                'name' => "Laptop Pro",
+                'name' => "Laptop Pro Elite | 15.6 Quad-HD Display with Intel Core i9 | AI-Enhanced Graphics ",
                 'description' => join("\n\n", ["The Laptop Pro offers a seamless blend of power and elegance, 
                     designed for professionals who demand performance without compromise. 
                     Under its sleek, anodized aluminum chassis lies a formidable 11th Gen Intel® Core™ processor, 
@@ -47,7 +47,7 @@ class ProductSeeder extends Seeder
                 'category_id' => 1
             ],
             [
-                'name' => "Iphone X ",
+                'name' => "iPhone X Infinity - 64GB with Super Retina Display & Advanced Face ID ",
                 'description' => join("\n\n", ["The iPhone X stands as a landmark in smartphone design, 
                     merging the classic allure of Apple's aesthetic with forward-thinking technology. 
                     Its edge-to-edge 5.8-inch Super Retina display is a feast for the eyes, 
@@ -82,7 +82,7 @@ class ProductSeeder extends Seeder
                 'category_id' => 1
             ],
             [
-                'name' => "Bluetooth Headphones",
+                'name' => "SoundWave Pro Bluetooth Headphones with Noise-Cancellation and Extended Bass",
                 'description' => join("\n\n", ["Step into a personal audio oasis with our state-of-the-art Bluetooth headphones, 
                     designed to deliver an immersive sound experience. With high-fidelity audio quality, 
                     these headphones produce a rich, balanced sound that brings your favorite tracks to life. 
@@ -111,7 +111,7 @@ class ProductSeeder extends Seeder
                 'category_id' => 1
             ],
             [
-                'name' => "Running Shoes",
+                'name' => "Trailblazer Sprint - High-Performance Running Shoes with Adaptive Cushioning",
                 'description' => join("\n\n", ["Elevate your running game with our premium running shoes, 
                     engineered to offer unmatched support and performance on any terrain. 
                     These shoes are the epitome of the perfect synergy between comfort and durability,
@@ -143,7 +143,7 @@ class ProductSeeder extends Seeder
                 'category_id' => 2
             ],
             [
-                'name' => "Yoga Mat",
+                'name' => "Serenity Grip Yoga Mat - Eco-Friendly Material with Alignment Markers",
                 'description' => join("\n\n", ["Discover the perfect foundation for your yoga practice with our high-performance 
                     yoga mat. Crafted for both novices and seasoned yogis, 
                     our mat provides the ultimate balance of cushioning and grip. 
@@ -176,7 +176,7 @@ class ProductSeeder extends Seeder
                 'category_id' => 2
             ],
             [
-                'name' => "Tennis Racket",
+                'name' => "AceMaster Tournament Tennis Racket with Precision Control and Swift Swing",
                 'description' => join("\n\n", ["Elevate your game with the latest innovation in tennis technology. 
                     Our state-of-the-art tennis racket is engineered for precision, power, and agility. 
                     Crafted from premium graphite, it offers a remarkable balance of strength and lightness, 
