@@ -306,10 +306,30 @@ class ProductSeeder extends Seeder
             ],
         ];
 
-        foreach ($products as $product) {
-            Product::create($product);
+        foreach ($products as $productData) {
+            $product = Product::create($productData);
+        
+            // Check if exist hardcoded images for current product
+            if (array_key_exists($product->name, $hardcodedImages)) {
+                foreach ($hardcodedImages[$product->name] as $imagePath) {
+                    ProductImage::create([
+                        'product_id' => $product->id,
+                        'url' => $imagePath,
+                    ]);
+                }
+            }
         }
 
-        Product::factory(10)->create(['category_id' => rand(1, 4)]);
+       // Factory-generated products assign images randomly
+        Product::factory(10)->create(['category_id' => rand(1, 4)])->each(function ($product) use ($hardcodedImages) {
+            // Generate between 3 and 5 images
+            $numberOfImages = rand(3, 5);
+            for ($i = 0; $i < $numberOfImages; $i++) {
+                ProductImage::create([
+                    'product_id' => $product->id,
+                    'url' => $this->faker->imageUrl(640, 480, 'products', true),
+                ]);
+            }
+        });
     }
 }
