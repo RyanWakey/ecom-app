@@ -43,7 +43,6 @@ class ProductSeeder extends Seeder
                 ]),
                 'price' => 1200.99,
                 'stock' => 15,
-                'imageUrl' => '/images/Laptop.jpg',
                 'category_id' => 1
             ],
             [
@@ -78,7 +77,6 @@ class ProductSeeder extends Seeder
                 ]),
                 'price' => 999.99,
                 'stock' => 25,
-                'imageUrl' => '/images/Iphone X.png',
                 'category_id' => 1
             ],
             [
@@ -107,7 +105,6 @@ class ProductSeeder extends Seeder
                 ]),
                 'price' => 250.50,
                 'stock' => 40,
-                'imageUrl' => '/images/Bluetooth headphones.jpg',
                 'category_id' => 1
             ],
             [
@@ -139,7 +136,6 @@ class ProductSeeder extends Seeder
                 ]),
                 'price' => 85.99,
                 'stock' => 50,
-                'imageUrl' => '/images/Running shoes.jpg',
                 'category_id' => 2
             ],
             [
@@ -172,7 +168,6 @@ class ProductSeeder extends Seeder
                 ]),
                 'price' => 47.99,
                 'stock' => 30,
-                'imageUrl' => '/images/Yoga mat.jpg',
                 'category_id' => 2
             ],
             [
@@ -205,7 +200,6 @@ class ProductSeeder extends Seeder
                 ]),
                 'price' => 199.99,
                 'stock' => 20,
-                'imageUrl' => '/images/Tennis racket.jpg',
                 'category_id' => 2
             ],
             [
@@ -239,7 +233,6 @@ class ProductSeeder extends Seeder
                 ]),
                 'price' => 15.99,
                 'stock' => 80,
-                'imageUrl' => '/images/Yoga mat.jpg',
                 'category_id' => 3
             ],
             [
@@ -266,7 +259,6 @@ class ProductSeeder extends Seeder
                 satisfy your appetite for quality cooking.",
                 'price' => 35.99,
                 'stock' => 60,
-                'imageUrl' => '/images/Cooking pot.jpg',
                 'category_id' => 4
             ]
         ];
