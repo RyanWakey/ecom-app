@@ -263,6 +263,49 @@ class ProductSeeder extends Seeder
             ]
         ];
 
+        $hardcodedImages = [
+            'Laptop Pro Elite | 15.6 Quad-HD Display with Intel Core i9 | AI-Enhanced Graphics ' => [
+                '/images/Lapbook.jpg',
+                '/images/Lapbook2.jpg',
+                '/images/Lapbook3.jpg'
+            ],
+            'iPhone X Infinity - 64GB with Super Retina Display & Advanced Face ID ' => [
+                '/images/Iphone.png',
+                '/images/Iphone1.jpg',
+                '/images/Iphone2.png',
+                '/images/Iphone3.png'
+            ],
+            'SoundWave Pro Bluetooth Headphones with Noise-Cancellation and Extended Bass' => [
+                '/images/BluetoothHeadphones.jpg',
+                '/images/BluetoothHeadphones2.jpg',
+                '/images/BluetoothHeadphones3.jpg'
+            ],
+            'Trailblazer Sprint - High-Performance Running Shoes with Adaptive Cushioning' => [
+                '/images/RunningShoes.jpg',
+                '/images/RunningShoes2.jpg',
+                '/images/RunningShoes3.jpg',
+                '/images/RunningShoes4.jpg',
+                '/images/RunningShoes5.jpg'
+            ],
+            'Serenity Grip Yoga Mat - Eco-Friendly Material with Alignment Markers' => [
+                '/images/yogamat.jpg',
+                '/images/yogamat2.jpg',
+                '/images/yogamat3.jpg'
+            ],
+            'AceMaster Tournament Tennis Racket with Precision Control and Swift Swing' => [
+                '/images/TennisRacket.jpg',
+                '/images/TennisRacket2.jpg'
+            ],
+            'Harry Potter Collection' => [
+                '/images/HarryPotterCollection.jpg',
+                '/images/HarryPotterCollection2.jpg'
+            ],
+            'Cooking Pan' => [
+                'images/CookingPan.jpg',
+                'images/CookingPan2.jpg'
+            ],
+        ];
+
         foreach ($products as $product) {
             Product::create($product);
         }
