@@ -2,11 +2,12 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Product;
 use App\Models\ProductImage;
+use Faker\Factory as Faker;
+
 
 
 class ProductSeeder extends Seeder
@@ -309,6 +310,8 @@ class ProductSeeder extends Seeder
             ],
         ];
 
+        $faker = Faker::create();  
+
         foreach ($products as $productData) {
             $product = Product::create($productData);
         
@@ -323,14 +326,15 @@ class ProductSeeder extends Seeder
             }
         }
 
-       // Factory-generated products assign images randomly
-        Product::factory(10)->create(['category_id' => rand(1, 4)])->each(function ($product) use ($hardcodedImages) {
+        // Factory-generated products assign images randomly
+        Product::factory(10)->create(['category_id' => rand(1, 4)])
+        ->each(function ($product) use ($faker) {
             // Generate between 3 and 5 images
             $numberOfImages = rand(3, 5);
             for ($i = 0; $i < $numberOfImages; $i++) {
                 ProductImage::create([
                     'product_id' => $product->id,
-                    'url' => $this->faker->imageUrl(640, 480, 'products', true),
+                    'url' => $faker->imageUrl(640, 480, 'products', true),
                 ]);
             }
         });
