@@ -2,9 +2,12 @@
 
 namespace Database\Seeders;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Product;
+use App\Models\ProductImage;
+
 
 class ProductSeeder extends Seeder
 {
