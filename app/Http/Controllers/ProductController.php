@@ -13,7 +13,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return Product::all();
+        $products = Product::with('images')->get();
+        return response()->json($products);
     }
 
     /**
@@ -38,7 +39,8 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        return Product::findOrFail($product->id);
+        $product = Product::with('images')->findOrFail($id);
+        return response()->json($product);
     }
 
     /**
