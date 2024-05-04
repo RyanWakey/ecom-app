@@ -306,8 +306,8 @@ class ProductSeeder extends Seeder
                 '/images/HarryPotterCollection2.jpg'
             ],
             'Cooking Pan' => [
-                'images/CookingPan.jpg',
-                'images/CookingPan2.jpg'
+                '/images/CookingPan.jpg',
+                '/images/CookingPan2.jpg'
             ],
         ];
 
