@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Database\Seeder;
 use App\Models\Product;
 use App\Models\ProductImage;
@@ -314,7 +315,8 @@ class ProductSeeder extends Seeder
 
         foreach ($products as $productData) {
             $product = Product::create($productData);
-        
+            Log::info('Product created: ' . $product->id);
+
             // Check if exist hardcoded images for current product
             if (array_key_exists($product->name, $hardcodedImages)) {
                 foreach ($hardcodedImages[$product->name] as $imagePath) {
@@ -322,6 +324,7 @@ class ProductSeeder extends Seeder
                         'product_id' => $product->id,
                         'url' => $imagePath,
                     ]);
+                    Log::info('Image added for product ' . $product->id);
                 }
             }
         }
