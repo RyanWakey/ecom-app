@@ -14,7 +14,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::with('images')->get();
-        return response()->json($products);
+        return response()->json($products, 200);
     }
 
     /**
@@ -37,10 +37,10 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Product $product)
+    public function show($id)
     {
         $product = Product::with('images')->findOrFail($id);
-        return response()->json($product);
+        return response()->json($product, 200);
     }
 
     /**
