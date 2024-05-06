@@ -276,9 +276,9 @@ class ProductSeeder extends Seeder
             ],
             'iPhone X Infinity - 64GB with Super Retina Display & Advanced Face ID ' => [
                 '/images/Iphone.png',
-                '/images/Iphone1.jpg',
-                '/images/Iphone2.png',
-                '/images/Iphone3.png'
+                '/images/Iphone2.jpg',
+                '/images/Iphone3.png',
+                '/images/Iphone4.png'
             ],
             'SoundWave Pro Bluetooth Headphones with Noise-Cancellation and Extended Bass' => [
                 '/images/BluetoothHeadphones.jpg',
