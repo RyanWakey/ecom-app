@@ -272,7 +272,9 @@ class ProductSeeder extends Seeder
             'Laptop Pro Elite | 15.6 Quad-HD Display with Intel Core i9 | AI-Enhanced Graphics ' => [
                 '/images/Lapbook.jpg',
                 '/images/Lapbook2.jpg',
-                '/images/Lapbook3.jpg'
+                '/images/Lapbook3.jpg',
+                '/images/Lapbook4.jpg',
+                '/images/Lapbook5.jpg'
             ],
             'iPhone X Infinity - 64GB with Super Retina Display & Advanced Face ID ' => [
                 '/images/Iphone.png',
