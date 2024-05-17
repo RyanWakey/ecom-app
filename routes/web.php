@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
@@ -23,5 +24,10 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+// Web routes, such as rendering the login view or handling session-based login/logout
+Route::get('login', [AuthenticatedSessionController::class, 'create'])->name('login');
+Route::post('login', [AuthenticatedSessionController::class, 'store']);
+Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
 require __DIR__.'/auth.php';
