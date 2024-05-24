@@ -17,16 +17,19 @@ class DealFactory extends Factory
      *
      * @return array<string, mixed>
      */
+    
+    protected $model = Deal::class;
+
     public function definition(): array
     {
-        return [
-            'product_id' => Product::factory(),
+         return [
+            'product_id' => Product::inRandomOrder()->first()->id,
             'discount' => $this->faker->randomFloat(2, 3, 75), // Discount between 3% and 75%
-            'valid_until' => $this->faker->dateTimeBetween('now', '+1 year'),
-            'user_id' => User::factory()->nullable(), // Nullable for global deals
+            'valid_until' => $this->faker->dateTimeBetween('now', '+1 year'), // Valid until a random date within the next year
+            'user_id' => null, // Nullable for global deals
             'targeting_criteria' => json_encode([
-                'browsing_history' => $this->faker->randomElements(['Electronics', 'Books', 'Sportswear'], 2),
-                'location' => $this->faker->randomElement(['US', 'EU', 'ASIA'])
+                'browsing_history' => $this->faker->randomElements(['Electronics', 'Books', 'Sportswear'], 2), // 2 random elements from the provided array
+                'location' => $this->faker->randomElement(['US', 'EU', 'ASIA']) // Random location
             ])
         ];
     }
