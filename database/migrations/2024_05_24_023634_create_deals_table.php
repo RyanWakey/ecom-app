@@ -15,8 +15,9 @@ return new class extends Migration
             $table->id();
             $table->float('discount');
             $table->timestamp('valid_until');
-            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('product_id')->constrained()->onDelete('cascade');
+            $table->foreignId('user_id')->nullable()->constrained()->onDelete('cascade');
+            $table->json('targeting_criteria')->nullable(); // JSON column for storing targeting rules
             $table->timestamps();
         });
     }
