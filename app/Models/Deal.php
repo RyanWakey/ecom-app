@@ -9,7 +9,13 @@ class Deal extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['discount', 'valid_until', 'user_id', 'product_id'];
+    protected $fillable = [
+        'product_id',
+        'discount',
+        'valid_until',
+        'user_id', // Nullable for global deals
+        'targeting_criteria' // JSON field for storing targeting rules
+    ];
 
     public function user()
     {
