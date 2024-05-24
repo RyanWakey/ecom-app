@@ -58,6 +58,11 @@ class User extends Authenticatable
 
     public function browsingHistories()
     {
-        return $this->hasMany(BrowsingHistories::class);
+        return $this->hasMany(BrowsingHistory::class);
+    }
+
+    public function deals()
+    {
+        return $this->hasMany(Deal::class);
     }
 }
