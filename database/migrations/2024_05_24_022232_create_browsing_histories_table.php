@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('browsing_histories', function (Blueprint $table) {
             $table->id();
+            $table->timestamp('viewed_at');
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
+            $table->foreignId('product_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
