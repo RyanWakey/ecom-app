@@ -17,7 +17,14 @@ class DealFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'product_id' => Product::factory(),
+            'discount' => $this->faker->randomFloat(2, 3, 75), // Discount between 3% and 75%
+            'valid_until' => $this->faker->dateTimeBetween('now', '+1 year'),
+            'user_id' => User::factory()->nullable(), // Nullable for global deals
+            'targeting_criteria' => json_encode([
+                'browsing_history' => $this->faker->randomElements(['Electronics', 'Books', 'Sportswear'], 2),
+                'location' => $this->faker->randomElement(['US', 'EU', 'ASIA'])
+            ])
         ];
     }
 }
