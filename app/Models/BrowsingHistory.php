@@ -20,4 +20,9 @@ class BrowsingHistory extends Model
     {
         return $this->belongsTo(Product::class);
     }
+
+    public function browsingHistories()
+    {
+        return $this->hasMany(BrowsingHistory::class);
+    }
 }
