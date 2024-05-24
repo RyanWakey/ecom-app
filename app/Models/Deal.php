@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Deal extends Model
 {
     use HasFactory;
-    
+
+    protected $fillable = ['discount', 'valid_until', 'user_id', 'product_id'];
+
     public function user()
     {
         return $this->belongsTo(User::class);

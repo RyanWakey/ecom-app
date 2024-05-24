@@ -9,7 +9,7 @@ class BrowsingHistory extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id', 'product_id', 'viewed_at'];
+    protected $fillable = ['viewed_at', 'user_id', 'product_id'];
 
     public function user()
     {
