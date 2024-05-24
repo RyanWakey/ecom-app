@@ -21,7 +21,7 @@ class BrowsingHistoryFactory extends Factory
     {
         return [
             'user_id' => User::inRandomOrder()->first()->id, // User::Factory() - could create a user when creting browsing history
-            'product_id' => Product::inRandomOrder()->first()->id,
+            'product_id' => Product::inRandomOrder()->first()->id, // use existing product id and user id (above)
             'viewed_at' => $this->faker->dateTimeBetween('-1 month', 'now')
         ];
     }
