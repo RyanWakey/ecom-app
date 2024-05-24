@@ -15,20 +15,26 @@ class DealSeeder extends Seeder
     public function run(): void
     {   
 
-        // Ensure there are products to associate deals with (this should never run)
+        // Ensure there are products to associate deals with
         if (Product::count() == 0) {
             Product::factory()->count(10)->create();
         }
 
-        // Create 5 global deals
-        Deal::facotory()->count(5)->create();
+        // Ensure there are users to associate user-specific deals with
+        if (User::count() == 0) {
+            User::factory()->count(10)->create();
+        }
 
-        // Create 3 user-specific deals for each user
+        // Create 5 global deals
+        Deal::factory()->count(5)->create();
+
+        // Create 5 user-specific deals for each user
         $users = User::all();
         foreach ($users as $user) {
-            Deal::factory()->count(3)->create([
+            Deal::factory()->count(5)->create([
                 'user_id' => $user->id
             ]);
         }
     }
+
 }
