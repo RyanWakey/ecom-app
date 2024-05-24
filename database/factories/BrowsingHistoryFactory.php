@@ -20,8 +20,8 @@ class BrowsingHistoryFactory extends Factory
     public function definition(): array
     {
         return [
-            'user_id' => User::factory(),
-            'product_id' => Product::factory(),
+            'user_id' => User::inRandomOrder()->first()->id, // User::Factory() - could create a user when creting browsing history
+            'product_id' => Product::inRandomOrder()->first()->id,
             'viewed_at' => $this->faker->dateTimeBetween('-1 month', 'now')
         ];
     }
