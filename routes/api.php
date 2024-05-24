@@ -2,11 +2,14 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\CartItemController;
-use App\Http\Controllers\Auth\AuthController;
+use App\Http\Controllers\BrowsingHistoryController;
+use App\Http\Controllers\DealController;
+
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -74,3 +77,15 @@ Route::post('register', [AuthController::class, 'apiRegister']);
 Route::post('login', [AuthController::class, 'apiLogin']);
 Route::post('logout', [AuthController::class, 'apiLogout'])->middleware('auth:sanctum');
 Route::get('user', [AuthController::class, 'user'])->middleware('auth:sanctum');
+
+
+
+// Routes that require user authentication for their browsing history and
+// both global and user-specific deals
+Route::middleware('auth:sanctum')->group(function () {
+    Route::get('/browsing-history', [BrowsingHistoryController::class, 'index']);
+    Route::get('/deals', [DealController::class, 'index']);
+});
+
+// Route to get popular categories, available to all users
+Route::get('/popular-categories', [CategoryController::class, 'index']);
