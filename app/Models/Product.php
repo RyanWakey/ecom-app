@@ -29,4 +29,9 @@ class Product extends Model
     {
         return $this->hasMany(BrowsingHistory::class);
     }
+
+    public function deals()
+    {
+        return $this->hasMany(Deal::class);
+    }
 }
