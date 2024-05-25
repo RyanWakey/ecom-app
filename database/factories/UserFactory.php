@@ -41,4 +41,15 @@ class UserFactory extends Factory
             'email_verified_at' => null,
         ]);
     }
+
+    /** Could use this also for nested factories to create users, products, deals and browsing history all at once.
+    * public function configure()
+    * {
+    *    return $this->afterCreating(function (User $user) {
+    *       // Ensure the user has deals and browsing histories
+    *      $user->deals()->saveMany(Deal::factory()->count(5)->make());
+    *     $user->browsingHistories()->saveMany(BrowsingHistory::factory()->count(5)->make());
+    *   });
+    * }
+    */
 }
