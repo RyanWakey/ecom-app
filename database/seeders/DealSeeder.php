@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Deal;
 use App\Models\User;
+use App\Models\Product;
 
 class DealSeeder extends Seeder
 {
