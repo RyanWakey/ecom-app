@@ -81,11 +81,14 @@ Route::get('user', [AuthController::class, 'user'])->middleware('auth:sanctum');
 
 
 // Routes that require user authentication for their browsing history and
-// both global and user-specific deals
+// both global and user-specific deals and recommended products
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/browsing-history', [BrowsingHistoryController::class, 'index']);
     Route::get('/deals', [DealController::class, 'index']);
+    Route::get('/recommended-products', [RecommendedProductsController::class, 'index']);
 });
 
 // Route to get popular categories, available to all users
 Route::get('/popular-categories', [CategoryController::class, 'index']);
+// Route to get deals available currently
+Route::get('/today-deals', [DealController::class, 'index']); 
