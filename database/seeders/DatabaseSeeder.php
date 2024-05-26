@@ -25,8 +25,8 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         $this->call(OrderSeeder::class);
         $this->call(CartItemSeeder::class);
-        $this->call(BrowsingHistory::class);
-        $this->call(Deal::class);
+        $this->call(BrowsingHistorySeeder::class);
+        $this->call(DealSeeder::class);
      
 
          // Create users with associated deals and browsing histories
