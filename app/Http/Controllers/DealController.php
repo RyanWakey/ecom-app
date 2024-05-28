@@ -38,4 +38,7 @@ class DealController extends Controller
 
         return response()->json($deals);
     }
+
+
+    
 }
