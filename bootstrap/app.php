@@ -18,14 +18,11 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
 
         // Added middleware to the api group
-        $middleware->api(append: [
+        $middleware->statefulApi([
             EnsureFrontendRequestsAreStateful::class,
             ThrottleRequests::class,
             SubstituteBindings::class,
         ]);
-        
-        // Added statefulApi middleware
-        $middleware->statefulApi();
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
