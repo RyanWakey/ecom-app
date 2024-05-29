@@ -23,6 +23,9 @@ return Application::configure(basePath: dirname(__DIR__))
             ThrottleRequests::class,
             SubstituteBindings::class,
         ]);
+        
+        // Added statefulApi middleware
+        $middleware->statefulApi();
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
