@@ -67,12 +67,17 @@ class AuthController extends Controller
      */
     public function apiLogout(Request $request)
     {
-        Auth::guard('web')->logout();
-
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-
-        return response()->json(['message' => 'Logged out']);
+        try {
+            Auth::guard('web')->logout();
+    
+            $request->session()->invalidate();
+            $request->session()->regenerateToken();
+    
+            return response()->json(['message' => 'Logged out']);
+        } catch (\Exception $e) {
+            Log::error('Logout error: ' . $e->getMessage());
+            return response()->json(['error' => 'Logout failed'], 500);
+        }
     }
 
     /**
