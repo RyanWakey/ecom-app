@@ -22,6 +22,8 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
         $middleware->api(append: [
             \Illuminate\Session\Middleware\StartSession::class, // Add session middleware
+            ThrottleRequests::class,
+            SubstituteBindings::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
