@@ -32,5 +32,10 @@ class CategorySeeder extends Seeder
         $category4->name = "Kitchenware";
         $category4->description = "Kitchen appliances and utensils";
         $category4->save(); 
+
+        $category5 = new Category;
+        $category5->name = "Gardening Supplies";
+        $cateogry5->description = "Essential tools and products for garden care";
+        $category5->save();
     }
 }
