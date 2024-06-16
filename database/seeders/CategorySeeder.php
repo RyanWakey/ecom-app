@@ -34,7 +34,7 @@ class CategorySeeder extends Seeder
         $category4->save(); 
 
         $category5 = new Category;
-        $category5->name = "Gardening Supplies";
+        $category5->name = "Gardening-Supplies";
         $cateogry5->description = "Essential tools and products for garden care";
         $category5->save();
     }

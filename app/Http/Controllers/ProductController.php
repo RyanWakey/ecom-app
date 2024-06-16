@@ -68,4 +68,33 @@ class ProductController extends Controller
         $product->delete();
         return response()->json(null, 204);
     }
+
+    public function getGardenEssentials()
+    {
+        try {
+            $gardenProducts = Product::where('category', 'Gardenware')
+                                     ->inRandomOrder()
+                                     ->limit(4)
+                                     ->get();
+
+            // Check if any products were found
+            if ($gardenProducts->isEmpty()) {
+                return response()->json([
+                    'message' => 'No garden essentials found',
+                    'data' => []
+                ], 404);
+            }
+
+            return response()->json([
+                'message' => 'Garden essentials fetched successfully',
+                'data' => $gardenProducts
+            ], 200);
+
+        } catch (\Exception $e) {
+            return response()->json([
+                'message' => 'An error occurred while fetching garden essentials',
+                'error' => $e->getMessage()
+            ], 500);
+        }
+    }
 }
