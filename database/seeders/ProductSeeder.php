@@ -266,6 +266,7 @@ class ProductSeeder extends Seeder
                 'stock' => 60,
                 'category_id' => 4
             ],
+            // Next two are watering equipment
             [
                 'name' => "Garden Hose",
                 'description' => "Transform your gardening experience with our high-quality Garden Hose, 
@@ -319,6 +320,7 @@ class ProductSeeder extends Seeder
                 'stock' => 50,
                 'category_id' => 5,
             ]
+            // Next two are Plant Protection and Pest Control
         ];
 
         $hardcodedImages = [
