@@ -293,6 +293,31 @@ class ProductSeeder extends Seeder
                 'price' => 24.99,
                 'stock' => 75,
                 'category_id' => 5
+            ],
+            [
+                'name' => "Lawn Sprinkler",
+                'description' => "Enhance your lawn care routine with our advanced Lawn Sprinkler, 
+                designed to deliver optimal water distribution for a lush, green lawn. 
+                This sprinkler is a must-have for any homeowner looking to maintain a healthy, vibrant yard with minimal effort. 
+                Constructed from high-grade materials, this sprinkler ensures durability and long-lasting performance.
+
+                The Lawn Sprinkler features an adjustable spray pattern, allowing you to customize the water coverage 
+                to suit different areas of your lawn. Whether you're watering a small patch of grass or a large expanse, 
+                this sprinkler provides even, consistent coverage. The efficient water usage helps conserve water 
+                while ensuring your lawn receives the nourishment it needs.
+
+                Versatility is a key feature of this sprinkler's design. It is compatible with all standard garden hoses 
+                and can easily be connected for immediate use. The sturdy base provides stability, 
+                preventing the sprinkler from tipping over during operation. Its UV-resistant exterior protects it from 
+                sun damage, ensuring it remains functional and attractive over time.
+
+                This Lawn Sprinkler isn't just a tool; it's an investment in your lawn's health and beauty. 
+                It's an essential companion for those who take pride in maintaining a pristine outdoor space and a testament 
+                to the belief that a beautiful lawn begins with the right equipment. With this sprinkler in your gardening arsenal, 
+                you're well-equipped to keep your lawn hydrated and thriving, making your yard the envy of the neighborhood.",
+                'price' => 29.99,
+                'stock' => 50,
+                'category_id' => 5,
             ]
         ];
 
@@ -343,6 +368,10 @@ class ProductSeeder extends Seeder
                 '/images/GardenHose.jpg',
                 '/images/GardenHose2.jpg',
                 '/images/GardenHose3.jpg'
+            ],
+            'Lawn Sprinkler' => [
+                '/images/Sprinkler.jpg',
+                '/images/Sprinkler.jpg',
             ]
         ];
 
