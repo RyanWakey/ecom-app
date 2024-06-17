@@ -319,8 +319,33 @@ class ProductSeeder extends Seeder
                 'price' => 29.99,
                 'stock' => 50,
                 'category_id' => 5,
-            ]
+            ],
             // Next two are Plant Protection and Pest Control
+            [
+                'name' => "Rat Poison",
+                'description' => "Protect your home and garden with our effective Rat Poison, 
+                formulated to eliminate rodent infestations quickly and efficiently. 
+                This rat poison is an essential tool for maintaining a safe and hygienic environment, 
+                whether you're dealing with a small infestation or a larger rodent problem. 
+                Crafted with powerful active ingredients, this product ensures high efficacy in eradicating rats and mice.
+
+                The Rat Poison features a potent formula that attracts rodents and delivers a lethal dose upon ingestion, 
+                ensuring swift elimination. The product is designed for easy placement in various locations, 
+                such as basements, garages, attics, and gardens, providing versatile pest control solutions. 
+                With its fast-acting properties, you can see results in a matter of days, giving you peace of mind.
+
+                Safety is a priority with this product. The Rat Poison is packaged in secure, tamper-resistant bait stations, 
+                minimizing the risk to children, pets, and non-target wildlife. Its weather-resistant design ensures it remains 
+                effective even in outdoor conditions, maintaining its potency and effectiveness over time.
+
+                This Rat Poison isn't just a product; it's an investment in the safety and cleanliness of your home. 
+                It's a reliable solution for those who prioritize a pest-free environment and a testament to the belief 
+                that effective pest control starts with the right products. With this rat poison in your pest control arsenal, 
+                you're well-equipped to tackle rodent problems and maintain a healthy, rodent-free space.",
+                'price' => 19.99,
+                'stock' => 100,
+                'category_id' => 5,
+            ]
         ];
 
         $hardcodedImages = [
@@ -374,6 +399,9 @@ class ProductSeeder extends Seeder
             'Lawn Sprinkler' => [
                 '/images/Sprinkler.jpg',
                 '/images/Sprinkler.jpg',
+            ],
+            'Rat poison' => [
+                '/images/RatPoison.jpg',
             ]
         ];
 
