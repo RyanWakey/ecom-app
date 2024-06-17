@@ -265,6 +265,34 @@ class ProductSeeder extends Seeder
                 'price' => 35.99,
                 'stock' => 60,
                 'category_id' => 4
+            ],
+            [
+                'name' => "Garden Hose",
+                'description' => "Transform your gardening experience with our high-quality Garden Hose, 
+                designed to meet the diverse needs of every garden enthusiast. 
+                This hose is an essential tool for maintaining a lush, healthy garden, 
+                providing both durability and flexibility for all your watering tasks. 
+                Crafted from robust materials, this hose offers exceptional strength and resilience, 
+                ensuring it withstands the rigors of frequent use.
+
+                The Garden Hose features a kink-resistant design, allowing for uninterrupted water flow and ease of use, 
+                making your watering chores more efficient and enjoyable. Whether you're watering your flower beds, 
+                washing your car, or filling up a pool, this hose delivers consistent performance. 
+                The ergonomic, non-slip grip ensures comfortable handling, even when wet.
+                                
+                Versatility is at the core of this hose's design. With universal fittings, 
+                it connects effortlessly to any standard spigot and is compatible with a variety of nozzles and sprinklers, 
+                providing you with a customizable watering solution. Its UV-resistant outer layer protects it from 
+                sun damage, ensuring it maintains its flexibility and strength over time.
+                                
+                This Garden Hose isn't just a tool; it's an investment in your garden's health and beauty. 
+                It's a reliable companion for those who take pride in their outdoor spaces and a testament to the 
+                belief that a well-tended garden begins with the right equipment. With this hose in your gardening arsenal, 
+                you're well-equipped to nurture your plants and keep your garden thriving, 
+                season after season.",
+                'price' => 24.99,
+                'stock' => 75,
+                'category_id' => 5
             ]
         ];
 
@@ -311,6 +339,11 @@ class ProductSeeder extends Seeder
                 '/images/CookingPan.jpg',
                 '/images/CookingPan2.jpg'
             ],
+            'Hose Pipe' => [
+                '/images/GardenHose.jpg',
+                '/images/GardenHose2.jpg',
+                '/images/GardenHose3.jpg'
+            ]
         ];
 
         $faker = Faker::create();  
