@@ -243,55 +243,55 @@ class ProductSeeder extends Seeder
             [
                 'name' => "Cooking Pan",
                 'description' => join("\n\n",["Unlock the secrets of gourmet chefs with our premium Cooking Pan, 
-                designed to elevate your culinary experiences. 
-                This pan is a staple for both professional kitchens and home cooks who crave the perfect balance of 
-                functionality and style. Crafted from superior materials, this pan offers unmatched heat distribution and 
-                retention for consistent, even cooking.
+                    designed to elevate your culinary experiences. 
+                    This pan is a staple for both professional kitchens and home cooks who crave the perfect balance of 
+                    functionality and style. Crafted from superior materials, this pan offers unmatched heat distribution and 
+                    retention for consistent, even cooking.
 
-                The Cooking Pan features a non-stick surface, allowing you to cook with minimal oil and ensuring an 
-                easy release of food, making clean-up a breeze. Whether you're searing steaks, sautéing vegetables, 
-                or creating delicate omelets, this pan performs with excellence. The ergonomic handle is designed to 
-                stay cool, providing a safe, comfortable grip.
-                
-                Versatility is at the heart of this pan's design. Compatible with all cooktops, 
-                including induction, and oven-safe, it allows you to start a dish on the stove and finish it in the oven.
-                Its durability is unmatched, resisting scratches and maintaining its sleek appearance over time.
-                
-                This Cooking Pan isn't just a tool; it's an investment in your culinary adventures. 
-                It's a companion for those who find joy in crafting delicious meals and a testament to the 
-                belief that the best dishes begin with the best cookware. With this pan in your kitchen arsenal, 
-                you're well-equipped to create a myriad of dishes that will impress your guests and 
-                satisfy your appetite for quality cooking.",
+                    The Cooking Pan features a non-stick surface, allowing you to cook with minimal oil and ensuring an 
+                    easy release of food, making clean-up a breeze. Whether you're searing steaks, sautéing vegetables, 
+                    or creating delicate omelets, this pan performs with excellence. The ergonomic handle is designed to 
+                    stay cool, providing a safe, comfortable grip.
+                    
+                    Versatility is at the heart of this pan's design. Compatible with all cooktops, 
+                    including induction, and oven-safe, it allows you to start a dish on the stove and finish it in the oven.
+                    Its durability is unmatched, resisting scratches and maintaining its sleek appearance over time.
+                    
+                    This Cooking Pan isn't just a tool; it's an investment in your culinary adventures. 
+                    It's a companion for those who find joy in crafting delicious meals and a testament to the 
+                    belief that the best dishes begin with the best cookware. With this pan in your kitchen arsenal, 
+                    you're well-equipped to create a myriad of dishes that will impress your guests and 
+                    satisfy your appetite for quality cooking.",
                 ]),
                 'price' => 35.99,
                 'stock' => 60,
                 'category_id' => 4
             ],
-            // Next two are watering equipment
+            // Next two are watering equipment (need 3 more)
             [
                 'name' => "Garden Hose",
                 'description' => join("\n\n",["Transform your gardening experience with our high-quality Garden Hose, 
-                designed to meet the diverse needs of every garden enthusiast. 
-                This hose is an essential tool for maintaining a lush, healthy garden, 
-                providing both durability and flexibility for all your watering tasks. 
-                Crafted from robust materials, this hose offers exceptional strength and resilience, 
-                ensuring it withstands the rigors of frequent use.
+                    designed to meet the diverse needs of every garden enthusiast. 
+                    This hose is an essential tool for maintaining a lush, healthy garden, 
+                    providing both durability and flexibility for all your watering tasks. 
+                    Crafted from robust materials, this hose offers exceptional strength and resilience, 
+                    ensuring it withstands the rigors of frequent use.
 
-                The Garden Hose features a kink-resistant design, allowing for uninterrupted water flow and ease of use, 
-                making your watering chores more efficient and enjoyable. Whether you're watering your flower beds, 
-                washing your car, or filling up a pool, this hose delivers consistent performance. 
-                The ergonomic, non-slip grip ensures comfortable handling, even when wet.
-                                
-                Versatility is at the core of this hose's design. With universal fittings, 
-                it connects effortlessly to any standard spigot and is compatible with a variety of nozzles and sprinklers, 
-                providing you with a customizable watering solution. Its UV-resistant outer layer protects it from 
-                sun damage, ensuring it maintains its flexibility and strength over time.
-                                
-                This Garden Hose isn't just a tool; it's an investment in your garden's health and beauty. 
-                It's a reliable companion for those who take pride in their outdoor spaces and a testament to the 
-                belief that a well-tended garden begins with the right equipment. With this hose in your gardening arsenal, 
-                you're well-equipped to nurture your plants and keep your garden thriving, 
-                season after season.",
+                    The Garden Hose features a kink-resistant design, allowing for uninterrupted water flow and ease of use, 
+                    making your watering chores more efficient and enjoyable. Whether you're watering your flower beds, 
+                    washing your car, or filling up a pool, this hose delivers consistent performance. 
+                    The ergonomic, non-slip grip ensures comfortable handling, even when wet.
+                                    
+                    Versatility is at the core of this hose's design. With universal fittings, 
+                    it connects effortlessly to any standard spigot and is compatible with a variety of nozzles and sprinklers, 
+                    providing you with a customizable watering solution. Its UV-resistant outer layer protects it from 
+                    sun damage, ensuring it maintains its flexibility and strength over time.
+                                    
+                    This Garden Hose isn't just a tool; it's an investment in your garden's health and beauty. 
+                    It's a reliable companion for those who take pride in their outdoor spaces and a testament to the 
+                    belief that a well-tended garden begins with the right equipment. With this hose in your gardening arsenal, 
+                    you're well-equipped to nurture your plants and keep your garden thriving, 
+                    season after season.",
                 ]),
                 'price' => 24.99,
                 'stock' => 75,
@@ -300,51 +300,51 @@ class ProductSeeder extends Seeder
             [
                 'name' => "Lawn Sprinkler",
                 'description' => join("\n\n",["Enhance your lawn care routine with our advanced Lawn Sprinkler, 
-                designed to deliver optimal water distribution for a lush, green lawn. 
-                This sprinkler is a must-have for any homeowner looking to maintain a healthy, vibrant yard with minimal effort. 
-                Constructed from high-grade materials, this sprinkler ensures durability and long-lasting performance.
+                    designed to deliver optimal water distribution for a lush, green lawn. 
+                    This sprinkler is a must-have for any homeowner looking to maintain a healthy, vibrant yard with minimal effort. 
+                    Constructed from high-grade materials, this sprinkler ensures durability and long-lasting performance.
 
-                The Lawn Sprinkler features an adjustable spray pattern, allowing you to customize the water coverage 
-                to suit different areas of your lawn. Whether you're watering a small patch of grass or a large expanse, 
-                this sprinkler provides even, consistent coverage. The efficient water usage helps conserve water 
-                while ensuring your lawn receives the nourishment it needs.
+                    The Lawn Sprinkler features an adjustable spray pattern, allowing you to customize the water coverage 
+                    to suit different areas of your lawn. Whether you're watering a small patch of grass or a large expanse, 
+                    this sprinkler provides even, consistent coverage. The efficient water usage helps conserve water 
+                    while ensuring your lawn receives the nourishment it needs.
 
-                Versatility is a key feature of this sprinkler's design. It is compatible with all standard garden hoses 
-                and can easily be connected for immediate use. The sturdy base provides stability, 
-                preventing the sprinkler from tipping over during operation. Its UV-resistant exterior protects it from 
-                sun damage, ensuring it remains functional and attractive over time.
+                    Versatility is a key feature of this sprinkler's design. It is compatible with all standard garden hoses 
+                    and can easily be connected for immediate use. The sturdy base provides stability, 
+                    preventing the sprinkler from tipping over during operation. Its UV-resistant exterior protects it from 
+                    sun damage, ensuring it remains functional and attractive over time.
 
-                This Lawn Sprinkler isn't just a tool; it's an investment in your lawn's health and beauty. 
-                It's an essential companion for those who take pride in maintaining a pristine outdoor space and a testament 
-                to the belief that a beautiful lawn begins with the right equipment. With this sprinkler in your gardening arsenal, 
-                you're well-equipped to keep your lawn hydrated and thriving, making your yard the envy of the neighborhood.",
+                    This Lawn Sprinkler isn't just a tool; it's an investment in your lawn's health and beauty. 
+                    It's an essential companion for those who take pride in maintaining a pristine outdoor space and a testament 
+                    to the belief that a beautiful lawn begins with the right equipment. With this sprinkler in your gardening arsenal, 
+                    you're well-equipped to keep your lawn hydrated and thriving, making your yard the envy of the neighborhood.",
                 ]),
                 'price' => 29.99,
                 'stock' => 50,
                 'category_id' => 5,
             ],
-            // Next two are Plant Protection and Pest Control
+            // Next two are Plant Protection and Pest Control (need 3 more)
             [
                 'name' => "Rat Poison",
                 'description' => join("\n\n",["Protect your home and garden with our effective Rat Poison, 
-                formulated to eliminate rodent infestations quickly and efficiently. 
-                This rat poison is an essential tool for maintaining a safe and hygienic environment, 
-                whether you're dealing with a small infestation or a larger rodent problem. 
-                Crafted with powerful active ingredients, this product ensures high efficacy in eradicating rats and mice.
+                    formulated to eliminate rodent infestations quickly and efficiently. 
+                    This rat poison is an essential tool for maintaining a safe and hygienic environment, 
+                    whether you're dealing with a small infestation or a larger rodent problem. 
+                    Crafted with powerful active ingredients, this product ensures high efficacy in eradicating rats and mice.
 
-                The Rat Poison features a potent formula that attracts rodents and delivers a lethal dose upon ingestion, 
-                ensuring swift elimination. The product is designed for easy placement in various locations, 
-                such as basements, garages, attics, and gardens, providing versatile pest control solutions. 
-                With its fast-acting properties, you can see results in a matter of days, giving you peace of mind.
+                    The Rat Poison features a potent formula that attracts rodents and delivers a lethal dose upon ingestion, 
+                    ensuring swift elimination. The product is designed for easy placement in various locations, 
+                    such as basements, garages, attics, and gardens, providing versatile pest control solutions. 
+                    With its fast-acting properties, you can see results in a matter of days, giving you peace of mind.
 
-                Safety is a priority with this product. The Rat Poison is packaged in secure, tamper-resistant bait stations, 
-                minimizing the risk to children, pets, and non-target wildlife. Its weather-resistant design ensures it remains 
-                effective even in outdoor conditions, maintaining its potency and effectiveness over time.
+                    Safety is a priority with this product. The Rat Poison is packaged in secure, tamper-resistant bait stations, 
+                    minimizing the risk to children, pets, and non-target wildlife. Its weather-resistant design ensures it remains 
+                    effective even in outdoor conditions, maintaining its potency and effectiveness over time.
 
-                This Rat Poison isn't just a product; it's an investment in the safety and cleanliness of your home. 
-                It's a reliable solution for those who prioritize a pest-free environment and a testament to the belief 
-                that effective pest control starts with the right products. With this rat poison in your pest control arsenal, 
-                you're well-equipped to tackle rodent problems and maintain a healthy, rodent-free space.",
+                    This Rat Poison isn't just a product; it's an investment in the safety and cleanliness of your home. 
+                    It's a reliable solution for those who prioritize a pest-free environment and a testament to the belief 
+                    that effective pest control starts with the right products. With this rat poison in your pest control arsenal, 
+                    you're well-equipped to tackle rodent problems and maintain a healthy, rodent-free space.",
                 ]),
                 'price' => 19.99,
                 'stock' => 100,
@@ -353,45 +353,49 @@ class ProductSeeder extends Seeder
             [
                 'name' => "Pest Repeller",
                 'description' => join("\n\n", ["Safeguard your home and garden with our comprehensive Pest Control solution, 
-                designed to effectively eliminate a wide range of pests. This product is essential for anyone looking to maintain 
-                a pest-free environment, ensuring the safety and comfort of your living spaces. 
-                Formulated with powerful ingredients, this pest repeller solution targets insects, rodents, and other common pests.
+                    designed to effectively eliminate a wide range of pests. This product is essential for anyone looking to maintain 
+                    a pest-free environment, ensuring the safety and comfort of your living spaces. 
+                    Formulated with powerful ingredients, this pest repeller solution targets insects, rodents, and other common pests.
 
-                The Pest Repeller solution features a fast-acting formula that provides immediate results, 
-                killing pests on contact and creating a protective barrier to prevent future infestations. 
-                Its versatile application allows you to use it both indoors and outdoors, making it suitable for 
-                homes, gardens, patios, and more. With its long-lasting effects, you can enjoy a pest-free environment for weeks.
+                    The Pest Repeller solution features a fast-acting formula that provides immediate results, 
+                    killing pests on contact and creating a protective barrier to prevent future infestations. 
+                    Its versatile application allows you to use it both indoors and outdoors, making it suitable for 
+                    homes, gardens, patios, and more. With its long-lasting effects, you can enjoy a pest-free environment for weeks.
 
-                Ease of use is a key feature of this product. The Pest Repeller solution comes with a convenient spray applicator, 
-                allowing for precise and controlled application in hard-to-reach areas. Its non-staining and odorless formula 
-                ensures it won't leave any marks or unpleasant smells, making it safe for use around your home and family.
+                    Ease of use is a key feature of this product. The Pest Repeller solution comes with a convenient spray applicator, 
+                    allowing for precise and controlled application in hard-to-reach areas. Its non-staining and odorless formula 
+                    ensures it won't leave any marks or unpleasant smells, making it safe for use around your home and family.
 
-                This Pest Repeller solution isn't just a product; it's an investment in the health and safety of your environment. 
-                It's a reliable companion for those who prioritize a clean and pest-free living space and a testament 
-                to the belief that effective pest repeller starts with the right products. With this solution in your pest control arsenal, 
-                you're well-equipped to tackle any pest problem and maintain a healthy, comfortable home.",
+                    This Pest Repeller solution isn't just a product; it's an investment in the health and safety of your environment. 
+                    It's a reliable companion for those who prioritize a clean and pest-free living space and a testament 
+                    to the belief that effective pest repeller starts with the right products. With this solution in your pest control arsenal, 
+                    you're well-equipped to tackle any pest problem and maintain a healthy, comfortable home.",
                 ]),
                 'price' => 25.99,
                 'stock' => 80,
                 'category_id' => 5,
             ],
-            // Next two are Plant and Soil Monitoring 
+            // Next two are Plant and Soil Monitoring (need 3 more)
             [
                 'name' => "Gardena smart Sensor: intelligent soil moisture meter for fully automatic watering of the garden",
                 'description' => join("\n\n",["The Gardena smart Sensor is an intelligent soil moisture meter designed to provide 
-                fully automatic watering for your garden. Using the Gardena smart App, you can monitor and control the 
-                watering process effortlessly. This smart sensor measures soil moisture and temperature, giving you precise 
-                data to optimize watering schedules. The device ensures that your plants receive the right amount of water, 
-                preventing both overwatering and underwatering. Versatility is a key feature of the Gardena smart Sensor. 
-                It is compatible with the Gardena smart system, allowing seamless integration with other Gardena smart 
-                devices. While the smart Gateway is not included, it can be easily added to enhance functionality.
-                Ease of use is at the heart of this product's design. The sensor is simple to install and can be placed 
-                anywhere in your garden where monitoring is needed. Its robust construction ensures durability, and it 
-                is designed to withstand outdoor conditions.
-                This Gardena smart Sensor isn't just a product; it's an investment in the health and beauty of your garden. 
-                It's a reliable tool for those who are serious about gardening and a testament to the belief that the best 
-                gardens start with the best tools. With this sensor in your gardening arsenal, you're well-equipped to 
-                maintain a thriving, well-watered garden.",
+                    fully automatic watering for your garden. Using the Gardena smart App, you can monitor and control the 
+                    watering process effortlessly. 
+                    
+                    This smart sensor measures soil moisture and temperature, giving you precise 
+                    data to optimize watering schedules. The device ensures that your plants receive the right amount of water, 
+                    preventing both overwatering and underwatering. Versatility is a key feature of the Gardena smart Sensor.
+
+                    It is compatible with the Gardena smart system, allowing seamless integration with other Gardena smart 
+                    devices. While the smart Gateway is not included, it can be easily added to enhance functionality.
+                    Ease of use is at the heart of this product's design. The sensor is simple to install and can be placed 
+                    anywhere in your garden where monitoring is needed. Its robust construction ensures durability, and it 
+                    is designed to withstand outdoor conditions.
+
+                    This Gardena smart Sensor isn't just a product; it's an investment in the health and beauty of your garden. 
+                    It's a reliable tool for those who are serious about gardening and a testament to the belief that the best 
+                    gardens start with the best tools. With this sensor in your gardening arsenal, you're well-equipped to 
+                    maintain a thriving, well-watered garden.",
                 ]),
                 'price' => 59.99,
                 'stock' => 25,
@@ -400,24 +404,24 @@ class ProductSeeder extends Seeder
             [
                 'name' => "Soil Moisture Meter",
                 'description' => join("\n\n", ["Optimize your garden's watering schedule with our Soil Moisture Meter, 
-                designed to provide accurate moisture readings for your plants. This essential gardening tool 
-                helps you maintain a healthy garden by preventing overwatering and underwatering. 
-                The Soil Moisture Meter features a simple, easy-to-read display that shows the moisture level 
-                instantly, allowing you to make informed decisions about your watering needs.
+                    designed to provide accurate moisture readings for your plants. This essential gardening tool 
+                    helps you maintain a healthy garden by preventing overwatering and underwatering. 
+                    The Soil Moisture Meter features a simple, easy-to-read display that shows the moisture level 
+                    instantly, allowing you to make informed decisions about your watering needs.
 
-                The probe is designed for easy insertion into the soil, providing quick and reliable readings. 
-                Suitable for both indoor and outdoor use, this meter is perfect for monitoring houseplants, 
-                garden beds, and lawns. Its compact and portable design ensures that you can take it anywhere 
-                in your garden with ease.
+                    The probe is designed for easy insertion into the soil, providing quick and reliable readings. 
+                    Suitable for both indoor and outdoor use, this meter is perfect for monitoring houseplants, 
+                    garden beds, and lawns. Its compact and portable design ensures that you can take it anywhere 
+                    in your garden with ease.
 
-                Durability is key with this product. The Soil Moisture Meter is built to withstand regular use, 
-                ensuring it remains a reliable tool in your gardening arsenal. Its low-maintenance design requires 
-                no batteries, making it an eco-friendly choice for gardeners.
+                    Durability is key with this product. The Soil Moisture Meter is built to withstand regular use, 
+                    ensuring it remains a reliable tool in your gardening arsenal. Its low-maintenance design requires 
+                    no batteries, making it an eco-friendly choice for gardeners.
 
-                This Soil Moisture Meter isn't just a tool; it's an investment in the health of your garden. 
-                It's a must-have for gardeners who prioritize precision and efficiency in their watering routines. 
-                With this meter in your toolkit, you're well-equipped to provide your plants with the optimal moisture 
-                they need to thrive.",
+                    This Soil Moisture Meter isn't just a tool; it's an investment in the health of your garden. 
+                    It's a must-have for gardeners who prioritize precision and efficiency in their watering routines. 
+                    With this meter in your toolkit, you're well-equipped to provide your plants with the optimal moisture 
+                    they need to thrive.",
                 ]),
                 'price' => 14.99,
                 'stock' => 150,
