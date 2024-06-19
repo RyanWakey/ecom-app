@@ -345,8 +345,32 @@ class ProductSeeder extends Seeder
                 'price' => 19.99,
                 'stock' => 100,
                 'category_id' => 5,
+            ],
+            [
+                'name' => "Pest Repeller",
+                'description' => "Safeguard your home and garden with our comprehensive Pest Control solution, 
+                designed to effectively eliminate a wide range of pests. This product is essential for anyone looking to maintain 
+                a pest-free environment, ensuring the safety and comfort of your living spaces. 
+                Formulated with powerful ingredients, this pest repeller solution targets insects, rodents, and other common pests.
+
+                The Pest Repeller solution features a fast-acting formula that provides immediate results, 
+                killing pests on contact and creating a protective barrier to prevent future infestations. 
+                Its versatile application allows you to use it both indoors and outdoors, making it suitable for 
+                homes, gardens, patios, and more. With its long-lasting effects, you can enjoy a pest-free environment for weeks.
+
+                Ease of use is a key feature of this product. The Pest Repeller solution comes with a convenient spray applicator, 
+                allowing for precise and controlled application in hard-to-reach areas. Its non-staining and odorless formula 
+                ensures it won't leave any marks or unpleasant smells, making it safe for use around your home and family.
+
+                This Pest Repeller solution isn't just a product; it's an investment in the health and safety of your environment. 
+                It's a reliable companion for those who prioritize a clean and pest-free living space and a testament 
+                to the belief that effective pest repeller starts with the right products. With this solution in your pest control arsenal, 
+                you're well-equipped to tackle any pest problem and maintain a healthy, comfortable home.",
+                'price' => 25.99,
+                'stock' => 80,
+                'category_id' => 5,
             ]
-            // Pest repeller add next
+            
         ];
 
         $hardcodedImages = [
@@ -401,8 +425,12 @@ class ProductSeeder extends Seeder
                 '/images/Sprinkler.jpg',
                 '/images/Sprinkler.jpg',
             ],
-            'Rat poison' => [
+            'Rat Poison' => [
                 '/images/RatPoison.jpg',
+            ],
+            'Pest Repeller' => [
+                'images/PestRepeller.jpg',
+                'images/PestRepeller2.jpg',
             ]
         ];
 
