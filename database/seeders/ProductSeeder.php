@@ -242,7 +242,7 @@ class ProductSeeder extends Seeder
             ],
             [
                 'name' => "Cooking Pan",
-                'description' => "Unlock the secrets of gourmet chefs with our premium Cooking Pan, 
+                'description' => join("\n\n",["Unlock the secrets of gourmet chefs with our premium Cooking Pan, 
                 designed to elevate your culinary experiences. 
                 This pan is a staple for both professional kitchens and home cooks who crave the perfect balance of 
                 functionality and style. Crafted from superior materials, this pan offers unmatched heat distribution and 
@@ -262,6 +262,7 @@ class ProductSeeder extends Seeder
                 belief that the best dishes begin with the best cookware. With this pan in your kitchen arsenal, 
                 you're well-equipped to create a myriad of dishes that will impress your guests and 
                 satisfy your appetite for quality cooking.",
+                ]),
                 'price' => 35.99,
                 'stock' => 60,
                 'category_id' => 4
@@ -269,7 +270,7 @@ class ProductSeeder extends Seeder
             // Next two are watering equipment
             [
                 'name' => "Garden Hose",
-                'description' => "Transform your gardening experience with our high-quality Garden Hose, 
+                'description' => join("\n\n",["Transform your gardening experience with our high-quality Garden Hose, 
                 designed to meet the diverse needs of every garden enthusiast. 
                 This hose is an essential tool for maintaining a lush, healthy garden, 
                 providing both durability and flexibility for all your watering tasks. 
@@ -291,13 +292,14 @@ class ProductSeeder extends Seeder
                 belief that a well-tended garden begins with the right equipment. With this hose in your gardening arsenal, 
                 you're well-equipped to nurture your plants and keep your garden thriving, 
                 season after season.",
+                ]),
                 'price' => 24.99,
                 'stock' => 75,
                 'category_id' => 5
             ],
             [
                 'name' => "Lawn Sprinkler",
-                'description' => "Enhance your lawn care routine with our advanced Lawn Sprinkler, 
+                'description' => join("\n\n",["Enhance your lawn care routine with our advanced Lawn Sprinkler, 
                 designed to deliver optimal water distribution for a lush, green lawn. 
                 This sprinkler is a must-have for any homeowner looking to maintain a healthy, vibrant yard with minimal effort. 
                 Constructed from high-grade materials, this sprinkler ensures durability and long-lasting performance.
@@ -316,6 +318,7 @@ class ProductSeeder extends Seeder
                 It's an essential companion for those who take pride in maintaining a pristine outdoor space and a testament 
                 to the belief that a beautiful lawn begins with the right equipment. With this sprinkler in your gardening arsenal, 
                 you're well-equipped to keep your lawn hydrated and thriving, making your yard the envy of the neighborhood.",
+                ]),
                 'price' => 29.99,
                 'stock' => 50,
                 'category_id' => 5,
@@ -323,7 +326,7 @@ class ProductSeeder extends Seeder
             // Next two are Plant Protection and Pest Control
             [
                 'name' => "Rat Poison",
-                'description' => "Protect your home and garden with our effective Rat Poison, 
+                'description' => join("\n\n",["Protect your home and garden with our effective Rat Poison, 
                 formulated to eliminate rodent infestations quickly and efficiently. 
                 This rat poison is an essential tool for maintaining a safe and hygienic environment, 
                 whether you're dealing with a small infestation or a larger rodent problem. 
@@ -342,13 +345,14 @@ class ProductSeeder extends Seeder
                 It's a reliable solution for those who prioritize a pest-free environment and a testament to the belief 
                 that effective pest control starts with the right products. With this rat poison in your pest control arsenal, 
                 you're well-equipped to tackle rodent problems and maintain a healthy, rodent-free space.",
+                ]),
                 'price' => 19.99,
                 'stock' => 100,
                 'category_id' => 5,
             ],
             [
                 'name' => "Pest Repeller",
-                'description' => "Safeguard your home and garden with our comprehensive Pest Control solution, 
+                'description' => join("\n\n", ["Safeguard your home and garden with our comprehensive Pest Control solution, 
                 designed to effectively eliminate a wide range of pests. This product is essential for anyone looking to maintain 
                 a pest-free environment, ensuring the safety and comfort of your living spaces. 
                 Formulated with powerful ingredients, this pest repeller solution targets insects, rodents, and other common pests.
@@ -366,6 +370,7 @@ class ProductSeeder extends Seeder
                 It's a reliable companion for those who prioritize a clean and pest-free living space and a testament 
                 to the belief that effective pest repeller starts with the right products. With this solution in your pest control arsenal, 
                 you're well-equipped to tackle any pest problem and maintain a healthy, comfortable home.",
+                ]),
                 'price' => 25.99,
                 'stock' => 80,
                 'category_id' => 5,
@@ -373,7 +378,7 @@ class ProductSeeder extends Seeder
             // Next two are Plant and Soil Monitoring 
             [
                 'name' => "Gardena smart Sensor: intelligent soil moisture meter for fully automatic watering of the garden",
-                'description' => "The Gardena smart Sensor is an intelligent soil moisture meter designed to provide 
+                'description' => join("\n\n",["The Gardena smart Sensor is an intelligent soil moisture meter designed to provide 
                 fully automatic watering for your garden. Using the Gardena smart App, you can monitor and control the 
                 watering process effortlessly. This smart sensor measures soil moisture and temperature, giving you precise 
                 data to optimize watering schedules. The device ensures that your plants receive the right amount of water, 
@@ -387,12 +392,14 @@ class ProductSeeder extends Seeder
                 It's a reliable tool for those who are serious about gardening and a testament to the belief that the best 
                 gardens start with the best tools. With this sensor in your gardening arsenal, you're well-equipped to 
                 maintain a thriving, well-watered garden.",
+                ]),
                 'price' => 59.99,
                 'stock' => 25,
                 'category_id' => 5,
             ],
+            [
                 'name' => "Soil Moisture Meter",
-                'description' => "Optimize your garden's watering schedule with our Soil Moisture Meter, 
+                'description' => join("\n\n", ["Optimize your garden's watering schedule with our Soil Moisture Meter, 
                 designed to provide accurate moisture readings for your plants. This essential gardening tool 
                 helps you maintain a healthy garden by preventing overwatering and underwatering. 
                 The Soil Moisture Meter features a simple, easy-to-read display that shows the moisture level 
@@ -411,11 +418,12 @@ class ProductSeeder extends Seeder
                 It's a must-have for gardeners who prioritize precision and efficiency in their watering routines. 
                 With this meter in your toolkit, you're well-equipped to provide your plants with the optimal moisture 
                 they need to thrive.",
+                ]),
                 'price' => 14.99,
                 'stock' => 150,
                 'category_id' => 5,
-    
-            
+                
+            ]
         ];
 
         $hardcodedImages = [
