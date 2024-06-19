@@ -453,7 +453,7 @@ class ProductSeeder extends Seeder
                 'images/PestRepeller.jpg',
                 'images/PestRepeller2.jpg',
             ],
-            'Garden Smart' => [
+            'Garden Smart Meter' => [
                 'images/GardenSmartMeter',
                 'images/GardenSmartMeter2',
                 'images/GardenSmartMeter3',
