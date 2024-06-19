@@ -390,7 +390,31 @@ class ProductSeeder extends Seeder
                 'price' => 59.99,
                 'stock' => 25,
                 'category_id' => 5,
-            ] 
+            ],
+                'name' => "Soil Moisture Meter",
+                'description' => "Optimize your garden's watering schedule with our Soil Moisture Meter, 
+                designed to provide accurate moisture readings for your plants. This essential gardening tool 
+                helps you maintain a healthy garden by preventing overwatering and underwatering. 
+                The Soil Moisture Meter features a simple, easy-to-read display that shows the moisture level 
+                instantly, allowing you to make informed decisions about your watering needs.
+
+                The probe is designed for easy insertion into the soil, providing quick and reliable readings. 
+                Suitable for both indoor and outdoor use, this meter is perfect for monitoring houseplants, 
+                garden beds, and lawns. Its compact and portable design ensures that you can take it anywhere 
+                in your garden with ease.
+
+                Durability is key with this product. The Soil Moisture Meter is built to withstand regular use, 
+                ensuring it remains a reliable tool in your gardening arsenal. Its low-maintenance design requires 
+                no batteries, making it an eco-friendly choice for gardeners.
+
+                This Soil Moisture Meter isn't just a tool; it's an investment in the health of your garden. 
+                It's a must-have for gardeners who prioritize precision and efficiency in their watering routines. 
+                With this meter in your toolkit, you're well-equipped to provide your plants with the optimal moisture 
+                they need to thrive.",
+                'price' => 14.99,
+                'stock' => 150,
+                'category_id' => 5,
+    
             
         ];
 
@@ -458,6 +482,10 @@ class ProductSeeder extends Seeder
                 'images/GardenSmartMeter2',
                 'images/GardenSmartMeter3',
             ],
+            'Soil Moisture Meter' => [
+                'images/SoilMoistureMeter',
+                'images/SoilMoistureMeter2',
+            ]
         ];
 
         $faker = Faker::create();  
