@@ -369,7 +369,28 @@ class ProductSeeder extends Seeder
                 'price' => 25.99,
                 'stock' => 80,
                 'category_id' => 5,
-            ]
+            ],
+            // Next two are Plant and Soil Monitoring 
+            [
+                'name' => "Gardena smart Sensor: intelligent soil moisture meter for fully automatic watering of the garden",
+                'description' => "The Gardena smart Sensor is an intelligent soil moisture meter designed to provide 
+                fully automatic watering for your garden. Using the Gardena smart App, you can monitor and control the 
+                watering process effortlessly. This smart sensor measures soil moisture and temperature, giving you precise 
+                data to optimize watering schedules. The device ensures that your plants receive the right amount of water, 
+                preventing both overwatering and underwatering. Versatility is a key feature of the Gardena smart Sensor. 
+                It is compatible with the Gardena smart system, allowing seamless integration with other Gardena smart 
+                devices. While the smart Gateway is not included, it can be easily added to enhance functionality.
+                Ease of use is at the heart of this product's design. The sensor is simple to install and can be placed 
+                anywhere in your garden where monitoring is needed. Its robust construction ensures durability, and it 
+                is designed to withstand outdoor conditions.
+                This Gardena smart Sensor isn't just a product; it's an investment in the health and beauty of your garden. 
+                It's a reliable tool for those who are serious about gardening and a testament to the belief that the best 
+                gardens start with the best tools. With this sensor in your gardening arsenal, you're well-equipped to 
+                maintain a thriving, well-watered garden.",
+                'price' => 59.99,
+                'stock' => 25,
+                'category_id' => 5,
+            ] 
             
         ];
 
@@ -431,7 +452,12 @@ class ProductSeeder extends Seeder
             'Pest Repeller' => [
                 'images/PestRepeller.jpg',
                 'images/PestRepeller2.jpg',
-            ]
+            ],
+            'Garden Smart' => [
+                'images/GardenSmartMeter',
+                'images/GardenSmartMeter2',
+                'images/GardenSmartMeter3',
+            ],
         ];
 
         $faker = Faker::create();  
