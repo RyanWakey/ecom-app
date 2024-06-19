@@ -346,6 +346,7 @@ class ProductSeeder extends Seeder
                 'stock' => 100,
                 'category_id' => 5,
             ]
+            // Pest repeller add next
         ];
 
         $hardcodedImages = [
