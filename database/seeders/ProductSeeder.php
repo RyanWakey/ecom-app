@@ -427,33 +427,65 @@ class ProductSeeder extends Seeder
                 'stock' => 150,
                 'category_id' => 5,
             ],
-            'name' => "Landrip Soil PH Tester",
-            'description' => join("\n\n", [
-                "Ensure the optimal health of your plants with the Landrip Soil PH Tester. 
-                This essential gardening tool is designed to provide accurate and immediate readings 
-                of your soil's pH levels, helping you maintain the perfect environment for your plants. 
-                By measuring the acidity or alkalinity of your soil, you can make informed decisions on soil 
-                amendments and fertilizers, ensuring your garden thrives.",
+            [
+                'name' => "Landrip Soil PH Tester",
+                'description' => join("\n\n", [
+                    "Ensure the optimal health of your plants with the Landrip Soil PH Tester. 
+                    This essential gardening tool is designed to provide accurate and immediate readings 
+                    of your soil's pH levels, helping you maintain the perfect environment for your plants. 
+                    By measuring the acidity or alkalinity of your soil, you can make informed decisions on soil 
+                    amendments and fertilizers, ensuring your garden thrives.",
 
-                "The Landrip Soil PH Tester features a simple and easy-to-read display, allowing you to 
-                quickly gauge your soil's pH levels. The probe is designed for easy insertion into the soil, 
-                providing reliable readings in both indoor and outdoor settings. Whether you're tending to 
-                houseplants, garden beds, or lawns, this pH tester is a versatile tool for all your gardening 
-                needs.",
+                    "The Landrip Soil PH Tester features a simple and easy-to-read display, allowing you to 
+                    quickly gauge your soil's pH levels. The probe is designed for easy insertion into the soil, 
+                    providing reliable readings in both indoor and outdoor settings. Whether you're tending to 
+                    houseplants, garden beds, or lawns, this pH tester is a versatile tool for all your gardening 
+                    needs.",
 
-                "Durability is a hallmark of this product. Constructed with high-quality materials, 
-                the Landrip Soil PH Tester is built to withstand regular use, making it a reliable addition 
-                to your gardening toolkit. Its compact and portable design ensures that you can take it 
-                anywhere in your garden with ease, allowing for consistent monitoring of your soil's health.",
+                    "Durability is a hallmark of this product. Constructed with high-quality materials, 
+                    the Landrip Soil PH Tester is built to withstand regular use, making it a reliable addition 
+                    to your gardening toolkit. Its compact and portable design ensures that you can take it 
+                    anywhere in your garden with ease, allowing for consistent monitoring of your soil's health.",
 
-                "This Landrip Soil PH Tester isn't just a tool; it's an investment in the vitality of your 
-                garden. It's a must-have for gardeners who are serious about creating the perfect growing 
-                conditions for their plants. With this tester in your toolkit, you're well-equipped to maintain 
-                the ideal pH balance in your soil, ensuring your plants receive the nutrients they need to flourish."
-            ]),
-            'price' => 18.99,
-            'stock' => 200,
-            'category_id' => 5,
+                    "This Landrip Soil PH Tester isn't just a tool; it's an investment in the vitality of your 
+                    garden. It's a must-have for gardeners who are serious about creating the perfect growing 
+                    conditions for their plants. With this tester in your toolkit, you're well-equipped to maintain 
+                    the ideal pH balance in your soil, ensuring your plants receive the nutrients they need to flourish."
+                ]),
+                'price' => 18.99,
+                'stock' => 200,
+                'category_id' => 5,
+            ],
+            [
+               'name' => "Dciustfhe Pack of 10 Soil Meter, 20 cm Plant Water Level Indicator, Water Level Indicator, Soil Meter, Sensor",
+                'description' => join("\n\n", [
+                    "Ensure your plants receive the right amount of water with the Dciustfhe Pack of 10 Soil Meters. 
+                    These 20 cm Plant Water Level Indicators are essential tools for both home gardeners and professionals. 
+                    Designed to accurately measure soil moisture levels, these meters help prevent overwatering and 
+                    underwatering, promoting healthier plant growth.",
+
+                    "The Dciustfhe Soil Meters feature a simple and clear display that shows the water level instantly. 
+                    Each meter is equipped with a sensitive sensor that provides precise readings, making it easy to monitor 
+                    the moisture levels of your plants. The 20 cm length is perfect for reaching deeper soil layers, ensuring 
+                    comprehensive moisture assessment.",
+
+                    "Versatility is a key feature of these water level indicators. Suitable for both indoor and outdoor use, 
+                    they are ideal for potted plants, garden beds, and lawns. The compact and lightweight design allows for 
+                    easy placement and removal, making them convenient tools for everyday gardening tasks.",
+
+                    "Durability is assured with the Dciustfhe Soil Meters. Made from high-quality materials, these meters 
+                    are built to withstand regular use and various environmental conditions. Their robust construction 
+                    ensures long-lasting performance, providing reliable moisture readings season after season.",
+
+                    "This Dciustfhe Pack of 10 Soil Meters isn't just a set of tools; it's an investment in the health and 
+                    vitality of your plants. Perfect for gardeners who value precision and efficiency, these meters help 
+                    maintain optimal watering schedules. With this pack of soil meters in your gardening arsenal, you're 
+                    well-equipped to ensure your plants thrive with the right amount of moisture."
+                ]),
+                'price' => 29.99,
+                'stock' => 120,
+                'category_id' => 5, 
+            ],
 
         ];
 
@@ -529,7 +561,13 @@ class ProductSeeder extends Seeder
                 'images/LandripSoilPHTester',
                 'images/LandripSoilPHTester2',
                 'images/LandripSoilPHTester3',
-            ]
+            ],
+            'Dciustfhe Pack of 10 Soil Meter' => [
+                'images/DciustfhePackof10SoilMeter',
+                'images/DciustfhePackof10SoilMeter2',
+                'images/DciustfhePackof10SoilMeter3',
+                'images/DciustfhePackof10SoilMeter4',
+            ],
         ];
 
         $faker = Faker::create();  
