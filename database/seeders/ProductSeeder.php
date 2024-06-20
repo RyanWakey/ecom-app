@@ -323,7 +323,7 @@ class ProductSeeder extends Seeder
                 'stock' => 50,
                 'category_id' => 5,
             ],
-            // Next two are Plant Protection and Pest Control - add category "Pest Control"
+            // Next five are Plant Protection and Pest Control - add category "Pest Control"
             [
                 'name' => "Rat Poison",
                 'description' => join("\n\n",["Protect your home and garden with our effective Rat Poison, 
@@ -406,7 +406,7 @@ class ProductSeeder extends Seeder
                 'category_id' => 5,
             ],
             [
-
+                
             ],
             // Next five are Plant and Soil Monitoring (Need to add category for this "Plant & Soil Monitoring")
             [
