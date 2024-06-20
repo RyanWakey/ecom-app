@@ -406,7 +406,34 @@ class ProductSeeder extends Seeder
                 'category_id' => 5,
             ],
             [
-                
+                'name' => "Doff Slug & Snail Killer 800g",
+                'description' => join("\n\n", [
+                    "Doff Slug & Snail Killer is an effective and easy-to-use solution for controlling slugs and 
+                    snails in your garden. This 800g container is filled with pellets designed to attract and kill 
+                    these pests, protecting your plants from damage. The pellets are formulated with a powerful active 
+                    ingredient that ensures fast and reliable results, keeping your garden healthy and vibrant.",
+
+                    "The Doff Slug & Snail Killer is suitable for use around all edible and non-edible crops, 
+                    making it a versatile choice for gardeners. The pellets are weather-resistant and remain effective
+                    even in wet conditions, providing long-lasting protection. Simply scatter the pellets around your
+                    plants to create a protective barrier that slugs and snails cannot cross.",
+
+                    "Ease of use is a key feature of this product. The pellets can be applied straight from the 
+                    container with no need for additional tools or equipment. They are designed to be highly attractive 
+                    to slugs and snails, ensuring maximum effectiveness with minimal effort.",
+
+                    "Safety is also considered in the design of this product. The pellets are blue in color to help 
+                    prevent accidental ingestion by pets, birds, and other wildlife. Always use as directed to ensure 
+                    safe and effective pest control.",
+
+                    "This Doff Slug & Snail Killer isn't just a product; it's an investment in the health and beauty 
+                    of your garden. It's a reliable solution for those who want to protect their plants and maintain 
+                    a thriving garden. With this killer in your gardening arsenal, you're well-equipped to defend your 
+                    plants against slugs and snails and enjoy a pest-free garden."
+                ]),
+                'price' => 12.99,
+                'stock' => 200,
+                'category_id' => 5,
             ],
             // Next five are Plant and Soil Monitoring (Need to add category for this "Plant & Soil Monitoring")
             [
@@ -642,6 +669,10 @@ class ProductSeeder extends Seeder
                 'images/TheBigCheeseAllWeatherBlockBait',
                 'images/TheBigCheeseAllWeatherBlockBait2',
                 'images/TheBigCheeseAllWeatherBlockBait3',
+            ],
+            'Doff Slug & Snail Killer 800g' => [
+                'images/DoffSlug&SnailKiller800g',
+                'images/DoffSlug&SnailKiller800g2',
             ],
         ];
 
