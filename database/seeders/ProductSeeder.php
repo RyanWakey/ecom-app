@@ -267,7 +267,7 @@ class ProductSeeder extends Seeder
                 'stock' => 60,
                 'category_id' => 4
             ],
-            // Next two are watering equipment (need 3 more)
+            // Next three are watering equipment - Add Category "Lawn & Garden Watering Equipment"
             [
                 'name' => "Garden Hose",
                 'description' => join("\n\n",["Transform your gardening experience with our high-quality Garden Hose, 
@@ -323,7 +323,7 @@ class ProductSeeder extends Seeder
                 'stock' => 50,
                 'category_id' => 5,
             ],
-            // Next five are Plant Protection and Pest Control - add category "Pest Control"
+            // Next four are Plant Protection and Pest Control - add category "Pest Control"
             [
                 'name' => "Rat Poison",
                 'description' => join("\n\n",["Protect your home and garden with our effective Rat Poison, 
