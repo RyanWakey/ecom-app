@@ -405,6 +405,9 @@ class ProductSeeder extends Seeder
                 'stock' => 50,
                 'category_id' => 5,
             ],
+            [
+
+            ],
             // Next five are Plant and Soil Monitoring (Need to add category for this "Plant & Soil Monitoring")
             [
                 'name' => "Gardena smart Sensor: intelligent soil moisture meter for fully automatic watering of the garden",
@@ -639,8 +642,7 @@ class ProductSeeder extends Seeder
                 'images/TheBigCheeseAllWeatherBlockBait',
                 'images/TheBigCheeseAllWeatherBlockBait2',
                 'images/TheBigCheeseAllWeatherBlockBait3',
-
-            ]
+            ],
         ];
 
         $faker = Faker::create();  
