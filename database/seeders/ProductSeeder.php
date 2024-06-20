@@ -614,7 +614,35 @@ class ProductSeeder extends Seeder
             // Next 3 sections are for Garden Furniture and Accessories Sub-Category which should fall under Gardening-Essentials
             // Next 3 entries are for Sub-Category of Garden Furiture and Accessories called Garden Furniture Sets.
             [
+                'name' => "bigzzia Rattan Garden Furniture Set, 4 piece Patio Rattan furniture sofa Weaving Wicker includes 2 Armchairs, 1 Double seat Sofa and 1 table",
+                'description' => join("\n\n", [
+                    "Elevate your outdoor living space with the bigzzia Rattan Garden Furniture Set. This 4-piece patio set 
+                    is designed to combine style, comfort, and durability, making it the perfect addition to any garden, 
+                    patio, or balcony. The set includes 2 armchairs, 1 double seat sofa, and 1 table, providing ample seating 
+                    and a convenient surface for your outdoor entertaining needs.",
 
+                    "Crafted from high-quality weaving wicker, this furniture set offers a sophisticated look that 
+                    complements any outdoor decor. The rattan material is weather-resistant, ensuring that your furniture 
+                    remains in excellent condition despite exposure to the elements. The sturdy steel frame provides robust 
+                    support, guaranteeing longevity and stability for all pieces.",
+
+                    "The armchairs and sofa are equipped with thick, comfortable cushions that are both water-resistant 
+                    and easy to clean. The cushions provide optimal comfort, allowing you to relax and enjoy your outdoor 
+                    space for hours. The ergonomic design of the seating ensures proper support, making this set ideal for 
+                    lounging and socializing.",
+
+                    "The included table features a tempered glass top, offering a sleek and practical surface for drinks, 
+                    snacks, or decorative items. The glass is easy to clean and adds a touch of elegance to the overall design.
+                    This table is the perfect centerpiece for your outdoor setup, providing both functionality and style.",
+
+                    "This bigzzia Rattan Garden Furniture Set isn't just a collection of outdoor furniture; it's an investment 
+                    in your outdoor lifestyle. It's perfect for those who value both aesthetics and comfort in their outdoor 
+                    spaces. With this furniture set in your garden, you're well-equipped to host gatherings, relax in comfort, 
+                    and enjoy the beauty of your outdoor environment."
+                ]),
+                'price' => 299.99,
+                'stock' => 20,
+                'category_id' => 5,
             ],
         ];
 
@@ -715,6 +743,11 @@ class ProductSeeder extends Seeder
                 'images/WateringCan.jpg',
                 'images/WateringCan2.jpg',
             ],
+            'Bigzzia Rattan Garden Furniture Set' => [
+                'images/BigzziaRattanGardenFurnitureSet.jpg',
+                'images/BigzziaRattanGardenFurnitureSet2.jpg',
+                'images/BigzziaRattanGardenFurnitureSet3.jpg',
+            ]
         ];
 
         $faker = Faker::create();  
