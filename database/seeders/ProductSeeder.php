@@ -635,6 +635,12 @@ class ProductSeeder extends Seeder
                 'images/VortexVitalityVprobe2',
                 'images/VortexVitalityVprobe3',
             ],
+            'The Big Cheese All-Weather Block Bait' => [
+                'images/TheBigCheeseAllWeatherBlockBait',
+                'images/TheBigCheeseAllWeatherBlockBait2',
+                'images/TheBigCheeseAllWeatherBlockBait3',
+
+            ]
         ];
 
         $faker = Faker::create();  
