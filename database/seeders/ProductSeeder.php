@@ -375,7 +375,7 @@ class ProductSeeder extends Seeder
                 'stock' => 80,
                 'category_id' => 5,
             ],
-            // Next two are Plant and Soil Monitoring (need 3 more)
+            // Next five are Plant and Soil Monitoring (need 2 more)
             [
                 'name' => "Gardena smart Sensor: intelligent soil moisture meter for fully automatic watering of the garden",
                 'description' => join("\n\n",["The Gardena smart Sensor is an intelligent soil moisture meter designed to provide 
