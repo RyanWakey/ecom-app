@@ -323,7 +323,7 @@ class ProductSeeder extends Seeder
                 'stock' => 50,
                 'category_id' => 5,
             ],
-            // Next two are Plant Protection and Pest Control (need 3 more)
+            // Next two are Plant Protection and Pest Control - add category "Pest Control"
             [
                 'name' => "Rat Poison",
                 'description' => join("\n\n",["Protect your home and garden with our effective Rat Poison, 
@@ -375,7 +375,37 @@ class ProductSeeder extends Seeder
                 'stock' => 80,
                 'category_id' => 5,
             ],
-            // Next five are Plant and Soil Monitoring (need 2 more)
+            [
+                'name' => "The Big Cheese All-Weather Block Bait - 10g x 30 Kills Mice and Rats Damp-Proof, 
+                          Weather-Resistant, Blue Difenacoum",
+                'description' => join("\n\n", [
+                    "The Big Cheese All-Weather Block Bait is an effective solution for controlling mice and rats. 
+                    These 10g bait blocks are designed to kill rodents quickly and efficiently, ensuring a safe and 
+                    hygienic environment for your home and garden. The bait blocks are formulated with blue difenacoum, 
+                    a powerful rodenticide that attracts rodents and delivers a lethal dose upon ingestion.",
+
+                    "These all-weather bait blocks are damp-proof and weather-resistant, making them suitable for use in 
+                    various environments, including outdoor areas prone to moisture. Whether you need to address a rodent 
+                    problem in your garden, shed, garage, or basement, these bait blocks provide reliable pest control even 
+                    in challenging conditions.",
+
+                    "The bait blocks are easy to use and can be placed in multiple locations where rodent activity has been 
+                    observed. Their robust formulation ensures they remain effective over time, providing continuous protection against mice and rats. The compact size of each block makes it easy to place them in tight spaces, ensuring comprehensive coverage.",
+
+                    "Safety is a priority with The Big Cheese All-Weather Block Bait. The bait blocks are designed to
+                    minimize the risk to children, pets, and non-target wildlife. They are packaged in secure containers 
+                    to prevent accidental exposure, and their distinctive blue color helps identify them as rodenticide.",
+
+                    "This product isn't just a solution; it's an investment in the cleanliness and safety of your environment.
+                     It's a reliable tool for those who prioritize a rodent-free space and a testament to the effectiveness 
+                     of quality pest control products. With The Big Cheese All-Weather Block Bait in your pest control arsenal,
+                     you're well-equipped to tackle rodent problems and maintain a healthy, rodent-free home."
+                ]),
+                'price' => 34.99,
+                'stock' => 50,
+                'category_id' => 5,
+            ],
+            // Next five are Plant and Soil Monitoring (Need to add category for this "Plant & Soil Monitoring")
             [
                 'name' => "Gardena smart Sensor: intelligent soil moisture meter for fully automatic watering of the garden",
                 'description' => join("\n\n",["The Gardena smart Sensor is an intelligent soil moisture meter designed to provide 
