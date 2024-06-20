@@ -486,7 +486,39 @@ class ProductSeeder extends Seeder
                 'stock' => 120,
                 'category_id' => 5, 
             ],
+            [
+                'name' => "Vortex Vitality Vprobe - Intelligent Plant Health Assistant - Soil Moisture Meter for Indoor Plants. Sunlight/Temperature/Humidity/Soil Moisture. Plant Speaks For Itself. WiFi IoT AI (Grey Sunshine)",
+                'description' => join("\n\n", [
+                    "Introducing the Vortex Vitality Vprobe, your intelligent plant health assistant designed to ensure
+                    your indoor plants thrive. This advanced soil moisture meter not only measures soil moisture but also
+                    monitors sunlight, temperature, and humidity, providing comprehensive insights into your plant's health.
+                    With its WiFi IoT AI capabilities, the Vprobe allows your plants to communicate their needs directly to
+                    you.",
 
+                    "The Vortex Vitality Vprobe features a sleek design in Grey Sunshine, making it a stylish addition to any 
+                    indoor garden. Its intuitive interface and real-time data transmission via WiFi ensure you are always 
+                    informed about your plant's condition. The Vprobe's AI technology analyzes the data and provides 
+                    personalized care recommendations, taking the guesswork out of plant care.",
+
+                    "Ease of use is at the core of the Vprobe's design. Simply insert the probe into the soil, 
+                    and it will start collecting data immediately. The device is compatible with various indoor plants, 
+                    making it a versatile tool for plant enthusiasts. Its durable construction ensures long-lasting 
+                    performance, providing reliable data over time.",
+
+                    "With the Vortex Vitality Vprobe, maintaining optimal conditions for your plants has never been easier. 
+                    The device alerts you to any changes in soil moisture, sunlight, temperature, or humidity, allowing you 
+                    to adjust your care routine promptly. This proactive approach helps prevent common plant issues and 
+                    promotes healthy growth.",
+
+                    "The Vortex Vitality Vprobe isn't just a gadget; it's an investment in your plant's health and your 
+                    peace of mind. Perfect for both novice and experienced gardeners, this intelligent assistant ensures 
+                    your plants can 'speak' for themselves. With the Vprobe in your plant care arsenal, you're equipped with
+                    the knowledge and tools to create the perfect indoor growing environment."
+                ]),
+                'price' => 49.99,
+                'stock' => 80,
+                'category_id' => 5,
+            ],
         ];
 
         $hardcodedImages = [
@@ -567,6 +599,11 @@ class ProductSeeder extends Seeder
                 'images/DciustfhePackof10SoilMeter2',
                 'images/DciustfhePackof10SoilMeter3',
                 'images/DciustfhePackof10SoilMeter4',
+            ],
+            'Vortex Vitality Vprobe' => [
+                'images/VortexVitalityVprobe',
+                'images/VortexVitalityVprobe2',
+                'images/VortexVitalityVprobe3',
             ],
         ];
 
