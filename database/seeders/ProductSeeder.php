@@ -267,6 +267,7 @@ class ProductSeeder extends Seeder
                 'stock' => 60,
                 'category_id' => 4
             ],
+            // Next 3 Sections are for Category Gardening and should fall under Gardening Essentials Categories
             // Next three are watering equipment - Add Category "Lawn & Garden Watering Equipment"
             [
                 'name' => "Garden Hose",
@@ -609,6 +610,11 @@ class ProductSeeder extends Seeder
                 'price' => 49.99,
                 'stock' => 80,
                 'category_id' => 5,
+            ],
+            // Next 3 sections are for Garden Furniture and Accessories Sub-Category which should fall under Gardening-Essentials
+            // Next 3 entries are for Sub-Category of Garden Furiture and Accessories called Garden Furniture Sets.
+            [
+
             ],
         ];
 
