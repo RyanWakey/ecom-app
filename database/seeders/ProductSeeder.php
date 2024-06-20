@@ -323,6 +323,37 @@ class ProductSeeder extends Seeder
                 'stock' => 50,
                 'category_id' => 5,
             ],
+            [
+                'name' => "6.5L Litre Watering Can With Rose Strong Plastic Green",
+                'description' => join("\n\n", [
+                    "This 6.5L Watering Can with Rose is an essential tool for any gardener, designed to make watering your 
+                    plants easy and efficient. Made from strong, durable plastic, this watering can is built to withstand 
+                    regular use and various weather conditions, ensuring it remains a reliable gardening companion for years 
+                    to come.",
+
+                    "The watering can features a 6.5-liter capacity, providing ample water for your plants without the need 
+                    for frequent refills. The included rose attachment ensures a gentle, even spray, making it ideal for 
+                    watering delicate flowers and seedlings. The rose can be easily removed for a more direct water flow when
+                    needed, offering versatility for different watering tasks.",
+
+                    "Ergonomically designed, this watering can is easy to carry and pour. The well-balanced handle allows 
+                    for comfortable use, reducing strain on your hands and wrists during extended watering sessions. 
+                    The wide opening makes it easy to fill from any water source, while the robust spout provides precise 
+                    control over the water flow.",
+
+                    "The green color of this watering can not only blends seamlessly with your garden but also symbolizes 
+                    the eco-friendly nature of gardening. It's a practical and stylish addition to any gardener's toolkit,
+                    helping you maintain the health and beauty of your plants with ease.",
+
+                    "This 6.5L Watering Can with Rose isn't just a tool; it's an investment in your garden's vitality.
+                    It's perfect for gardeners of all levels, offering a combination of durability, functionality, and comfort.
+                    With this watering can in your gardening arsenal, you're well-equipped to keep your plants hydrated 
+                    and thriving throughout the growing season."
+                ]),
+                'price' => 9.99,
+                'stock' => 150,
+                'category_id' => 5,
+            ],
             // Next four are Plant Protection and Pest Control - add category "Pest Control"
             [
                 'name' => "Rat Poison",
@@ -641,38 +672,42 @@ class ProductSeeder extends Seeder
                 'images/PestRepeller2.jpg',
             ],
             'Garden Smart Meter' => [
-                'images/GardenSmartMeter',
-                'images/GardenSmartMeter2',
-                'images/GardenSmartMeter3',
+                'images/GardenSmartMeter.jpg',
+                'images/GardenSmartMeter2.jpg',
+                'images/GardenSmartMeter3.jpg',
             ],
             'Soil Moisture Meter' => [
-                'images/SoilMoistureMeter',
-                'images/SoilMoistureMeter2',
+                'images/SoilMoistureMeter.jpg',
+                'images/SoilMoistureMeter2.jpg',
             ],
             'Landrip Soil PH Tester' => [
-                'images/LandripSoilPHTester',
-                'images/LandripSoilPHTester2',
-                'images/LandripSoilPHTester3',
+                'images/LandripSoilPHTester.jpg',
+                'images/LandripSoilPHTester2.jpg',
+                'images/LandripSoilPHTester3.jpg',
             ],
             'Dciustfhe Pack of 10 Soil Meter' => [
-                'images/DciustfhePackof10SoilMeter',
-                'images/DciustfhePackof10SoilMeter2',
-                'images/DciustfhePackof10SoilMeter3',
-                'images/DciustfhePackof10SoilMeter4',
+                'images/DciustfhePackof10SoilMeter.jpg',
+                'images/DciustfhePackof10SoilMeter2.jpg',
+                'images/DciustfhePackof10SoilMeter3.jpg',
+                'images/DciustfhePackof10SoilMeter4.jpg',
             ],
             'Vortex Vitality Vprobe' => [
-                'images/VortexVitalityVprobe',
-                'images/VortexVitalityVprobe2',
-                'images/VortexVitalityVprobe3',
+                'images/VortexVitalityVprobe.jpg',
+                'images/VortexVitalityVprobe2.jpg',
+                'images/VortexVitalityVprobe3.jpg',
             ],
             'The Big Cheese All-Weather Block Bait' => [
-                'images/TheBigCheeseAllWeatherBlockBait',
-                'images/TheBigCheeseAllWeatherBlockBait2',
-                'images/TheBigCheeseAllWeatherBlockBait3',
+                'images/TheBigCheeseAllWeatherBlockBait.jpg',
+                'images/TheBigCheeseAllWeatherBlockBait2.jpg',
+                'images/TheBigCheeseAllWeatherBlockBait3.jpg',
             ],
             'Doff Slug & Snail Killer 800g' => [
-                'images/DoffSlug&SnailKiller800g',
-                'images/DoffSlug&SnailKiller800g2',
+                'images/DoffSlug&SnailKiller800g.jpg',
+                'images/DoffSlug&SnailKiller800g2.jpg',
+            ],
+            '6.5L Litre Watering Can With Rose Strong Plastic Green' => [
+                'images/WateringCan.jpg',
+                'images/WateringCan2.jpg',
             ],
         ];
 
