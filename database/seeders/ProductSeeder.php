@@ -702,18 +702,69 @@ class ProductSeeder extends Seeder
             [
                 'name' => "VOUNOT Privacy Netting 1×10m Garden Screening 150 g/m² HDPE Shading Net",
                 'description' => join("\n\n", [
-                    "Enhance the privacy and aesthetics of your garden with the VOUNOT Privacy Netting. This 1×10m garden screening net is crafted from 150 g/m² HDPE (High-Density Polyethylene), providing excellent durability and performance. The netting is designed to offer effective shading and screening, making it perfect for creating secluded areas in your garden, patio, or balcony.",
+                    "Enhance the privacy and aesthetics of your garden with the VOUNOT Privacy Netting. 
+                    This 1×10m garden screening net is crafted from 150 g/m² HDPE (High-Density Polyethylene), 
+                    providing excellent durability and performance. The netting is designed to offer effective 
+                    shading and screening, making it perfect for creating secluded areas in your garden, patio, 
+                    or balcony.",
                     
-                    "The VOUNOT Privacy Netting features a high-quality weave that ensures optimal privacy while allowing air to circulate freely. This balance of privacy and ventilation makes it ideal for use in various outdoor settings. The 150 g/m² density provides robust protection against the sun's harmful UV rays, reducing glare and heat, and creating a comfortable shaded area for you to enjoy.",
+                    "The VOUNOT Privacy Netting features a high-quality weave that ensures optimal privacy while 
+                    allowing air to circulate freely. This balance of privacy and ventilation makes it ideal for 
+                    use in various outdoor settings. The 150 g/m² density provides robust protection against the 
+                    sun's harmful UV rays, reducing glare and heat, and creating a comfortable shaded area for you 
+                    to enjoy.",
                     
-                    "Installation is simple and straightforward. The netting comes with reinforced edges and built-in eyelets, allowing for easy attachment to fences, railings, or posts. The flexibility of the HDPE material makes it easy to handle and adjust to your desired coverage area. Whether you need to screen an entire fence or create a small private nook, this netting provides versatile solutions.",
+                    "Installation is simple and straightforward. The netting comes with reinforced edges 
+                    and built-in eyelets, allowing for easy attachment to fences, railings, or posts. The 
+                    flexibility of the HDPE material makes it easy to handle and adjust to your desired coverage 
+                    area. Whether you need to screen an entire fence or create a small private nook, this netting 
+                    provides versatile solutions.",
                     
-                    "Durability is a key feature of this product. The VOUNOT Privacy Netting is UV-stabilized and weather-resistant, ensuring it remains effective and attractive throughout the seasons. The material is resistant to tearing and fraying, providing long-lasting performance even in harsh outdoor conditions.",
+                    "Durability is a key feature of this product. The VOUNOT Privacy Netting is UV-stabilized and 
+                    weather-resistant, ensuring it remains effective and attractive throughout the seasons. 
+                    The material is resistant to tearing and fraying, providing long-lasting performance even 
+                    in harsh outdoor conditions.",
                     
-                    "This VOUNOT Privacy Netting isn't just a functional addition to your garden; it's an investment in your outdoor living space. It's perfect for those who value privacy and comfort in their outdoor areas. With this shading net in your gardening arsenal, you're well-equipped to create a tranquil and private retreat in your garden or patio."
+                    "This VOUNOT Privacy Netting isn't just a functional addition to your garden; it's an 
+                    investment in your outdoor living space. It's perfect for those who value privacy and 
+                    comfort in their outdoor areas. With this shading net in your gardening arsenal, you're 
+                    well-equipped to create a tranquil and private retreat in your garden or patio."
                 ]),
                 'price' => 29.99,
                 'stock' => 75,
+                'category_id' => 5,
+            ],
+            [
+                'name' => "Abaseen Extra Thick Natural Peeled Reed Fence, Garden Screening Fence Panels, Privacy & Protective Screening Roll for Outdoor Wind and Sun Protection (8mm-10mm Thickness)",
+                'description' => join("\n\n", [
+                    "Enhance your outdoor space with the Abaseen Extra Thick Natural Peeled Reed Fence. 
+                    These garden screening fence panels offer excellent privacy and protection, making them a 
+                    perfect addition to your garden, patio, or balcony. The fence panels are crafted from natural 
+                    peeled reeds, providing a robust and attractive solution for wind and sun protection.",
+                    
+                    "The Abaseen Reed Fence features an extra thick design, with a thickness of 8mm-10mm, ensuring 
+                    durability and long-lasting performance. The natural reeds are tightly woven to create a sturdy
+                    barrier that effectively blocks wind and sunlight, creating a comfortable and private outdoor 
+                    environment. The natural appearance of the reeds adds a touch of rustic charm to your garden 
+                    decor.",
+                    
+                    "Installation is quick and easy. The fence panels come in a convenient roll that can be easily 
+                    unrolled and attached to existing fences, walls, or structures using ties or staples. The 
+                    flexibility of the reed material allows you to adjust the fence to fit various shapes and 
+                    sizes, providing versatile screening solutions for different outdoor areas.",
+                    
+                    "Durability is a key feature of this product. The natural peeled reeds are treated to withstand 
+                    outdoor conditions, ensuring they remain intact and effective over time. The extra thickness 
+                    provides added strength, making the fence panels resistant to damage from wind and other 
+                    environmental factors.",
+                    
+                    "This Abaseen Extra Thick Natural Peeled Reed Fence isn't just a screening solution; it's an 
+                    investment in the privacy and comfort of your outdoor space. It's perfect for those who value 
+                    both functionality and aesthetics in their garden or patio. With this reed fence in your 
+                    gardening arsenal, you're well-equipped to create a peaceful and protected outdoor retreat."
+                ]),
+                'price' => 39.99,
+                'stock' => 50,
                 'category_id' => 5,
             ],
         ];
@@ -833,6 +884,12 @@ class ProductSeeder extends Seeder
                 'images/VOUNOTPrivacyNetting1×10mGardenScreening2.jpg',
                 'images/VOUNOTPrivacyNetting1×10mGardenScreening3.jpg',
                 'images/VOUNOTPrivacyNetting1×10mGardenScreening4.jpg',
+            ],
+            'Abaseen Extra Thick Natural Peeled Reed Fence' => [
+                'images/AbaseenExtraThickNaturalPeeledReedFence.jpg',
+                'images/AbaseenExtraThickNaturalPeeledReedFence2.jpg',
+                'images/AbaseenExtraThickNaturalPeeledReedFence3.jpg',
+                'images/AbaseenExtraThickNaturalPeeledReedFence4.jpg',
             ],
 
         ];
