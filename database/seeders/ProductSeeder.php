@@ -802,6 +802,10 @@ class ProductSeeder extends Seeder
                 'stock' => 30,
                 'category_id' => 5,
             ],
+            // Next 3 entries are for Sub-Category of Garden Furiture and Accessories called Hammocks, Stands & Accessories.
+            [
+                    
+            ],
         ];
 
         $hardcodedImages = [
