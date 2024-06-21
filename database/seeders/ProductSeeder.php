@@ -644,6 +644,43 @@ class ProductSeeder extends Seeder
                 'stock' => 20,
                 'category_id' => 5,
             ],
+            [
+                'name' => "Dawsons Living Faux Rattan Bistro Set - Conservatory Garden Patio and Decking Furniture Chairs and Glass Top Table Set",
+                'description' => join("\n\n", [
+                    "Enhance your outdoor living area with the Dawsons Living Faux Rattan Bistro Set. 
+                    This elegant set is perfect for conservatories, gardens, patios, and decking areas, 
+                    offering a stylish and comfortable seating solution for your outdoor space. The set 
+                    includes two chairs and a glass top table, making it ideal for intimate gatherings and 
+                    cozy outdoor meals.",
+                    
+                    "Crafted from high-quality faux rattan, this bistro set combines the classic look of 
+                    natural rattan with the durability and low maintenance of synthetic materials. The faux 
+                    rattan is weather-resistant and UV-protected, ensuring that your furniture retains its beauty 
+                    and functionality even after prolonged exposure to the elements. The sturdy steel frame provides
+                    excellent support and stability, enhancing the overall durability of the set.",
+                    
+                    "The chairs are designed with comfort in mind, featuring ergonomic shapes and cushioned 
+                    seats that provide optimal relaxation. The cushions are water-resistant and easy to clean, 
+                    ensuring that they remain fresh and comfortable throughout the seasons. The compact design 
+                    of the chairs makes them easy to move and arrange, allowing you to customize your outdoor 
+                    seating area to suit your needs.",
+                    
+                    "The table features a tempered glass top that adds a touch of sophistication to the set. 
+                    The glass surface is easy to clean and maintain, making it perfect for outdoor dining and 
+                    entertaining. The table's sturdy construction ensures that it can support various items, 
+                    from beverages and snacks to decorative pieces.",
+                    
+                    "This Dawsons Living Faux Rattan Bistro Set isn't just a furniture set; it's an investment 
+                    in your outdoor lifestyle. Perfect for those who appreciate both style and comfort, this set 
+                    is designed to enhance your outdoor living experience. With this bistro set in your garden 
+                    or patio, you're well-equipped to enjoy cozy meals, relaxing conversations, and the beauty 
+                    of your outdoor space."
+                ]),
+                'price' => 149.99,
+                'stock' => 50,
+                'category_id' => 5,
+
+            ]
         ];
 
         $hardcodedImages = [
@@ -747,7 +784,12 @@ class ProductSeeder extends Seeder
                 'images/BigzziaRattanGardenFurnitureSet.jpg',
                 'images/BigzziaRattanGardenFurnitureSet2.jpg',
                 'images/BigzziaRattanGardenFurnitureSet3.jpg',
+            ],
+            'Dawsons Living Faux Rattan Bistro Set' => [
+                'images/DawsonsLivingFauxRattanBistroSet.jpg',
+                'images/DawsonsLivingFauxRattanBistroSet2.jpg',
             ]
+
         ];
 
         $faker = Faker::create();  
