@@ -804,7 +804,21 @@ class ProductSeeder extends Seeder
             ],
             // Next 3 entries are for Sub-Category of Garden Furiture and Accessories called Hammocks, Stands & Accessories.
             [
+                'name' => "VonHaus Hanging Chair Outdoor",
+                'description' => join("\n\n", [
+                    "Relax in style with the VonHaus Hanging Chair Outdoor, featuring a charming blue and white striped design. This garden swing seat and hammock chair provide the perfect spot to unwind in your garden, patio, terrace, or decking area. Made with strong cotton rope, this hanging chair offers a combination of comfort and durability, ensuring you can enjoy countless hours of relaxation.",
                     
+                    "The VonHaus Hanging Chair is designed for both comfort and stability. The high-quality cotton rope construction provides a supportive and cozy seating experience, while the robust wooden spreader bar ensures the chair remains securely in place. The ergonomic design adapts to your body, offering excellent support and allowing you to relax in complete comfort.",
+                    
+                    "Portability is a key feature of this garden swing seat. The lightweight design makes it easy to move and hang in different locations, whether you're looking to enjoy the sun in your garden or relax in the shade on your patio. The chair can be easily hung from a tree branch, porch, or any sturdy overhang, providing versatile seating options for your outdoor space.",
+                    
+                    "Durability is assured with the VonHaus Hanging Chair. The strong cotton rope and solid wooden bar are built to withstand outdoor conditions, ensuring the chair remains in excellent condition over time. The vibrant blue and white striped fabric is both stylish and fade-resistant, maintaining its fresh look even after prolonged exposure to the elements.",
+                    
+                    "This VonHaus Hanging Chair isn't just a piece of outdoor furniture; it's an investment in your comfort and outdoor enjoyment. Perfect for those who value both aesthetics and relaxation, this swing seat adds a touch of elegance to any outdoor setting. With this hanging chair in your outdoor arsenal, you're well-equipped to create a cozy and inviting retreat in your garden, patio, or terrace."
+                ]),
+                'price' => 59.99,
+                'stock' => 40,
+                'category_id' => 5,       
             ],
         ];
 
@@ -935,6 +949,10 @@ class ProductSeeder extends Seeder
                 'images/BPILArtificialMapleLeafIvyonWillowTrellisPrivacyScreenExpandable2.jpg',
                 'images/BPILArtificialMapleLeafIvyonWillowTrellisPrivacyScreenExpandable3.jpg',
             ],
+            'VonHaus Hanging Chair Outdoor' => [
+                'images/VonHausHangingChairOutdoor.jpg',
+                'images/VonHausHangingChairOutdoor2.jpg',
+            ]
 
         ];
 
