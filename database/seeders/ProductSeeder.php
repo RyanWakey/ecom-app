@@ -838,7 +838,37 @@ class ProductSeeder extends Seeder
                 'category_id' => 5,       
             ],
             [
-                
+               'name' => "Ousinby Pool Float Hammock 2 pack",
+                'description' => join("\n\n", [
+                    "Enjoy ultimate relaxation with the Ousinby Pool Float Hammock 2 pack. These inflatable 
+                    hammocks are perfect for lounging in the pool, providing comfort and support while you 
+                    float. Each pack includes two hammocks, allowing you to share the fun with a friend or 
+                    family member. The durable, high-quality PVC material ensures long-lasting use and 
+                    enjoyment.",
+                    
+                    "The Ousinby Pool Float Hammock features an ergonomic design that cradles your body 
+                    comfortably. The headrest and footrest provide excellent support, while the breathable 
+                    mesh middle keeps you cool as you float. Whether you're soaking up the sun or drifting 
+                    in the water, these hammocks offer the perfect way to unwind.",
+                    
+                    "Portability is a key feature of these inflatable hammocks. The compact design makes 
+                    them easy to deflate, fold, and store when not in use. The included inflator pump 
+                    ensures quick and effortless setup, so you can spend more time enjoying the water. 
+                    Ideal for adults and kids, these floats are versatile and fun for the whole family.",
+                    
+                    "Durability is assured with the Ousinby Pool Float Hammock. The high-quality PVC 
+                    material is resistant to punctures and tears, ensuring the floats remain in excellent 
+                    condition over time. The sturdy construction provides reliable support, making these 
+                    hammocks a great addition to your pool accessories.",
+                    
+                    "These Ousinby Pool Float Hammocks aren't just pool floats; they're an investment in 
+                    your summer fun. Perfect for those who value comfort and convenience, these hammocks 
+                    offer a stylish and practical way to relax in the water. With these floats in your 
+                    pool arsenal, you're well-equipped to enjoy a summer of floating bliss."
+                ]),
+                'price' => 39.99,
+                'stock' => 60,
+                'category_id' => 5, 
             ],
         ];
 
@@ -972,6 +1002,11 @@ class ProductSeeder extends Seeder
             'VonHaus Hanging Chair Outdoor' => [
                 'images/VonHausHangingChairOutdoor.jpg',
                 'images/VonHausHangingChairOutdoor2.jpg',
+            ],
+            'Ousinby Pool Float Hammock 2 Pack' => [
+                'images/OusinbyPoolFloatHammock2Pack.jpg',
+                'images/OusinbyPoolFloatHammock2Pack2.jpg',
+                'images/OusinbyPoolFloatHammock2Pack3.jpg',
             ]
 
         ];
