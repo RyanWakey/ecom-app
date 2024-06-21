@@ -680,7 +680,24 @@ class ProductSeeder extends Seeder
                 'stock' => 50,
                 'category_id' => 5,
 
-            ]
+            ],
+            [
+                'name' => "Kingfisher 12in (30cm) Dark Rattan Hanging Basket",
+                'description' => join("\n\n", [
+                    "Add a touch of elegance to your garden with the Kingfisher 12in (30cm) Dark Rattan Hanging Basket. This stylish hanging basket is perfect for showcasing your favorite flowers and plants, enhancing the beauty of your outdoor space. The dark rattan design provides a classic and sophisticated look that complements any garden decor.",
+                    
+                    "Crafted from high-quality materials, the Kingfisher Hanging Basket is both durable and weather-resistant, ensuring it can withstand the elements and remain in excellent condition throughout the seasons. The sturdy construction provides reliable support for your plants, while the included metal chains and hook make it easy to hang securely in your garden, patio, or balcony.",
+                    
+                    "The basket features a spacious 12-inch diameter, providing ample room for a variety of plants and flowers. Its depth allows for adequate soil capacity, promoting healthy root growth and ensuring your plants have the nutrients they need to thrive. The natural rattan finish adds a rustic charm, making this hanging basket a beautiful addition to any outdoor setting.",
+                    
+                    "Ease of use is at the heart of this product's design. The Kingfisher Hanging Basket comes with a pre-lined interior, saving you time and effort during planting. The liner helps retain moisture, reducing the frequency of watering and keeping your plants healthy and hydrated.",
+                    
+                    "This Kingfisher 12in Dark Rattan Hanging Basket isn't just a container; it's an investment in the aesthetic appeal of your garden. It's a perfect choice for gardeners who value both functionality and style. With this hanging basket in your gardening arsenal, you're well-equipped to create stunning floral displays that will impress your guests and enhance your outdoor environment."
+                ]),
+                'price' => 14.99,
+                'stock' => 100,
+                'category_id' => 5,
+            ],
         ];
 
         $hardcodedImages = [
@@ -788,7 +805,11 @@ class ProductSeeder extends Seeder
             'Dawsons Living Faux Rattan Bistro Set' => [
                 'images/DawsonsLivingFauxRattanBistroSet.jpg',
                 'images/DawsonsLivingFauxRattanBistroSet2.jpg',
-            ]
+            ],
+            'Kingfisher 12in (30cm) Dark Rattan Hanging Basket' => [
+                'images/KingfisherDarkRattanHangingBasket.jpg',
+                'images/KingfisherDarkRattanHangingBasket2.jpg',
+            ],
 
         ];
 
