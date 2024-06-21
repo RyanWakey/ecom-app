@@ -871,7 +871,39 @@ class ProductSeeder extends Seeder
                 'category_id' => 5, 
             ],
             [
-                
+                'name' => "Outsunny 3 Seater Swing Chair 2 in 1 Garden Swing Seat Bed Convertible Outdoor 
+                Rocking Bench Bed",
+                'description' => join("\n\n", [
+                    "Transform your outdoor space with the versatile Outsunny 3 Seater Swing Chair. This 2 
+                    in 1 garden swing seat bed offers the perfect combination of relaxation and comfort. 
+                    Designed to seat three people, this swing chair easily converts into a bed, providing a 
+                    cozy spot for lounging and napping. The elegant grey color complements any garden, 
+                    patio, or terrace decor.",
+                    
+                    "The Outsunny Swing Chair features a water-resistant roof that provides shade and 
+                    protection from the elements. The zipped door and mosquito netting create a safe and 
+                    comfortable environment, free from insects. This makes it ideal for enjoying your 
+                    outdoor space without interruptions, whether during the day or at night.",
+                    
+                    "Comfort and stability are key features of this garden swing seat. The sturdy metal 
+                    frame ensures durability and can support multiple users, while the soft cushions 
+                    provide exceptional comfort. The swing chair's gentle rocking motion adds an extra 
+                    layer of relaxation, making it the perfect spot to unwind and enjoy your garden.",
+                    
+                    "Ease of use is at the heart of the Outsunny Swing Chair's design. The convertible 
+                    function allows you to switch between a swing seat and a bed effortlessly. The 
+                    lightweight construction makes it easy to move and position in your desired location, 
+                    ensuring you can always find the perfect spot to relax.",
+                    
+                    "This Outsunny 3 Seater Swing Chair isn't just a piece of outdoor furniture; it's an 
+                    investment in your outdoor living experience. Perfect for those who value both style 
+                    and functionality, this swing chair offers a luxurious way to enjoy your garden. With 
+                    this swing chair in your outdoor arsenal, you're well-equipped to create a serene and 
+                    comfortable retreat in your garden, patio, or terrace."
+                ]),
+                'price' => 199.99,
+                'stock' => 20,
+                'category_id' => 5,       
             ],
         ];
 
@@ -1010,7 +1042,12 @@ class ProductSeeder extends Seeder
                 'images/OusinbyPoolFloatHammock2Pack.jpg',
                 'images/OusinbyPoolFloatHammock2Pack2.jpg',
                 'images/OusinbyPoolFloatHammock2Pack3.jpg',
-            ]
+            ],
+            'Outsunny 3 Seater Swing Chair' => [
+                'images/Outsunny3SeaterSwingChair.jpg',
+                'images/Outsunny3SeaterSwingChair2.jpg',
+                'images/Outsunny3SeaterSwingChair3.jpg',
+            ],
 
         ];
 
