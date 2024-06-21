@@ -767,6 +767,41 @@ class ProductSeeder extends Seeder
                 'stock' => 50,
                 'category_id' => 5,
             ],
+            [
+                'name' => "BPIL Artificial Maple Leaf Ivy on Willow Trellis Privacy Screen Expandable - 1 x 2 m, Expandable Privacy Screening Panel for Gardens, Balcony and Terraces",
+                'description' => join("\n\n", [
+                    "Transform your outdoor space with the BPIL Artificial Maple Leaf Ivy on Willow 
+                    Trellis Privacy Screen. This expandable privacy screening panel measures 1 x 2 meters,
+                    providing an attractive and practical solution for enhancing privacy in gardens, balconies, 
+                    and terraces. The artificial maple leaf ivy, combined with the natural willow trellis, 
+                    creates a realistic and lush appearance that adds beauty to any outdoor area.",
+                    
+                    "The BPIL Privacy Screen features a high-quality design, with durable artificial ivy leaves 
+                    that are UV-resistant and weatherproof. The leaves are intricately woven into the natural 
+                    willow trellis, offering a robust and flexible screening solution. This expandable panel can
+                    be easily adjusted to fit different spaces, making it versatile and convenient for various 
+                    applications.",
+                    
+                    "Installation is simple and hassle-free. The expandable design allows you to extend the trellis 
+                    to your desired width, and it can be easily attached to fences, walls, or existing structures 
+                    using ties or screws. The lightweight construction makes it easy to handle and position, 
+                    ensuring a quick setup process.",
+                    
+                    "Durability and low maintenance are key features of this product. The artificial maple leaves 
+                    require no watering or trimming, maintaining their vibrant appearance year-round with minimal 
+                    effort. The natural willow trellis provides a sturdy framework that withstands outdoor conditions,
+                    ensuring long-lasting performance.",
+                    
+                    "This BPIL Artificial Maple Leaf Ivy on Willow Trellis Privacy Screen isn't just a decorative 
+                    panel; it's an investment in the privacy and aesthetics of your outdoor space. Perfect for those 
+                    who appreciate both style and functionality, this privacy screen offers an effective way to create 
+                    a secluded and visually appealing area. With this privacy screen in your gardening arsenal, 
+                    you're well-equipped to enhance your outdoor living experience."
+                ]),
+                'price' => 49.99,
+                'stock' => 30,
+                'category_id' => 5,
+            ],
         ];
 
         $hardcodedImages = [
@@ -890,6 +925,11 @@ class ProductSeeder extends Seeder
                 'images/AbaseenExtraThickNaturalPeeledReedFence2.jpg',
                 'images/AbaseenExtraThickNaturalPeeledReedFence3.jpg',
                 'images/AbaseenExtraThickNaturalPeeledReedFence4.jpg',
+            ],
+            'BPIL Artificial Maple Leaf Ivy on Willow Trellis Privacy Screen Expandable' => [
+                'images/BPILArtificialMapleLeafIvyonWillowTrellisPrivacyScreenExpandable.jpg',
+                'images/BPILArtificialMapleLeafIvyonWillowTrellisPrivacyScreenExpandable2.jpg',
+                'images/BPILArtificialMapleLeafIvyonWillowTrellisPrivacyScreenExpandable3.jpg',
             ],
 
         ];
