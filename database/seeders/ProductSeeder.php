@@ -870,6 +870,9 @@ class ProductSeeder extends Seeder
                 'stock' => 60,
                 'category_id' => 5, 
             ],
+            [
+                
+            ],
         ];
 
         $hardcodedImages = [
