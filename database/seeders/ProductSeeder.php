@@ -698,6 +698,10 @@ class ProductSeeder extends Seeder
                 'stock' => 100,
                 'category_id' => 5,
             ],
+            // Next 3 entries are for Sub-Category of Garden Furiture and Accessories called Outdoor Screens & Protection.
+            [
+
+            ],
         ];
 
         $hardcodedImages = [
