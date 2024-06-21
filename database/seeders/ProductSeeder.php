@@ -700,7 +700,21 @@ class ProductSeeder extends Seeder
             ],
             // Next 3 entries are for Sub-Category of Garden Furiture and Accessories called Outdoor Screens & Protection.
             [
-
+                'name' => "VOUNOT Privacy Netting 1×10m Garden Screening 150 g/m² HDPE Shading Net",
+                'description' => join("\n\n", [
+                    "Enhance the privacy and aesthetics of your garden with the VOUNOT Privacy Netting. This 1×10m garden screening net is crafted from 150 g/m² HDPE (High-Density Polyethylene), providing excellent durability and performance. The netting is designed to offer effective shading and screening, making it perfect for creating secluded areas in your garden, patio, or balcony.",
+                    
+                    "The VOUNOT Privacy Netting features a high-quality weave that ensures optimal privacy while allowing air to circulate freely. This balance of privacy and ventilation makes it ideal for use in various outdoor settings. The 150 g/m² density provides robust protection against the sun's harmful UV rays, reducing glare and heat, and creating a comfortable shaded area for you to enjoy.",
+                    
+                    "Installation is simple and straightforward. The netting comes with reinforced edges and built-in eyelets, allowing for easy attachment to fences, railings, or posts. The flexibility of the HDPE material makes it easy to handle and adjust to your desired coverage area. Whether you need to screen an entire fence or create a small private nook, this netting provides versatile solutions.",
+                    
+                    "Durability is a key feature of this product. The VOUNOT Privacy Netting is UV-stabilized and weather-resistant, ensuring it remains effective and attractive throughout the seasons. The material is resistant to tearing and fraying, providing long-lasting performance even in harsh outdoor conditions.",
+                    
+                    "This VOUNOT Privacy Netting isn't just a functional addition to your garden; it's an investment in your outdoor living space. It's perfect for those who value privacy and comfort in their outdoor areas. With this shading net in your gardening arsenal, you're well-equipped to create a tranquil and private retreat in your garden or patio."
+                ]),
+                'price' => 29.99,
+                'stock' => 75,
+                'category_id' => 5,
             ],
         ];
 
@@ -813,6 +827,12 @@ class ProductSeeder extends Seeder
             'Kingfisher 12in (30cm) Dark Rattan Hanging Basket' => [
                 'images/KingfisherDarkRattanHangingBasket.jpg',
                 'images/KingfisherDarkRattanHangingBasket2.jpg',
+            ],
+            'VOUNOT Privacy Netting 1×10m Garden Screening 150 g/m² HDPE Shading Net' => [
+                'images/VOUNOTPrivacyNetting1×10mGardenScreening.jpg',
+                'images/VOUNOTPrivacyNetting1×10mGardenScreening2.jpg',
+                'images/VOUNOTPrivacyNetting1×10mGardenScreening3.jpg',
+                'images/VOUNOTPrivacyNetting1×10mGardenScreening4.jpg',
             ],
 
         ];
