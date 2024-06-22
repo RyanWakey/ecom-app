@@ -1161,8 +1161,8 @@ class ProductSeeder extends Seeder
                 'price' => 299.99,
                 'stock' => 15,
                 'category_id' => 5,
-    
             ],
+            
         ];
 
         $hardcodedImages = [
