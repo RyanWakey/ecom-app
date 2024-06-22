@@ -1199,6 +1199,44 @@ class ProductSeeder extends Seeder
                 'stock' => 40,
                 'category_id' => 5,
             ],
+            [
+                'name' => "Leisurealeaneag Non-Stick BBQ Barbecue Camping Grill Pans Meat Vegetables 
+                Fish Topper Tray",
+                'description' => join("\n\n", [
+                    "Elevate your grilling experience with the Leisurealeaneag Non-Stick BBQ Barbecue 
+                    Camping Grill Pans. These versatile grill pans are perfect for cooking meat, 
+                    vegetables, and fish, ensuring delicious and evenly cooked meals. Ideal for both home 
+                    and camping use, these pans offer convenience and performance for all your outdoor 
+                    cooking adventures.",
+                    
+                    "The Leisurealeaneag Grill Pans feature a durable non-stick coating that prevents food 
+                    from sticking, making cooking and cleanup a breeze. The high-quality construction 
+                    ensures even heat distribution, allowing your food to cook thoroughly and evenly. The 
+                    non-stick surface also reduces the need for oil, promoting healthier cooking.",
+                    
+                    "Versatility is a key feature of these grill pans. The spacious design provides ample 
+                    room for grilling various foods, from meats and vegetables to fish and seafood. The 
+                    perforated surface allows smoke and heat to circulate, enhancing the flavor of your 
+                    food while preventing small pieces from falling through the grill grates. This makes 
+                    the pans perfect for a wide range of grilling applications.",
+                    
+                    "Ease of use is at the heart of the Leisurealeaneag design. The lightweight and 
+                    portable construction makes these pans easy to transport and ideal for camping trips 
+                    and outdoor picnics. The non-stick surface ensures quick and easy cleanup, allowing you 
+                    to spend more time enjoying your meal and less time on maintenance. The sturdy handles 
+                    provide a secure grip, making it easy to move the pans on and off the grill.",
+                    
+                    "These Leisurealeaneag Non-Stick BBQ Grill Pans aren't just cooking tools; they're an 
+                    investment in your outdoor culinary experience. Perfect for those who love to grill and 
+                    appreciate easy-to-use, versatile equipment, these pans offer the performance and 
+                    convenience needed to enhance your barbecuing. With these grill pans in your cooking 
+                    arsenal, you're well-equipped to create delicious, restaurant-quality meals in your 
+                    garden or at the campsite."
+                ]),
+                'price' => 29.99,
+                'stock' => 60,
+                'category_id' => 5,
+            ],
 
         ];
 
@@ -1252,96 +1290,96 @@ class ProductSeeder extends Seeder
             ],
             'Lawn Sprinkler' => [
                 '/images/Sprinkler.jpg',
-                '/images/Sprinkler.jpg',
+                '/images/Sprinkler.jpg'
             ],
             'Rat Poison' => [
                 '/images/RatPoison.jpg',
             ],
             'Pest Repeller' => [
                 'images/PestRepeller.jpg',
-                'images/PestRepeller2.jpg',
+                'images/PestRepeller2.jpg'
             ],
             'Garden Smart Meter' => [
                 'images/GardenSmartMeter.jpg',
                 'images/GardenSmartMeter2.jpg',
-                'images/GardenSmartMeter3.jpg',
+                'images/GardenSmartMeter3.jpg'
             ],
             'Soil Moisture Meter' => [
                 'images/SoilMoistureMeter.jpg',
-                'images/SoilMoistureMeter2.jpg',
+                'images/SoilMoistureMeter2.jpg'
             ],
             'Landrip Soil PH Tester' => [
                 'images/LandripSoilPHTester.jpg',
                 'images/LandripSoilPHTester2.jpg',
-                'images/LandripSoilPHTester3.jpg',
+                'images/LandripSoilPHTester3.jpg'
             ],
             'Dciustfhe Pack of 10 Soil Meter' => [
                 'images/DciustfhePackof10SoilMeter.jpg',
                 'images/DciustfhePackof10SoilMeter2.jpg',
                 'images/DciustfhePackof10SoilMeter3.jpg',
-                'images/DciustfhePackof10SoilMeter4.jpg',
+                'images/DciustfhePackof10SoilMeter4.jpg'
             ],
             'Vortex Vitality Vprobe' => [
                 'images/VortexVitalityVprobe.jpg',
                 'images/VortexVitalityVprobe2.jpg',
-                'images/VortexVitalityVprobe3.jpg',
+                'images/VortexVitalityVprobe3.jpg'
             ],
             'The Big Cheese All-Weather Block Bait' => [
                 'images/TheBigCheeseAllWeatherBlockBait.jpg',
                 'images/TheBigCheeseAllWeatherBlockBait2.jpg',
-                'images/TheBigCheeseAllWeatherBlockBait3.jpg',
+                'images/TheBigCheeseAllWeatherBlockBait3.jpg'
             ],
             'Doff Slug & Snail Killer 800g' => [
                 'images/DoffSlug&SnailKiller800g.jpg',
-                'images/DoffSlug&SnailKiller800g2.jpg',
+                'images/DoffSlug&SnailKiller800g2.jpg'
             ],
             '6.5L Litre Watering Can With Rose Strong Plastic Green' => [
                 'images/WateringCan.jpg',
-                'images/WateringCan2.jpg',
+                'images/WateringCan2.jpg'
             ],
             'Bigzzia Rattan Garden Furniture Set' => [
                 'images/BigzziaRattanGardenFurnitureSet.jpg',
                 'images/BigzziaRattanGardenFurnitureSet2.jpg',
-                'images/BigzziaRattanGardenFurnitureSet3.jpg',
+                'images/BigzziaRattanGardenFurnitureSet3.jpg'
             ],
             'Dawsons Living Faux Rattan Bistro Set' => [
                 'images/DawsonsLivingFauxRattanBistroSet.jpg',
-                'images/DawsonsLivingFauxRattanBistroSet2.jpg',
+                'images/DawsonsLivingFauxRattanBistroSet2.jpg'
             ],
             'Kingfisher 12in (30cm) Dark Rattan Hanging Basket' => [
                 'images/KingfisherDarkRattanHangingBasket.jpg',
-                'images/KingfisherDarkRattanHangingBasket2.jpg',
+                'images/KingfisherDarkRattanHangingBasket2.jpg'
             ],
             'VOUNOT Privacy Netting 1×10m Garden Screening 150 g/m² HDPE Shading Net' => [
                 'images/VOUNOTPrivacyNetting1×10mGardenScreening.jpg',
                 'images/VOUNOTPrivacyNetting1×10mGardenScreening2.jpg',
                 'images/VOUNOTPrivacyNetting1×10mGardenScreening3.jpg',
-                'images/VOUNOTPrivacyNetting1×10mGardenScreening4.jpg',
+                'images/VOUNOTPrivacyNetting1×10mGardenScreening4.jpg'
             ],
             'Abaseen Extra Thick Natural Peeled Reed Fence' => [
                 'images/AbaseenExtraThickNaturalPeeledReedFence.jpg',
                 'images/AbaseenExtraThickNaturalPeeledReedFence2.jpg',
                 'images/AbaseenExtraThickNaturalPeeledReedFence3.jpg',
-                'images/AbaseenExtraThickNaturalPeeledReedFence4.jpg',
+                'images/AbaseenExtraThickNaturalPeeledReedFence4.jpg'
             ],
             'BPIL Artificial Maple Leaf Ivy on Willow Trellis Privacy Screen Expandable' => [
                 'images/BPILArtificialMapleLeafIvyonWillowTrellisPrivacyScreenExpandable.jpg',
                 'images/BPILArtificialMapleLeafIvyonWillowTrellisPrivacyScreenExpandable2.jpg',
-                'images/BPILArtificialMapleLeafIvyonWillowTrellisPrivacyScreenExpandable3.jpg',
+                'images/BPILArtificialMapleLeafIvyonWillowTrellisPrivacyScreenExpandable3.jpg'
             ],
             'VonHaus Hanging Chair Outdoor' => [
                 'images/VonHausHangingChairOutdoor.jpg',
-                'images/VonHausHangingChairOutdoor2.jpg',
+                'images/VonHausHangingChairOutdoor2.jpg'
             ],
             'Ousinby Pool Float Hammock 2 Pack' => [
                 'images/OusinbyPoolFloatHammock2Pack.jpg',
                 'images/OusinbyPoolFloatHammock2Pack2.jpg',
-                'images/OusinbyPoolFloatHammock2Pack3.jpg',
+                'images/OusinbyPoolFloatHammock2Pack3.jpg'
             ],
             'Outsunny 3 Seater Swing Chair' => [
                 'images/Outsunny3SeaterSwingChair.jpg',
                 'images/Outsunny3SeaterSwingChair2.jpg',
-                'images/Outsunny3SeaterSwingChair3.jpg',
+                'images/Outsunny3SeaterSwingChair3.jpg'
             ],
             'Joeji\'s Cedar Planks for BBQ Grilling & Unique Food Plating' => [
                 'images/Joeji\'sCedarPlanksforBBQGrilling.jpg',
@@ -1349,7 +1387,7 @@ class ProductSeeder extends Seeder
             ],
             'Albert Austin Charcoal BBQ Fire Starter BBQ Chimney Starter' => [
                 'images/AlbertAustinCharcoalBBQFireStarterBBQChimneyStarter.jpg',
-                'images/AlbertAustinCharcoalBBQFireStarterBBQChimneyStarter2.jpg',
+                'images/AlbertAustinCharcoalBBQFireStarterBBQChimneyStarter2.jpg'
             ],
             'Woodabrix Hickory Wood Chips' => [
                 'images/WoodabrixHickoryWoodChips.jpg',
@@ -1364,20 +1402,24 @@ class ProductSeeder extends Seeder
             'Char-Broil Gas2Coal 2.0 Hybrid Grill' => [
                 'images/Char-BroilGas2Coal2.0HybridGrill.jpg',
                 'images/Char-BroilGas2Coal2.0HybridGrill2.jpg',
-                'images/Char-BroilGas2Coal2.0HybridGrill3.jpg',
+                'images/Char-BroilGas2Coal2.0HybridGrill3.jpg'
             ],
             'Weber Compact Kettle Charcoal Grill Barbecue' => [
                 'images/WeberCompactKettleCharcoalGrillBarbecue.jpg',
-                'images/WeberCompactKettleCharcoalGrillBarbecue2.jpg',
+                'images/WeberCompactKettleCharcoalGrillBarbecue2.jpg'
             ],
             'Anchor Fast Exmouth BBQ Wooden Shelter' => [
                 'images/AnchorFastExmouthBBQWoodenShelter.jpg',
-                'images/AnchorFastExmouthBBQWoodenShelter2.jpg',
+                'images/AnchorFastExmouthBBQWoodenShelter2.jpg'
             ],  
             'Leisurealeaneag 3 set Barbecue Rack' => [
                 'images/Leisurealeaneag3SetBarbecueRack.jpg',
                 'images/Leisurealeaneag3SetBarbecueRack2.jpg',
-                'images/Leisurealeaneag3SetBarbecueRack3.jpg',
+                'images/Leisurealeaneag3SetBarbecueRack3.jpg'
+            ],
+            'Leisurealeaneag Non-Stick BBQ Tray' => [
+                'images/LeisurealeaneagNon-StickBBQTray.jpg',
+                'images/LeisurealeaneagNon-StickBBQTray2.jpg'
             ],
         ];
 
