@@ -1207,7 +1207,11 @@ class ProductSeeder extends Seeder
                 'images/WoodabrixHickoryWoodChips2.jpg',
                 'images/WoodabrixHickoryWoodChips3.jpg'
             ],
-
+            'CosmoGrill Outdoor XL Smoker Barbecue' => [
+                'images/CosmoGrillOutdoorXLSmokerBarbecue.jpg',
+                'images/CosmoGrillOutdoorXLSmokerBarbecue2.jpg',
+                'images/CosmoGrillOutdoorXLSmokerBarbecue3A.jpg'
+            ],
         ];
 
         $faker = Faker::create();  
