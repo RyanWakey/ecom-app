@@ -1252,7 +1252,7 @@ class ProductSeeder extends Seeder
                 'images/Char-BroilGas2Coal2.0HybridGrill2.jpg',
                 'images/Char-BroilGas2Coal2.0HybridGrill3.jpg',
             ],
-            
+                
         ];
 
         $faker = Faker::create();  
