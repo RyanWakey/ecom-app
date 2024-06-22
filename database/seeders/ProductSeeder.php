@@ -905,6 +905,8 @@ class ProductSeeder extends Seeder
                 'stock' => 20,
                 'category_id' => 5,       
             ],
+            // Next 3 Sections are Sections inside the Outdoor Cooking Section
+            // Next 3 entries are for Barbecue & Smoker Accessory Category.
         ];
 
         $hardcodedImages = [
