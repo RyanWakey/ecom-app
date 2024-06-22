@@ -1125,6 +1125,44 @@ class ProductSeeder extends Seeder
                 'stock' => 50,
                 'category_id' => 5,
             ],
+            // Next 3 entries are for Barbecue Huts
+            [
+                'name' => "Anchor Fast Exmouth BBQ Wooden Shelter",
+                'description' => join("\n\n", [
+                    "Enhance your outdoor cooking experience with the Anchor Fast Exmouth BBQ Wooden 
+                    Shelter. This sturdy and stylish shelter is designed to provide protection and comfort 
+                    while you grill, ensuring that your barbecue area is shielded from the elements. The 
+                    Exmouth shelter is perfect for any garden, patio, or outdoor entertaining space.",
+                    
+                    "The Anchor Fast Exmouth BBQ Shelter features a robust wooden construction that is both 
+                    durable and aesthetically pleasing. The high-quality timber is treated to withstand 
+                    outdoor conditions, ensuring the shelter remains in excellent condition throughout the 
+                    seasons. The natural wood finish adds a rustic charm to your outdoor area, blending 
+                    seamlessly with your garden decor.",
+                    
+                    "Versatility is a key feature of this BBQ shelter. The spacious design provides ample 
+                    room for your grill, accessories, and cooking area, making it ideal for various BBQ 
+                    setups. The open sides ensure proper ventilation and easy access, while the slanted 
+                    roof offers effective protection against rain and sun, allowing you to grill 
+                    comfortably in any weather.",
+                    
+                    "Ease of use is at the heart of the Anchor Fast Exmouth design. The shelter comes with 
+                    clear assembly instructions, making it straightforward to set up. The sturdy frame and 
+                    secure fittings ensure the shelter remains stable and safe during use, providing a 
+                    reliable cover for your BBQ area.",
+                    
+                    "This Anchor Fast Exmouth BBQ Wooden Shelter isn't just a protective cover; it's an 
+                    investment in your outdoor cooking experience. Perfect for those who love to barbecue 
+                    in style and comfort, this shelter offers the durability and functionality needed to 
+                    enhance your outdoor grilling. With the Exmouth shelter in your garden, you're well-
+                    equipped to enjoy year-round barbecues and create memorable moments with family and 
+                    friends."
+                ]),
+                'price' => 299.99,
+                'stock' => 15,
+                'category_id' => 5,
+    
+            ],
         ];
 
         $hardcodedImages = [
@@ -1294,7 +1332,11 @@ class ProductSeeder extends Seeder
             'Weber Compact Kettle Charcoal Grill Barbecue' => [
                 'images/WeberCompactKettleCharcoalGrillBarbecue.jpg',
                 'images/WeberCompactKettleCharcoalGrillBarbecue2.jpg',
-            ],   
+            ],
+            'Anchor Fast Exmouth BBQ Wooden Shelter' =>[
+                'images/AnchorFastExmouthBBQWoodenShelter.jpg',
+                'images/AnchorFastExmouthBBQWoodenShelter2.jpg',
+            ]   
         ];
 
         $faker = Faker::create();  
