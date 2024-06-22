@@ -1014,8 +1014,43 @@ class ProductSeeder extends Seeder
                 'price' => 14.99,
                 'stock' => 100,
                 'category_id' => 5,
-
             ],
+            // Next 3 entries are for Barbecues & Smokers Category
+            [
+                'name' => "CosmoGrill Outdoor XL Smoker Barbecue Charcoal Portable BBQ Grill Garden",
+                'description' => join("\n\n", [
+                    "Elevate your grilling experience with the CosmoGrill Outdoor XL Smoker Barbecue. This 
+                    charcoal portable BBQ grill is designed to provide exceptional performance and versatility 
+                    in your garden. The XL size offers ample cooking space, making it perfect for hosting 
+                    large gatherings and family barbecues.",
+                    
+                    "The CosmoGrill Outdoor XL Smoker features a robust and durable construction, ensuring 
+                    long-lasting performance. The high-quality materials used in its design can withstand 
+                    high temperatures and frequent use, providing you with a reliable grilling solution. The 
+                    portable design allows you to easily move the grill around your garden, making it 
+                    convenient for any outdoor setting.",
+                    
+                    "Versatility is a key feature of this BBQ grill. The CosmoGrill Outdoor XL can be used as 
+                    both a traditional charcoal grill and a smoker, allowing you to explore various cooking 
+                    techniques and flavors. The adjustable air vents and built-in thermometer help you 
+                    maintain precise temperature control, ensuring perfectly cooked meals every time.",
+                    
+                    "Ease of use is at the heart of the CosmoGrill design. The large cooking area and 
+                    adjustable cooking grates provide flexibility and convenience, allowing you to cook 
+                    multiple items simultaneously. The removable ash catcher makes cleanup quick and easy, 
+                    so you can spend more time enjoying your barbecue and less time on maintenance.",
+                    
+                    "This CosmoGrill Outdoor XL Smoker Barbecue isn't just a grill; it's an investment in 
+                    your outdoor cooking adventures. Perfect for those who love to entertain and experiment 
+                    with new recipes, this grill offers the performance and versatility needed to create 
+                    delicious and memorable meals. With the CosmoGrill Outdoor XL in your garden, you're 
+                    well-equipped to host fantastic barbecues and enjoy quality time with family and 
+                    friends."
+                ]),
+                'price' => 199.99,
+                'stock' => 30,
+                'category_id' => 5,
+            ]
         ];
 
         $hardcodedImages = [
@@ -1171,7 +1206,7 @@ class ProductSeeder extends Seeder
                 'images/WoodabrixHickoryWoodChips.jpg',
                 'images/WoodabrixHickoryWoodChips2.jpg',
                 'images/WoodabrixHickoryWoodChips3.jpg'
-            ]
+            ],
 
         ];
 
