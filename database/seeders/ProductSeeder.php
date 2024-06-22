@@ -1162,7 +1162,44 @@ class ProductSeeder extends Seeder
                 'stock' => 15,
                 'category_id' => 5,
             ],
-            
+            [
+                'name' => "Leisurealeaneag 3 set Barbecue Rack Stainless Steel Sausage Vegetable Steak 
+                Beef Grilling Portable Garden Grilling Camping Baking Tools Triple",
+                'description' => join("\n\n", [
+                    "Upgrade your grilling game with the Leisurealeaneag 3 set Barbecue Rack. This set of 
+                    stainless steel racks is perfect for grilling sausages, vegetables, steak, and beef. 
+                    Designed for both home and portable use, these racks are ideal for garden grilling, 
+                    camping, and baking, offering versatility and convenience for all your outdoor cooking 
+                    needs.",
+                    
+                    "The Leisurealeaneag Barbecue Rack set features three different racks, each crafted from 
+                    high-quality stainless steel. This ensures durability and resistance to rust, even 
+                    with frequent use. The robust construction provides excellent heat distribution, 
+                    ensuring your food is cooked evenly and to perfection every time.",
+                    
+                    "Versatility is a key feature of this barbecue rack set. The racks are designed to hold 
+                    various types of food securely, allowing you to grill multiple items simultaneously. 
+                    The sausage rack keeps sausages in place, preventing them from rolling around, while 
+                    the vegetable and steak racks provide ample space for grilling a variety of items. This 
+                    flexibility makes the set perfect for different grilling scenarios.",
+                    
+                    "Ease of use is at the heart of the Leisurealeaneag design. The racks are lightweight 
+                    and portable, making them easy to transport for camping trips or outdoor picnics. They 
+                    are also easy to clean, with a simple design that allows for quick removal of grease 
+                    and food particles. The stainless steel material ensures the racks remain in excellent 
+                    condition, even after multiple washes.",
+                    
+                    "This Leisurealeaneag 3 set Barbecue Rack isn't just a set of grilling tools; it's an 
+                    investment in your outdoor cooking experience. Perfect for those who love to grill and 
+                    enjoy versatile cooking options, these racks offer the durability and functionality 
+                    needed to enhance your barbecuing. With this set in your grilling arsenal, you're well-
+                    equipped to create delicious meals and enjoy memorable moments with family and friends."
+                ]),
+                'price' => 49.99,
+                'stock' => 40,
+                'category_id' => 5,
+            ],
+
         ];
 
         $hardcodedImages = [
@@ -1333,10 +1370,15 @@ class ProductSeeder extends Seeder
                 'images/WeberCompactKettleCharcoalGrillBarbecue.jpg',
                 'images/WeberCompactKettleCharcoalGrillBarbecue2.jpg',
             ],
-            'Anchor Fast Exmouth BBQ Wooden Shelter' =>[
+            'Anchor Fast Exmouth BBQ Wooden Shelter' => [
                 'images/AnchorFastExmouthBBQWoodenShelter.jpg',
                 'images/AnchorFastExmouthBBQWoodenShelter2.jpg',
-            ]   
+            ]  
+            'Leisurealeaneag 3 set Barbecue Rack' => [
+                'images/Leisurealeaneag3SetBarbecueRack.jpg'
+                'images/Leisurealeaneag3SetBarbecueRack2.jpg'
+                'images/Leisurealeaneag3SetBarbecueRack3.jpg'
+            ]
         ];
 
         $faker = Faker::create();  
