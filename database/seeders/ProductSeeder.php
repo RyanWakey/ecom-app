@@ -907,6 +907,45 @@ class ProductSeeder extends Seeder
             ],
             // Next 3 Sections are Sections inside the Outdoor Cooking Section
             // Next 3 entries are for Barbecue & Smoker Accessory Category.
+            [
+                'name' => "Joeji's Cedar Planks for BBQ Grilling & Unique Food Plating",
+                'description' => join("\n\n", [
+                    "Enhance your grilling experience with Joeji's Cedar Planks for BBQ Grilling & Unique 
+                    Food Plating. This set includes 6 pieces of high-quality cedar wood planks, designed 
+                    to infuse your food with rich, smoky flavors. Perfect for use as a fish smoker or for 
+                    slow-cooked meats, these food-safe BBQ wood planks add a gourmet touch to your 
+                    grilling.",
+                    
+                    "Joeji's Cedar Planks are crafted from premium cedar wood, known for its ability to 
+                    impart a distinctive smoky flavor to food. The natural oils in the cedar wood enhance 
+                    the taste of your grilled dishes, making them more flavorful and aromatic. These planks 
+                    are ideal for grilling fish, chicken, beef, and vegetables, offering a versatile 
+                    solution for all your BBQ needs.",
+                    
+                    "The set of 6 planks provides ample cooking space, allowing you to grill multiple items 
+                    at once. Each plank measures perfectly to fit on most grills, ensuring even cooking and 
+                    optimal smoke infusion. The wood planks are easy to use—simply soak them in water 
+                    before placing them on the grill to prevent burning and extend their usability.",
+                    
+                    "Durability and safety are key features of Joeji's Cedar Planks. The food-safe wood is 
+                    free from harmful chemicals, ensuring that your food remains healthy and safe to eat. 
+                    The thick construction of the planks ensures they can withstand high grill temperatures 
+                    and multiple uses, providing long-lasting performance.",
+                    
+                    "These Joeji's Cedar Planks aren't just grilling tools; they're an investment in your 
+                    culinary adventures. Perfect for those who love to experiment with flavors and cooking 
+                    techniques, these planks add a unique touch to your BBQ. With this set of cedar planks 
+                    in your grilling arsenal, you're well-equipped to create delicious, smoky-flavored 
+                    dishes that will impress your guests and elevate your outdoor cooking."
+                ]),
+                'price' => 24.99,
+                'stock' => 100,
+                'category_id' => 5,
+                
+            ],
+            [
+
+            ],
         ];
 
         $hardcodedImages = [
@@ -1050,6 +1089,10 @@ class ProductSeeder extends Seeder
                 'images/Outsunny3SeaterSwingChair2.jpg',
                 'images/Outsunny3SeaterSwingChair3.jpg',
             ],
+            'Joeji\'s Cedar Planks for BBQ Grilling & Unique Food Plating' => [
+                'images/Joeji\'sCedarPlanksforBBQGrilling.jpg',
+                'images/Joeji\'sCedarPlanksforBBQGrilling2.jpg'
+            ]
 
         ];
 
