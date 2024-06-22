@@ -978,6 +978,44 @@ class ProductSeeder extends Seeder
                 'category_id' => 5,
 
             ],
+            [
+                'name' => "Woodabrix Hickory Wood Chips",
+                'description' => join("\n\n", [
+                    "Enhance the flavor of your grilled dishes with Woodabrix Hickory Wood Chips. These BBQ 
+                    wood chips are suitable for use with charcoal, gas, and BBQ smokers, making them a 
+                    versatile addition to your grilling arsenal. Made from 100% natural and eco-friendly 
+                    hickory wood, these chips provide a rich, smoky flavor that enhances the taste of your 
+                    food.",
+                    
+                    "The Woodabrix Hickory Wood Chips are ideal for adding a robust smoky flavor to a 
+                    variety of meats, including beef, pork, chicken, and fish. The natural hickory wood 
+                    chips burn slowly, ensuring a long-lasting smoke that permeates your food, creating a 
+                    delicious and aromatic grilling experience. Each bag contains 800 grams (3.2 liters / 
+                    195 cu in) of premium wood chips, providing plenty of fuel for multiple grilling 
+                    sessions.",
+                    
+                    "Ease of use is a key feature of these wood chips. Simply soak the chips in water for 
+                    about 30 minutes before placing them on the hot coals or in the smoker box of your gas 
+                    grill. The soaking process helps the chips smolder and produce smoke, rather than burn 
+                    quickly, enhancing the smoky flavor of your dishes.",
+                    
+                    "Durability and safety are assured with Woodabrix Hickory Wood Chips. The 100% natural 
+                    and eco-friendly composition means there are no harmful chemicals or additives, ensuring 
+                    a safe and healthy grilling experience. The chips are also packaged in a resealable bag 
+                    for easy storage and to maintain freshness.",
+                    
+                    "These Woodabrix Hickory Wood Chips aren't just a grilling accessory; they're an 
+                    investment in your culinary adventures. Perfect for those who love to experiment with 
+                    flavors and techniques, these wood chips add a unique and rich smoky taste to your 
+                    BBQ. With this bag of hickory wood chips in your grilling arsenal, you're well-equipped 
+                    to create mouthwatering dishes that will impress your guests and elevate your outdoor 
+                    cooking."
+                ]),
+                'price' => 14.99,
+                'stock' => 100,
+                'category_id' => 5,
+
+            ],
         ];
 
         $hardcodedImages = [
@@ -1129,6 +1167,11 @@ class ProductSeeder extends Seeder
                 'images/AlbertAustinCharcoalBBQFireStarterBBQChimneyStarter.jpg',
                 'images/AlbertAustinCharcoalBBQFireStarterBBQChimneyStarter2.jpg',
             ],
+            'Woodabrix Hickory Wood Chips' => [
+                'images/WoodabrixHickoryWoodChips.jpg',
+                'images/WoodabrixHickoryWoodChips2.jpg',
+                'images/WoodabrixHickoryWoodChips3.jpg'
+            ]
 
         ];
 
