@@ -1052,38 +1052,77 @@ class ProductSeeder extends Seeder
                 'category_id' => 5,
             ],
             [
-                'name' => "CosmoGrill Outdoor XL Smoker Barbecue Charcoal Portable BBQ Grill Garden",
+                'name' => "Char-Broil Gas2Coal 2.0 Hybrid Grill - 4 Burner Gas & Coal Barbecue Grill, 
+                Black Finish",
                 'description' => join("\n\n", [
-                    "Elevate your grilling experience with the CosmoGrill Outdoor XL Smoker Barbecue. This 
-                    charcoal portable BBQ grill is designed to provide exceptional performance and versatility 
-                    in your garden. The XL size offers ample cooking space, making it perfect for hosting 
-                    large gatherings and family barbecues.",
+                    "Experience the best of both worlds with the Char-Broil Gas2Coal 2.0 Hybrid Grill. This 
+                    innovative grill combines the convenience of gas grilling with the rich flavor of 
+                    charcoal, offering a versatile and powerful cooking solution. With four burners, this 
+                    hybrid grill provides ample cooking space, making it perfect for large gatherings and 
+                    family barbecues.",
                     
-                    "The CosmoGrill Outdoor XL Smoker features a robust and durable construction, ensuring 
-                    long-lasting performance. The high-quality materials used in its design can withstand 
-                    high temperatures and frequent use, providing you with a reliable grilling solution. The 
-                    portable design allows you to easily move the grill around your garden, making it 
-                    convenient for any outdoor setting.",
+                    "The Char-Broil Gas2Coal Hybrid Grill features a durable black finish that is both 
+                    stylish and resistant to the elements. The high-quality construction ensures long-
+                    lasting performance, allowing you to enjoy delicious grilled meals for years to come. 
+                    The grill's robust design provides stability and durability, ensuring it can handle 
+                    the rigors of frequent use.",
                     
-                    "Versatility is a key feature of this BBQ grill. The CosmoGrill Outdoor XL can be used as 
-                    both a traditional charcoal grill and a smoker, allowing you to explore various cooking 
-                    techniques and flavors. The adjustable air vents and built-in thermometer help you 
-                    maintain precise temperature control, ensuring perfectly cooked meals every time.",
+                    "Versatility is a key feature of this hybrid grill. Easily switch between gas and 
+                    charcoal grilling with the simple and quick conversion system. The gas burners provide 
+                    fast and even heating, while the charcoal tray adds a smoky flavor to your food. This 
+                    flexibility allows you to experiment with different cooking techniques and flavors, 
+                    enhancing your grilling experience.",
                     
-                    "Ease of use is at the heart of the CosmoGrill design. The large cooking area and 
-                    adjustable cooking grates provide flexibility and convenience, allowing you to cook 
-                    multiple items simultaneously. The removable ash catcher makes cleanup quick and easy, 
-                    so you can spend more time enjoying your barbecue and less time on maintenance.",
+                    "Ease of use is at the heart of the Char-Broil Gas2Coal design. The electronic ignition 
+                    system ensures quick and reliable startups, while the built-in temperature gauge 
+                    allows you to monitor the cooking temperature precisely. The side shelves provide 
+                    additional workspace, and the removable ash pan makes cleanup simple and efficient.",
                     
-                    "This CosmoGrill Outdoor XL Smoker Barbecue isn't just a grill; it's an investment in 
-                    your outdoor cooking adventures. Perfect for those who love to entertain and experiment 
-                    with new recipes, this grill offers the performance and versatility needed to create 
-                    delicious and memorable meals. With the CosmoGrill Outdoor XL in your garden, you're 
+                    "This Char-Broil Gas2Coal Hybrid Grill isn't just a BBQ; it's an investment in your 
+                    outdoor cooking adventures. Perfect for those who love to grill and experiment with 
+                    new recipes, this hybrid grill offers the performance and versatility needed to create 
+                    delicious and memorable meals. With the Char-Broil Gas2Coal in your garden, you're 
                     well-equipped to host fantastic barbecues and enjoy quality time with family and 
                     friends."
                 ]),
-                'price' => 199.99,
-                'stock' => 30,
+                'price' => 399.99,
+                'stock' => 20,
+                'category_id' => 5,
+            ],
+            [
+                'name' => "Weber Compact Kettle Charcoal Grill Barbecue",
+                'description' => join("\n\n", [
+                    "Experience the joy of outdoor cooking with the Weber Compact Kettle Charcoal Grill 
+                    Barbecue. This 47cm BBQ grill is designed for versatility and performance, making it 
+                    perfect for grilling, smoking, and cooking outdoors. The compact size is ideal for 
+                    small gardens, patios, and balconies, offering convenience without compromising on 
+                    quality.",
+                    
+                    "The Weber Compact Kettle features a porcelain-enamelled bowl and lid that provide 
+                    superior heat retention and distribution. This durable coating ensures the grill is 
+                    resistant to rust and easy to clean, maintaining its sleek black appearance over time. 
+                    The included lid cover helps to retain heat and smoke, enhancing the flavor of your 
+                    food.",
+                    
+                    "Portability and stability are key features of this BBQ grill. The stand and wheels 
+                    allow you to move the grill easily, making it convenient for any outdoor setting. The 
+                    freestanding design provides stability during cooking, ensuring a safe and enjoyable 
+                    grilling experience.",
+                    
+                    "Ease of use is at the heart of the Weber Compact Kettle design. The built-in 
+                    thermometer allows you to monitor the cooking temperature precisely, while the 
+                    adjustable air vents help you control airflow for perfect grilling and smoking. The 
+                    ash catcher and easy-to-clean grates make maintenance a breeze, so you can focus on 
+                    enjoying your barbecue.",
+                    
+                    "This Weber Compact Kettle Charcoal Grill isn't just a BBQ; it's an investment in your 
+                    outdoor cooking experience. Perfect for those who appreciate quality and versatility, 
+                    this grill offers the performance needed to create delicious and memorable meals. With 
+                    the Weber Compact Kettle in your outdoor arsenal, you're well-equipped to enjoy 
+                    fantastic barbecues with family and friends."
+                ]),
+                'price' => 99.99,
+                'stock' => 50,
                 'category_id' => 5,
             ],
         ];
@@ -1252,7 +1291,10 @@ class ProductSeeder extends Seeder
                 'images/Char-BroilGas2Coal2.0HybridGrill2.jpg',
                 'images/Char-BroilGas2Coal2.0HybridGrill3.jpg',
             ],
-                
+            'Weber Compact Kettle Charcoal Grill Barbecue' => [
+                'images/WeberCompactKettleCharcoalGrillBarbecue.jpg',
+                'images/WeberCompactKettleCharcoalGrillBarbecue2.jpg',
+            ],   
         ];
 
         $faker = Faker::create();  
