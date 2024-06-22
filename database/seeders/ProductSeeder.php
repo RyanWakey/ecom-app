@@ -1373,12 +1373,12 @@ class ProductSeeder extends Seeder
             'Anchor Fast Exmouth BBQ Wooden Shelter' => [
                 'images/AnchorFastExmouthBBQWoodenShelter.jpg',
                 'images/AnchorFastExmouthBBQWoodenShelter2.jpg',
-            ]  
+            ],  
             'Leisurealeaneag 3 set Barbecue Rack' => [
-                'images/Leisurealeaneag3SetBarbecueRack.jpg'
-                'images/Leisurealeaneag3SetBarbecueRack2.jpg'
-                'images/Leisurealeaneag3SetBarbecueRack3.jpg'
-            ]
+                'images/Leisurealeaneag3SetBarbecueRack.jpg',
+                'images/Leisurealeaneag3SetBarbecueRack2.jpg',
+                'images/Leisurealeaneag3SetBarbecueRack3.jpg',
+            ],
         ];
 
         $faker = Faker::create();  
