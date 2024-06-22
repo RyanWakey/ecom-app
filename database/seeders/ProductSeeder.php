@@ -944,6 +944,38 @@ class ProductSeeder extends Seeder
                 
             ],
             [
+                'name' => "Albert Austin Charcoal BBQ Fire Starter BBQ Chimney Starter",
+                'description' => join("\n\n", [
+                    "Kickstart your barbecue with the Albert Austin Charcoal BBQ Fire Starter. This medium 
+                    BBQ chimney starter is designed to quickly and efficiently ignite your charcoal, making 
+                    it ideal for charcoal barbecues, smokers, and Weber BBQ grills. Its durable construction 
+                    and practical design make it perfect for camping, grilling, traveling, and outdoor 
+                    barbecues.",
+                    
+                    "The Albert Austin BBQ Fire Starter features sturdy plastic handles that provide a 
+                    comfortable and safe grip. The handles stay cool to the touch, ensuring you can handle 
+                    the chimney starter with ease, even when it's hot. The chimney design allows for optimal 
+                    airflow, quickly igniting the charcoal and getting your barbecue ready in no time.",
+                    
+                    "Ease of use is a key feature of this fire starter. Simply fill the chimney with charcoal, 
+                    place it over a lit firelighter or crumpled newspaper, and watch as the charcoal ignites 
+                    evenly. The chimney starter's efficient design reduces the time and effort needed to get 
+                    your grill up to temperature, allowing you to focus on cooking and enjoying your barbecue.",
+                    
+                    "Durability and safety are assured with the Albert Austin Charcoal BBQ Fire Starter. The 
+                    high-quality construction ensures long-lasting performance, while the plastic handles 
+                    provide added safety and comfort. The compact size makes it easy to transport and store, 
+                    making it a versatile addition to your outdoor cooking equipment.",
+                    
+                    "This Albert Austin Charcoal BBQ Fire Starter isn't just a tool; it's an investment in 
+                    your grilling experience. Perfect for those who value efficiency and convenience, this 
+                    fire starter helps you achieve perfectly lit charcoal every time. With this chimney 
+                    starter in your BBQ arsenal, you're well-equipped to enjoy hassle-free and enjoyable 
+                    barbecuing, whether at home or on the go."
+                ]),
+                'price' => 19.99,
+                'stock' => 75,
+                'category_id' => 5,
 
             ],
         ];
@@ -1092,7 +1124,11 @@ class ProductSeeder extends Seeder
             'Joeji\'s Cedar Planks for BBQ Grilling & Unique Food Plating' => [
                 'images/Joeji\'sCedarPlanksforBBQGrilling.jpg',
                 'images/Joeji\'sCedarPlanksforBBQGrilling2.jpg'
-            ]
+            ],
+            'Albert Austin Charcoal BBQ Fire Starter BBQ Chimney Starter' => [
+                'images/AlbertAustinCharcoalBBQFireStarterBBQChimneyStarter.jpg',
+                'images/AlbertAustinCharcoalBBQFireStarterBBQChimneyStarter2.jpg',
+            ],
 
         ];
 
