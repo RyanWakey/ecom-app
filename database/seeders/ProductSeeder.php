@@ -1237,7 +1237,11 @@ class ProductSeeder extends Seeder
                 'stock' => 60,
                 'category_id' => 5,
             ],
+            // Next 3 Categories should be within Decor & Lighting (Inside Garden-Accessory Category)
+            // Next 3 Entries are for sub-category Decorative fences
+            [
 
+            ],
         ];
 
         $hardcodedImages = [
