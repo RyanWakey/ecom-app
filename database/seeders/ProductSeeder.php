@@ -1240,7 +1240,39 @@ class ProductSeeder extends Seeder
             // Next 3 Categories should be within Decor & Lighting (Inside Garden-Accessory Category)
             // Next 3 Entries are for sub-category Decorative fences
             [
-
+                'name' => "Artificial Ivy Leaf Hedge Garden Fence",
+                'description' => join("\n\n", [
+                    "Enhance your garden privacy with the Artificial Ivy Leaf Hedge Screening Panels. These 
+                    1m x 3m panels are designed to provide an attractive and effective privacy solution for 
+                    your outdoor space. Perfect for gardens, patios, and balconies, this ivy leaf hedge 
+                    offers a natural look without the maintenance of real plants.",
+                    
+                    "The Artificial Ivy Leaf Hedge features high-quality, UV-resistant leaves that are 
+                    designed to withstand outdoor conditions, ensuring they remain vibrant and green 
+                    throughout the seasons. The dense foliage provides excellent coverage, making it ideal 
+                    for creating secluded areas or hiding unsightly views. The realistic design adds a 
+                    touch of nature to your outdoor decor, enhancing the beauty of your space.",
+                    
+                    "Versatility is a key feature of these screening panels. The flexible roll can be easily 
+                    attached to fences, walls, or existing structures using ties or staples. This makes it 
+                    simple to install and adjust to fit various spaces. Whether you need to cover a large 
+                    area or create a smaller privacy screen, these panels offer a convenient and adaptable 
+                    solution.",
+                    
+                    "Ease of use is at the heart of the Artificial Ivy Leaf Hedge design. The lightweight 
+                    construction makes it easy to handle and install, while the durable materials ensure 
+                    long-lasting performance. The panels require no watering, trimming, or upkeep, making 
+                    them a hassle-free option for enhancing your garden privacy.",
+                    
+                    "This Artificial Ivy Leaf Hedge isn't just a decorative panel; it's an investment in 
+                    the privacy and aesthetics of your outdoor space. Perfect for those who value both 
+                    style and convenience, this screening offers an easy way to improve your garden's 
+                    appearance and functionality. With these ivy leaf panels in your garden, you're well-
+                    equipped to create a beautiful, private oasis in your outdoor area."
+                ]),
+                'price' => 49.99,
+                'stock' => 50,
+                'category_id' => 5,
             ],
         ];
 
@@ -1424,6 +1456,10 @@ class ProductSeeder extends Seeder
             'Leisurealeaneag Non-Stick BBQ Tray' => [
                 'images/LeisurealeaneagNon-StickBBQTray.jpg',
                 'images/LeisurealeaneagNon-StickBBQTray2.jpg'
+            ],
+            'Artificial Ivy Leaf Hedge Garden Fence' => [
+                'images/ArtificialIvyLeafHedgeGardenFence.jpg',
+                'images/ArtificialIvyLeafHedgeGardenFence2.jpg'
             ],
         ];
 
