@@ -1274,6 +1274,42 @@ class ProductSeeder extends Seeder
                 'stock' => 50,
                 'category_id' => 5,
             ],
+            [
+                'name' => "Western Red Cedar Batten Screen (21 Pack) 1.65m2 contemporary fencing cladding",
+                'description' => join("\n\n", [
+                    "Transform your outdoor space with the Western Red Cedar Batten Screen. This 21 pack 
+                    covers 1.65m2 and is perfect for creating contemporary fencing and cladding. The 
+                    18x38mmx1.83mtr slats battens are designed for cedar fence panels, offering a stylish 
+                    and durable solution for your garden or patio.",
+                    
+                    "The Western Red Cedar Batten Screen features high-quality cedar wood, known for its 
+                    natural resistance to decay and insects. The rich, warm tones of the cedar provide a 
+                    beautiful, natural look that enhances any outdoor setting. These battens are ideal for 
+                    creating sleek, modern fence panels that add privacy and aesthetic appeal to your 
+                    garden.",
+                    
+                    "Versatility is a key feature of these cedar battens. They can be used for various 
+                    applications, including fencing, cladding, and decorative screening. The precision-cut 
+                    slats ensure a uniform appearance and easy installation, allowing you to achieve a 
+                    professional finish with minimal effort. Whether you're building a new fence or 
+                    updating an existing one, these battens offer a flexible and attractive solution.",
+                    
+                    "Ease of use is at the heart of the Western Red Cedar Batten Screen design. The slats 
+                    are lightweight and easy to handle, making installation straightforward. The durable 
+                    cedar wood requires minimal maintenance, ensuring your fence panels remain in excellent 
+                    condition over time. Simply treat the wood occasionally to maintain its color and 
+                    longevity.",
+                    
+                    "This Western Red Cedar Batten Screen isn't just a fencing material; it's an investment 
+                    in the beauty and functionality of your outdoor space. Perfect for those who value 
+                    quality and style, these battens offer the performance and visual appeal needed to 
+                    enhance your garden. With this pack of cedar battens, you're well-equipped to create a 
+                    stunning, contemporary fence that stands the test of time."
+                ]),
+                'price' => 99.99,
+                'stock' => 30,
+                'category_id' => 5,
+    ],
         ];
 
         $hardcodedImages = [
@@ -1460,6 +1496,10 @@ class ProductSeeder extends Seeder
             'Artificial Ivy Leaf Hedge Garden Fence' => [
                 'images/ArtificialIvyLeafHedgeGardenFence.jpg',
                 'images/ArtificialIvyLeafHedgeGardenFence2.jpg'
+            ],
+            'Western Red Cedar Batten Screen Fencing' => [
+                'images/WesternRedCedarBattenScreenFence.jpg',
+                'images/WesternRedCedarBattenScreenFence2.jpg'  
             ],
         ];
 
