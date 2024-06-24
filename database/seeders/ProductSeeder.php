@@ -1309,7 +1309,48 @@ class ProductSeeder extends Seeder
                 'price' => 99.99,
                 'stock' => 30,
                 'category_id' => 5,
-    ],
+            ],
+            [
+                'name' => "Thealyn Decorative Garden Fence",
+                'description' => join("\n\n", [
+                    "Enhance your garden's beauty and functionality with the healyn Decorative Garden 
+                    Fence. Measuring 44cm in height and 3m in length, this fence serves as an effective 
+                    animal barrier and decorative border for your yard, patio, or flower bed. Made from 
+                    rustproof metal, these fence panels are designed for durability and long-lasting 
+                    performance.",
+                    
+                    "The healyn Decorative Garden Fence features a stylish design that adds a touch of 
+                    elegance to any outdoor space. The decorative panels are not only functional but also 
+                    enhance the aesthetic appeal of your garden. The rustproof metal construction ensures 
+                    that the fence remains in excellent condition, even when exposed to the elements.",
+                    
+                    "Versatility is a key feature of this garden fence. The no dig design allows for easy 
+                    installation without the need for tools or digging. Simply push the panels into the 
+                    ground to create a sturdy and attractive border. This makes the fence ideal for 
+                    defining garden beds, protecting flower beds from pets, and creating a neat and tidy 
+                    look in your yard.",
+                    
+                    "Ease of use is at the heart of the healyn design. The lightweight panels are easy to 
+                    handle and reposition as needed. The modular design allows you to connect multiple 
+                    panels to fit your desired length, providing flexibility for various landscaping 
+                    projects. The rustproof metal requires minimal maintenance, ensuring the fence remains 
+                    attractive and functional over time.",
+                    
+                    "This healyn Decorative Garden Fence isn't just a functional barrier; it's an 
+                    investment in the beauty and organization of your outdoor space. Perfect for those who 
+                    value both style and practicality, this fence offers the durability and elegance needed 
+                    to enhance your garden. With these decorative panels, you're well-equipped to create a 
+                    stunning and well-protected garden area."
+                ]),
+                'price' => 49.99,
+                'stock' => 40,
+                'category_id' => 5,
+
+            ],
+            // Next 3 entries are for Garden Sculptures & Statues
+            [
+
+            ],
         ];
 
         $hardcodedImages = [
@@ -1501,6 +1542,10 @@ class ProductSeeder extends Seeder
                 'images/WesternRedCedarBattenScreenFence.jpg',
                 'images/WesternRedCedarBattenScreenFence2.jpg'  
             ],
+            'Thealyn Decorative Garden Fence' => [
+                'images/ThealynDecorativeGardenFence.jpg',
+                'images/ThealynDecorativeGardenFence2.jpg'
+            ]
         ];
 
         $faker = Faker::create();  
