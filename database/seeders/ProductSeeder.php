@@ -1384,6 +1384,43 @@ class ProductSeeder extends Seeder
                 'price' => 34.99,
                 'stock' => 50,
                 'category_id' => 5,
+            ],
+            [
+                'name' => "GIGALUMI Elephant Statue",
+                'description' => join("\n\n", [
+                    "Enhance your garden's charm with the GIGALUMI Elephant Statue Garden Decoration. This 
+                    adorable watering elephant figure features solar-powered LED lights, making it a 
+                    delightful addition to your patio or yard. Standing at 10.6 inches (27 cm) tall, this 
+                    statue makes for a perfect gift for mums, birthday presents for women, or a charming 
+                    decoration for any outdoor space.",
+                    
+                    "The GIGALUMI Elephant Statue is crafted from high-quality, weather-resistant resin, 
+                    ensuring durability and long-lasting beauty. The intricate details and vibrant colors 
+                    make this garden ornament a standout piece, adding personality and style to your garden 
+                    decor. The watering can design adds a whimsical touch, making it a unique and eye-
+                    catching addition to your outdoor area.",
+                    
+                    "Versatility is a key feature of this garden statue. The solar-powered LED lights charge 
+                    during the day and automatically illuminate at night, providing a soft, ambient glow 
+                    that enhances the beauty of your outdoor space. This eco-friendly lighting solution 
+                    requires no wiring or external power, making it easy to place the statue anywhere in 
+                    your garden.",
+                    
+                    "Ease of use is at the heart of the GIGALUMI design. The lightweight statue is easy to 
+                    move and position, allowing you to find the perfect spot in your garden, patio, or 
+                    yard. The solar panel is discreetly integrated into the design, maintaining the 
+                    statue's aesthetic while providing reliable lighting. Simply place the statue in a 
+                    sunny spot and enjoy the charming glow each evening.",
+                    
+                    "This GIGALUMI Elephant Statue isn't just a decoration; it's an investment in the beauty 
+                    and ambiance of your outdoor space. Perfect for those who appreciate unique and 
+                    functional garden decor, this statue offers the durability and charm needed to enhance 
+                    your garden. With this delightful elephant figure, you're well-equipped to create a 
+                    magical and inviting outdoor environment."
+                ]),
+                'price' => 39.99,
+                'stock' => 50,
+                'category_id' => 5,
 
             ],
         ];
@@ -1584,6 +1621,11 @@ class ProductSeeder extends Seeder
             'Goodeco Solar Turtle Statue' => [
                 'images/GoodecoSolarTurtleStatue.jpg',
                 'images/GoodecoSolarTurtleStatue2.jpg'
+            ],
+            'GIGALUMI Elephant Statue' => [
+                'images/ElephantStatue.jpg',
+                'images/ElephantStatue2.jpg',
+                'images/ElephantStatue3.jpg' 
             ],
         ];
 
