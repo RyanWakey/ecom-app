@@ -1423,9 +1423,41 @@ class ProductSeeder extends Seeder
                 'category_id' => 5,
             ],
             [
-                
+                'name' => "Wind Spinner",
+                'description' => join("\n\n", [
+                    "Add a touch of elegance to your outdoor space with the Wind Spinner Dahlia. Standing 
+                    at 155cm (61 inches) tall, this single blade easy spinning kinetic wind spinner is 
+                    designed to enhance the beauty of your yard, lawn, or garden. The vertical metal 
+                    sculpture stake construction ensures durability and long-lasting performance, making 
+                    it a stunning addition to any outdoor setting.",
+                    
+                    "The Wind Spinner Dahlia features a beautiful gold finish that catches the light and 
+                    creates a dazzling display as it spins in the breeze. The intricate dahlia design adds 
+                    a touch of sophistication to your garden decor, making it a standout piece that will 
+                    impress your guests and enhance your outdoor environment.",
+                    
+                    "Versatility is a key feature of this wind spinner. The single blade design allows for 
+                    smooth and easy spinning, creating a mesmerizing kinetic display. The vertical metal 
+                    stake construction ensures stability and durability, making it suitable for various 
+                    outdoor settings, including gardens, lawns, and yards. This wind spinner is perfect 
+                    for adding a dynamic and visually appealing element to your outdoor space.",
+                    
+                    "Ease of use is at the heart of the Wind Spinner Dahlia design. The lightweight 
+                    construction makes it easy to install and position, allowing you to find the perfect 
+                    spot in your garden. The metal stake can be easily inserted into the ground, providing 
+                    a secure and stable base for the wind spinner. Simply place it in an area with a 
+                    gentle breeze and enjoy the captivating motion.",
+                    
+                    "This Wind Spinner Dahlia isn't just a garden ornament; it's an investment in the 
+                    beauty and ambiance of your outdoor space. Perfect for those who appreciate unique and 
+                    elegant garden decor, this wind spinner offers the durability and charm needed to 
+                    enhance your garden. With this stunning wind spinner in your garden, you're well-
+                    equipped to create a magical and inviting outdoor environment."
+                ]),
+                'price' => 49.99,
+                'stock' => 40,
+                'category_id' => 5,
             ],
-
         ];
 
         $hardcodedImages = [
