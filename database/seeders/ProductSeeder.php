@@ -1349,6 +1349,41 @@ class ProductSeeder extends Seeder
             ],
             // Next 3 entries are for Garden Sculptures & Statues
             [
+                'name' => "Goodeco Solar Turtle Statue Garden",
+                'description' => join("\n\n", [
+                    "Add charm to your outdoor space with the Goodeco Solar Turtle Statue Garden Ornaments. 
+                    This adorable garden tortoise figurine features a built-in succulent and solar-powered 
+                    LED lights, making it a delightful decoration for your patio, balcony, yard, or lawn. 
+                    Perfect as a unique housewarming gift, this statue brings a touch of whimsy and 
+                    functionality to any outdoor area.",
+                    
+                    "The Goodeco Solar Turtle Statue is crafted from high-quality, weather-resistant resin, 
+                    ensuring durability and long-lasting beauty. The detailed design and vibrant colors 
+                    make this garden ornament a standout piece, adding personality and style to your 
+                    garden decor. The succulent on the turtle's back adds a natural element, enhancing its 
+                    appeal.",
+                    
+                    "Versatility is a key feature of this garden statue. The solar-powered LED lights charge 
+                    during the day and automatically illuminate at night, providing a soft, ambient glow 
+                    that enhances the beauty of your outdoor space. This eco-friendly lighting solution 
+                    requires no wiring or external power, making it easy to place the statue anywhere in 
+                    your garden.",
+                    
+                    "Ease of use is at the heart of the Goodeco design. The lightweight statue is easy to 
+                    move and position, allowing you to find the perfect spot in your garden, patio, or 
+                    balcony. The solar panel is discreetly integrated into the design, maintaining the 
+                    statue's aesthetic while providing reliable lighting. Simply place the statue in a 
+                    sunny spot and enjoy the charming glow each evening.",
+                    
+                    "This Goodeco Solar Turtle Statue isn't just a decoration; it's an investment in the 
+                    beauty and ambiance of your outdoor space. Perfect for those who appreciate unique and 
+                    functional garden decor, this statue offers the durability and charm needed to enhance 
+                    your garden. With this delightful tortoise figurine, you're well-equipped to create a 
+                    magical and inviting outdoor environment."
+                ]),
+                'price' => 34.99,
+                'stock' => 50,
+                'category_id' => 5,
 
             ],
         ];
@@ -1545,7 +1580,11 @@ class ProductSeeder extends Seeder
             'Thealyn Decorative Garden Fence' => [
                 'images/ThealynDecorativeGardenFence.jpg',
                 'images/ThealynDecorativeGardenFence2.jpg'
-            ]
+            ],
+            'Goodeco Solar Turtle Statue' => [
+                'images/GoodecoSolarTurtleStatue.jpg',
+                'images/GoodecoSolarTurtleStatue2.jpg'
+            ],
         ];
 
         $faker = Faker::create();  
