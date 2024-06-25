@@ -1421,8 +1421,11 @@ class ProductSeeder extends Seeder
                 'price' => 39.99,
                 'stock' => 50,
                 'category_id' => 5,
-
             ],
+            [
+                
+            ],
+
         ];
 
         $hardcodedImages = [
@@ -1626,6 +1629,10 @@ class ProductSeeder extends Seeder
                 'images/ElephantStatue.jpg',
                 'images/ElephantStatue2.jpg',
                 'images/ElephantStatue3.jpg' 
+            ],
+            'Wind Spinner' => [
+                'images/WindSpinner.jpg',
+                'images/WindSpinner2.jpg'
             ],
         ];
 
