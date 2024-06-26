@@ -1460,7 +1460,40 @@ class ProductSeeder extends Seeder
             ],
             // Next 3 entries are for Wind Chimes sub category
             [
-
+                'name' => "Winzwon Solar Butterfly Wind Chimes",
+                'description' => join("\n\n", [
+                    "Delight your loved ones with the Winzwon Solar Butterfly Wind Chimes, perfect as 
+                    birthday gifts for women, grandmas, nannies, and mums. These charming solar lights 
+                    are designed to add a touch of beauty and tranquility to any garden, yard, or porch, 
+                    making them ideal for Christmas, Easter, or any special occasion.",
+                    
+                    "The Winzwon Solar Butterfly Wind Chimes feature beautifully crafted butterflies that 
+                    light up with solar-powered LEDs. The vibrant colors and delicate design create a 
+                    stunning visual display, adding a whimsical touch to your outdoor decor. The gentle 
+                    chimes produce a soothing sound as they sway in the breeze, enhancing the peaceful 
+                    ambiance of your garden.",
+                    
+                    "Versatility is a key feature of these solar wind chimes. They are perfect for hanging 
+                    in various outdoor settings, including gardens, yards, porches, and patios. The solar 
+                    panel charges during the day and automatically lights up the butterflies at night, 
+                    providing a magical glow without the need for external power sources. This eco-friendly 
+                    lighting solution is both beautiful and practical.",
+                    
+                    "Ease of use is at the heart of the Winzwon design. The lightweight construction makes 
+                    these wind chimes easy to hang and move, allowing you to find the perfect spot in your 
+                    outdoor space. The durable materials ensure long-lasting performance, even in various 
+                    weather conditions. Simply place them in an area with direct sunlight to enjoy their 
+                    enchanting glow each evening.",
+                    
+                    "These Winzwon Solar Butterfly Wind Chimes aren't just decorations; they're thoughtful 
+                    gifts that bring joy and serenity to any outdoor space. Perfect for those who appreciate 
+                    unique and functional garden decor, these wind chimes offer the beauty and tranquility 
+                    needed to enhance your garden. With these delightful solar lights, you're well-equipped 
+                    to create a magical and inviting environment for yourself and your loved ones."
+                ]),
+                'price' => 29.99,
+                'stock' => 60,
+                'category_id' => 5,
             ],
         ];
 
@@ -1670,6 +1703,10 @@ class ProductSeeder extends Seeder
                 'images/WindSpinner.jpg',
                 'images/WindSpinner2.jpg'
             ],
+            'Winzwon Solar Butterfly Wind Chimes' => [
+                'images/WinzwonSolarButterflyWindChimes.jpg'
+            ],
+            
         ];
 
         $faker = Faker::create();  
