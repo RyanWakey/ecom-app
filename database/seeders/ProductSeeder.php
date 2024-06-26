@@ -1458,6 +1458,10 @@ class ProductSeeder extends Seeder
                 'stock' => 40,
                 'category_id' => 5,
             ],
+            // Next 3 entries are for Wind Chimes sub category
+            [
+
+            ],
         ];
 
         $hardcodedImages = [
