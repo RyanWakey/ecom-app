@@ -1495,6 +1495,43 @@ class ProductSeeder extends Seeder
                 'stock' => 60,
                 'category_id' => 5,
             ],
+            [
+                'name' => "Wind Chimes, 65 cm Wooden Wind Chimes with 6 Hollow Aluminium Tubes",
+                'description' => join("\n\n", [
+                    "Enhance the ambiance of your outdoor space with these elegant 65 cm Wooden Wind 
+                    Chimes. Featuring six hollow aluminium tubes, these decorative hanging chimes create 
+                    a soothing and melodic sound that adds tranquility to any patio, garden, or home 
+                    setting. Perfect as an ornament, these wind chimes bring a touch of serenity to your 
+                    outdoor decor.",
+                    
+                    "The Wooden Wind Chimes are crafted with high-quality materials, ensuring durability 
+                    and long-lasting beauty. The wooden top and clapper provide a natural and rustic 
+                    aesthetic, while the six aluminium tubes produce a clear, resonant sound when they 
+                    sway in the breeze. The combination of wood and metal adds a stylish and harmonious 
+                    element to your garden decor.",
+                    
+                    "Versatility is a key feature of these wind chimes. They are ideal for hanging in 
+                    various outdoor settings, including patios, gardens, balconies, and porches. The 
+                    lightweight design makes them easy to hang and move, allowing you to find the perfect 
+                    spot to enjoy their calming sounds. These wind chimes are also suitable for indoor use, 
+                    adding a decorative touch to any room in your home.",
+                    
+                    "Ease of use is at the heart of the Wooden Wind Chimes design. The sturdy hanging loop 
+                    allows for easy installation, while the durable materials ensure the chimes remain 
+                    functional and attractive even in different weather conditions. The low-maintenance 
+                    design means you can enjoy the beauty and tranquility of these chimes with minimal 
+                    effort.",
+                    
+                    "These Wooden Wind Chimes aren't just decorations; they're an investment in the peace 
+                    and beauty of your outdoor and indoor spaces. Perfect for those who appreciate unique 
+                    and functional decor, these wind chimes offer the elegance and tranquility needed to 
+                    enhance your environment. With these charming wind chimes, you're well-equipped to 
+                    create a serene and inviting atmosphere for yourself and your guests."
+                ]),
+                'price' => 19.99,
+                'stock' => 70,
+                'category_id' => 5,
+            ],
         ];
 
         $hardcodedImages = [
@@ -1706,7 +1743,9 @@ class ProductSeeder extends Seeder
             'Winzwon Solar Butterfly Wind Chimes' => [
                 'images/WinzwonSolarButterflyWindChimes.jpg'
             ],
-            
+            'Wooden Wind Chimes with Hollow Aluminium Tubes' => [
+                'images/WoodenWindChimesWithHollowAluminiumTubes.jpg'
+            ],
         ];
 
         $faker = Faker::create();  
