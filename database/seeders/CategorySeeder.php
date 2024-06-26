@@ -75,15 +75,16 @@ class CategorySeeder extends Seeder
             ],
         ]);
 
-        /** When to Use Which Approach
-            Eloquent ORM: Use when you want to leverage Laravel’s features like relationships, 
-            model events, and mutators. Best for smaller sets of data or when you need the convenience and 
-            readability of Eloquent’s syntax.
-
-            Query Builder (insertGetId and insert): Use when performance is critical, 
-            especially for large datasets. Also useful when you need the ID of the inserted record 
-            immediately or when inserting multiple records in one query.
-        */
-            
+        
+        /**
+        *  When to Use Which Approach
+        *    Eloquent ORM: Use when you want to leverage Laravel’s features like relationships, 
+        *    model events, and mutators. Best for smaller sets of data or when you need the convenience and 
+        *    readability of Eloquent’s syntax..
+        *
+        *    Query Builder (insertGetId and insert): Use when performance is critical, 
+        *    especially for large datasets. Also useful when you need the ID of the inserted record 
+        *    immediately or when inserting multiple records in one query.
+        */    
     }
 }
