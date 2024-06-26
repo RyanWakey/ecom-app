@@ -1532,6 +1532,43 @@ class ProductSeeder extends Seeder
                 'stock' => 70,
                 'category_id' => 5,
             ],
+            [
+                'name' => "Solalite Solar Wind Chime Light Spiral Spinner Color Changing LED Lamp",
+                'description' => join("\n\n", [
+                    "Illuminate your outdoor space with the Solalite Solar Wind Chime Light Spiral Spinner. 
+                    This decorative wind chime features color-changing LED lights that create a romantic 
+                    and enchanting atmosphere for your patio, yard, or garden. The waterproof design 
+                    ensures durability, making it perfect for all-weather use.",
+                    
+                    "The Solalite Solar Wind Chime Light features a beautiful spiral spinner design that 
+                    captures the light and creates a mesmerizing display. The color-changing LED lights 
+                    add a magical touch, enhancing the ambiance of your outdoor space. The solar-powered 
+                    design means no wiring or external power sources are needed, providing an eco-friendly 
+                    and cost-effective lighting solution.",
+                    
+                    "Versatility is a key feature of this wind chime light. It is perfect for hanging in 
+                    various outdoor settings, including patios, gardens, balconies, and porches. The 
+                    included hanging hook makes it easy to install and move, allowing you to find the 
+                    perfect spot to enjoy the captivating light display. The lightweight and compact design 
+                    make it a versatile addition to any outdoor decor.",
+                    
+                    "Ease of use is at the heart of the Solalite design. The solar panel charges during the 
+                    day and automatically lights up the LED lamps at night, providing a continuous and 
+                    hassle-free lighting experience. The waterproof construction ensures the wind chime 
+                    light remains functional and attractive even in different weather conditions, making it 
+                    a reliable choice for year-round use.",
+                    
+                    "This Solalite Solar Wind Chime Light isn't just a decorative item; it's an investment 
+                    in the beauty and ambiance of your outdoor space. Perfect for those who appreciate 
+                    unique and romantic garden decor, this wind chime light offers the charm and 
+                    functionality needed to enhance your environment. With this enchanting wind chime light, 
+                    you're well-equipped to create a magical and inviting atmosphere for yourself and your 
+                    guests."
+                ]),
+                'price' => 24.99,
+                'stock' => 50,
+                'category_id' => 5,
+            ],
         ];
 
         $hardcodedImages = [
@@ -1745,6 +1782,11 @@ class ProductSeeder extends Seeder
             ],
             'Wooden Wind Chimes with Hollow Aluminium Tubes' => [
                 'images/WoodenWindChimesWithHollowAluminiumTubes.jpg'
+            ],
+            'Solalite Solar Wind Chime Light Spiral' => [
+                'images/SolaliteSolarWindChimeLightSpiral.jpg',
+                'images/SolaliteSolarWindChimeLightSpiral2.jpg',
+                'images/SolaliteSolarWindChimeLightSpiral3.jpg'
             ],
         ];
 
