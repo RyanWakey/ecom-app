@@ -34,8 +34,8 @@ class CategorySeeder extends Seeder
         $category4->description = "Kitchen appliances and utensils";
         $category4->save(); 
 
-        // Different way of doing it (query builder approach with insertGetId)
-        $gardenEssentialsId = DB::table('categories')->insertGetId([
+         // Create Garden-Essentials as the main category
+         $gardenEssentialsId = DB::table('categories')->insertGetId([
             'name' => 'Garden-Essentials',
             'description' => 'Essential tools and products for garden care',
             'parent_id' => null,
@@ -43,33 +43,59 @@ class CategorySeeder extends Seeder
             'updated_at' => now(),
         ]);
 
-        // Insert the subcategories (query builder approach with insert)
+        // Insert subcategories under Garden-Essentials
+        $furnitureId = DB::table('categories')->insertGetId([
+            'name' => 'Furniture',
+            'description' => 'Garden furniture to enhance your outdoor space.',
+            'parent_id' => $gardenEssentialsId,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        $gardeningId = DB::table('categories')->insertGetId([
+            'name' => 'Gardening',
+            'description' => 'Tools and supplies for gardening.',
+            'parent_id' => $gardenEssentialsId,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        $outdoorCookingId = DB::table('categories')->insertGetId([
+            'name' => 'OutdoorCooking',
+            'description' => 'Equipment for outdoor cooking and barbecues.',
+            'parent_id' => $gardenEssentialsId,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        $decorAndLightingId = DB::table('categories')->insertGetId([
+            'name' => 'Decor and Lighting',
+            'description' => 'Decorative items and lighting for your garden.',
+            'parent_id' => $gardenEssentialsId,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        // Insert subcategories under Gardening
         DB::table('categories')->insert([
             [
-                'name' => 'Furniture',
-                'description' => 'Garden furniture to enhance your outdoor space.',
-                'parent_id' => $gardenEssentialsId,
+                'name' => 'Lawn & Garden Watering Equipment',
+                'description' => 'All equipment for watering lawns and gardens.',
+                'parent_id' => $gardeningId,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'name' => 'Gardening',
-                'description' => 'Tools and supplies for gardening.',
-                'parent_id' => $gardenEssentialsId,
+                'name' => 'Pest Control',
+                'description' => 'Products for controlling garden pests.',
+                'parent_id' => $gardeningId,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
-                'name' => 'OutdoorCooking',
-                'description' => 'Equipment for outdoor cooking and barbecues.',
-                'parent_id' => $gardenEssentialsId,
-                'created_at' => now(),
-                'updated_at' => now(),
-            ],
-            [
-                'name' => 'Decor and Lighting',
-                'description' => 'Decorative items and lighting for your garden.',
-                'parent_id' => $gardenEssentialsId,
+                'name' => 'Plant and Soil Monitoring',
+                'description' => 'Equipment for monitoring plant and soil health.',
+                'parent_id' => $gardeningId,
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
