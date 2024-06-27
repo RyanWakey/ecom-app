@@ -698,7 +698,7 @@ class ProductSeeder extends Seeder
                 'stock' => 100,
                 'category_id' => 5,
             ],
-            // Next 3 entries are for Sub-Category of Garden Furiture and Accessories called Outdoor Screens & Protection.
+            // Next 3 entries are for Sub-Category of Furiture called Outdoor Screens & Protection.
             [
                 'name' => "VOUNOT Privacy Netting 1×10m Garden Screening 150 g/m² HDPE Shading Net",
                 'description' => join("\n\n", [
@@ -802,7 +802,7 @@ class ProductSeeder extends Seeder
                 'stock' => 30,
                 'category_id' => 5,
             ],
-            // Next 3 entries are for Sub-Category of Garden Furiture and Accessories called Hammocks, Stands & Accessories.
+            // Next 3 entries are for Sub-Category of Furiture called Hammocks, Stands & Accessories.
             [
                 'name' => "VonHaus Hanging Chair Outdoor",
                 'description' => join("\n\n", [

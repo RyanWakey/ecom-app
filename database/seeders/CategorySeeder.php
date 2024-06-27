@@ -76,6 +76,32 @@ class CategorySeeder extends Seeder
             'updated_at' => now(),
         ]);
 
+
+         // Insert subcategories under Furniture
+         DB::table('categories')->insert([
+            [
+                'name' => 'Garden Furniture Sets',
+                'description' => 'Complete sets of garden furniture.',
+                'parent_id' => $furnitureId,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Outdoor Screens & Protection',
+                'description' => 'Screens and protective items for outdoor spaces.',
+                'parent_id' => $furnitureId,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Hammocks, Stands & Accessories',
+                'description' => 'Hammocks, stands, and related accessories.',
+                'parent_id' => $furnitureId,
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+        ]);
+        
         // Insert subcategories under Gardening
         DB::table('categories')->insert([
             [
