@@ -1238,7 +1238,7 @@ class ProductSeeder extends Seeder
                 'category_id' => 5,
             ],
             // Next 3 Categories should be within Decor & Lighting (Inside Garden-Accessory Category)
-            // Next 3 Entries are for sub-category Decorative fences
+            // Next 3 Entries are for Sub-Category Decorative fences
             [
                 'name' => "Artificial Ivy Leaf Hedge Garden Fence",
                 'description' => join("\n\n", [

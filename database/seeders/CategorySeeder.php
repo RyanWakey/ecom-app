@@ -151,6 +151,31 @@ class CategorySeeder extends Seeder
                     'updated_at' => now(),
                 ],
             ]);
+
+            // Insert subcategories under Decor and Lighting
+            DB::table('categories')->insert([
+                [
+                    'name' => 'Decorative Fences',
+                    'description' => 'Fences for decoration and privacy.',
+                    'parent_id' => $decorAndLightingId,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ],
+                [
+                    'name' => 'Garden Sculptures and Statues',
+                    'description' => 'Sculptures and statues for garden decor.',
+                    'parent_id' => $decorAndLightingId,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ],
+                [
+                    'name' => 'Wind Chimes',
+                    'description' => 'Decorative wind chimes for gardens.',
+                    'parent_id' => $decorAndLightingId,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ],
+            ]);
         
         /**
         *  When to Use Which Approach
