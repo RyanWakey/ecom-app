@@ -905,8 +905,8 @@ class ProductSeeder extends Seeder
                 'stock' => 20,
                 'category_id' => 5,       
             ],
-            // Next 3 Sections are Sections inside the Outdoor Cooking Section
-            // Next 3 entries are for Barbecue & Smoker Accessory Category.
+            // Next 3 Sections are Sections inside the Outdoor Cooking Category
+            // Next 3 Entries are for Barbecue & Smoker Accessories Category.
             [
                 'name' => "Joeji's Cedar Planks for BBQ Grilling & Unique Food Plating",
                 'description' => join("\n\n", [

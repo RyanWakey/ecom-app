@@ -101,7 +101,7 @@ class CategorySeeder extends Seeder
                 'updated_at' => now(),
             ],
         ]);
-        
+
         // Insert subcategories under Gardening
         DB::table('categories')->insert([
             [
@@ -127,6 +127,30 @@ class CategorySeeder extends Seeder
             ],
         ]);
 
+             // Insert subcategories under OutdoorCooking
+             DB::table('categories')->insert([
+                [
+                    'name' => 'Barbecue & Smoker Accessories',
+                    'description' => 'Accessories for barbecues and smokers.',
+                    'parent_id' => $outdoorCookingId,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ],
+                [
+                    'name' => 'Barbecue & Smoker',
+                    'description' => 'Various types of barbecues and smokers.',
+                    'parent_id' => $outdoorCookingId,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ],
+                [
+                    'name' => 'Barbecue Huts',
+                    'description' => 'Shelters and huts for barbecuing.',
+                    'parent_id' => $outdoorCookingId,
+                    'created_at' => now(),
+                    'updated_at' => now(),
+                ],
+            ]);
         
         /**
         *  When to Use Which Approach
