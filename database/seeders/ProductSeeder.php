@@ -1790,6 +1790,15 @@ class ProductSeeder extends Seeder
             ],
             'Garden Essentials Furniture' => [
                 'images/GardenEssentialsFurniture.jpg'
+            ],
+            'Garden Essentials Gardening' => [
+                'images/GardenEssentialsGardening.jpg'
+            ],
+            'Garden Essentials Gardening' => [
+                'images/GardenEssentialsCooking.jpg'
+            ],
+            'Garden Essentials Gardening' => [
+                'images/GardenEssentialsLighting.jpg'
             ]
         ];
 
