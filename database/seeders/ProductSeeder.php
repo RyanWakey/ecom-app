@@ -1788,6 +1788,9 @@ class ProductSeeder extends Seeder
                 'images/SolaliteSolarWindChimeLightSpiral2.jpg',
                 'images/SolaliteSolarWindChimeLightSpiral3.jpg'
             ],
+            'Garden Essentials Furniture' => [
+                'images/GardenEssentialsFurniture.jpg'
+            ]
         ];
 
         $faker = Faker::create();  
