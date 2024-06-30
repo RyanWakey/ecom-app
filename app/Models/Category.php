@@ -16,6 +16,11 @@ class Category extends Model
         return $this->hasMany(Product::class);
     }
 
+    public function subcategories()
+    {
+        return $this->hasMany(Category::class, 'parent_id');
+    }
+    
     public function getImageUrlAttribute()
     {
         return url('storage/' . $this->image_path);
