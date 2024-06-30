@@ -67,4 +67,29 @@ class CategoryController extends Controller
         $category->delete();
         return response()->json(null, 204);
     }
+
+    public function getGardenEssentialsSubcategories()
+    {
+        // Fetch the Garden-Essentials category
+        $gardenEssentials = Category::where('name', 'Garden-Essentials')->first();
+
+        // Ensure the category exists
+        if (!$gardenEssentials) {
+            return response()->json(['error' => 'Garden-Essentials category not found'], 404);
+        }
+
+        // Fetch the subcategories
+        $subcategories = $gardenEssentials->subcategories()->get(['name', 'image_path']);
+
+        // Transform the subcategories to include the image URL
+        $subcategories = $subcategories->map(function ($subcategory) {
+            return [
+                'name' => $subcategory->name,
+                'image_url' => $subcategory->image_url,
+            ];
+        });
+
+        // Return the response
+        return response()->json($subcategories);
+    }
 }
