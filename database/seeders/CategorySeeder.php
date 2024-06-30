@@ -89,6 +89,7 @@ class CategorySeeder extends Seeder
             [
                 'name' => 'Garden Furniture Sets',
                 'description' => 'Complete sets of garden furniture.',
+                'image_path' => 'images/SubCategoryGardenFurnitureSets.jpg',
                 'parent_id' => $furnitureId,
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -96,6 +97,7 @@ class CategorySeeder extends Seeder
             [
                 'name' => 'Outdoor Screens & Protection',
                 'description' => 'Screens and protective items for outdoor spaces.',
+                'image_path' => 'images/SubCategoryGardenOutdoorScreens&Protection.jpg',
                 'parent_id' => $furnitureId,
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -103,6 +105,7 @@ class CategorySeeder extends Seeder
             [
                 'name' => 'Hammocks, Stands & Accessories',
                 'description' => 'Hammocks, stands, and related accessories.',
+                'image_path' => 'images/SubCategoryGardenHammocksStands&Accessoriesa.jpg',
                 'parent_id' => $furnitureId,
                 'created_at' => now(),
                 'updated_at' => now(),
