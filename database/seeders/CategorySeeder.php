@@ -145,6 +145,7 @@ class CategorySeeder extends Seeder
                 [
                     'name' => 'Barbecue & Smoker Accessories',
                     'description' => 'Accessories for barbecues and smokers.',
+                    'image_path' => 'images/SubCategoryGardenOutdoorCookingBarbecue&SmokerAccessories.jpg',
                     'parent_id' => $outdoorCookingId,
                     'created_at' => now(),
                     'updated_at' => now(),
@@ -152,6 +153,7 @@ class CategorySeeder extends Seeder
                 [
                     'name' => 'Barbecue & Smoker',
                     'description' => 'Various types of barbecues and smokers.',
+                    'image_path' => 'images/SubCategoryGardenOutdoorCookingBarbecue&Smoker.jpg',
                     'parent_id' => $outdoorCookingId,
                     'created_at' => now(),
                     'updated_at' => now(),
@@ -159,6 +161,7 @@ class CategorySeeder extends Seeder
                 [
                     'name' => 'Barbecue Huts',
                     'description' => 'Shelters and huts for barbecuing.',
+                    'image_path' => 'images/SubCategoryGardenOutdoorCookingBarbecueHuts.jpg',
                     'parent_id' => $outdoorCookingId,
                     'created_at' => now(),
                     'updated_at' => now(),
