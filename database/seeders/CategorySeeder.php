@@ -105,7 +105,7 @@ class CategorySeeder extends Seeder
             [
                 'name' => 'Hammocks, Stands & Accessories',
                 'description' => 'Hammocks, stands, and related accessories.',
-                'image_path' => 'images/SubCategoryGardenHammocksStands&Accessoriesa.jpg',
+                'image_path' => 'images/SubCategoryGardenHammocksStands&Accessories.jpg',
                 'parent_id' => $furnitureId,
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -117,6 +117,7 @@ class CategorySeeder extends Seeder
             [
                 'name' => 'Lawn & Garden Watering Equipment',
                 'description' => 'All equipment for watering lawns and gardens.',
+                'image_path' => 'images/SubCategoryGardenWateringEquipment.jpg',
                 'parent_id' => $gardeningId,
                 'created_at' => now(),
                 'updated_at' => now(),
@@ -125,12 +126,14 @@ class CategorySeeder extends Seeder
                 'name' => 'Pest Control',
                 'description' => 'Products for controlling garden pests.',
                 'parent_id' => $gardeningId,
+                'image_path' => 'images/SubCategoryGardenPestControl.jpg',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
             [
                 'name' => 'Plant and Soil Monitoring',
                 'description' => 'Equipment for monitoring plant and soil health.',
+                'image_path' => 'images/SubCategoryGardenPlant&SoilMonitoring.jpg',
                 'parent_id' => $gardeningId,
                 'created_at' => now(),
                 'updated_at' => now(),
