@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('description')->nullable();
+            $table->string('image_path')->nullable(); 
             $table->unsignedBigInteger('parent_id')->nullable(); // for nested categories
             $table->foreign('parent_id')->references('id')->on('categories')->onDelete('cascade'); // Foreign key constraint for self-referencing
             $table->timestamps();
