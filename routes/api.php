@@ -92,7 +92,5 @@ Route::middleware('auth:sanctum')->group(function () {
 Route::get('/popular-categories', [CategoryController::class, 'index']);
 // Route to get today's deals
 Route::get('/today-deals', [DealController::class, 'todayDeals']);
-// Route to get Garden-essentials
-Route::get('/garden-essentials', [ProductController::class, 'getGardenEssentials']);
 // Route to get Garden-essentials Sub Categories
 Route::get('/garden-essentials-subcategories', [CategoryController::class, 'getGardenEssentialsSubcategories']);

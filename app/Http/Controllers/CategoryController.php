@@ -68,27 +68,46 @@ class CategoryController extends Controller
         return response()->json(null, 204);
     }
 
+    /**
+     * Fetch the subcategories of "Garden-Essentials" with their names and images.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function getGardenEssentialsSubcategories()
     {
-        // Fetch the Garden-Essentials category
-        $gardenEssentials = Category::where('name', 'Garden-Essentials')->first();
+        try {
+            // Fetch the Garden-Essentials category
+            $gardenEssentials = Category::where('name', 'Garden-Essentials')->first();
 
-        // Ensure the category exists
-        if (!$gardenEssentials) {
-            return response()->json(['error' => 'Garden-Essentials category not found'], 404);
+            // Ensure the category exists
+            if (!$gardenEssentials) {
+                return response()->json([
+                    'message' => 'Garden-Essentials category not found',
+                    'data' => []
+                ], 404);
+            }
+
+            // Fetch the subcategories
+            $subcategories = $gardenEssentials->subcategories()->get(['name', 'image_path']);
+
+            // Transform the subcategories to include the image URL
+            $subcategories = $subcategories->map(function ($subcategory) {
+                return [
+                    'name' => $subcategory->name,
+                    'image_url' => url('images/' . $subcategory->image_path),
+                ];
+            });
+
+            return response()->json([
+                'message' => 'Garden essentials subcategories fetched successfully',
+                'data' => $subcategories
+            ], 200);
+
+        } catch (\Exception $e) {
+            return response()->json([
+                'message' => 'An error occurred while fetching garden essentials subcategories',
+                'error' => $e->getMessage()
+            ], 500);
         }
-
-        // Fetch the subcategories
-        $subcategories = $gardenEssentials->subcategories()->get(['name', 'image_path']);
-
-        // Transform the subcategories to include the image URL
-        $subcategories = $subcategories->map(function ($subcategory) {
-            return [
-                'name' => $subcategory->name,
-                'image_url' => $subcategory->image_url,
-            ];
-        });
-        
-        return response()->json($subcategories);
     }
 }
