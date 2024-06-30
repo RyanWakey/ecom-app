@@ -173,6 +173,7 @@ class CategorySeeder extends Seeder
                 [
                     'name' => 'Decorative Fences',
                     'description' => 'Fences for decoration and privacy.',
+                    'image_path' => 'images/SubCategoryGardenDecor&LightingDecorativeFences.jpg',
                     'parent_id' => $decorAndLightingId,
                     'created_at' => now(),
                     'updated_at' => now(),
@@ -180,6 +181,7 @@ class CategorySeeder extends Seeder
                 [
                     'name' => 'Garden Sculptures and Statues',
                     'description' => 'Sculptures and statues for garden decor.',
+                    'image_path' => 'images/SubCategoryGardenDecor&LightingSculptures&Statues.jpg',
                     'parent_id' => $decorAndLightingId,
                     'created_at' => now(),
                     'updated_at' => now(),
@@ -187,6 +189,7 @@ class CategorySeeder extends Seeder
                 [
                     'name' => 'Wind Chimes',
                     'description' => 'Decorative wind chimes for gardens.',
+                    'image_path' => 'images/SubCategoryGardenDecor&LightingWindChimes.jpg',
                     'parent_id' => $decorAndLightingId,
                     'created_at' => now(),
                     'updated_at' => now(),
