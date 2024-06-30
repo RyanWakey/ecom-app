@@ -40,6 +40,7 @@ class CategorySeeder extends Seeder
          $gardenEssentialsId = DB::table('categories')->insertGetId([
             'name' => 'Garden-Essentials',
             'description' => 'Essential tools and products for garden care',
+            'image_path' => null,
             'parent_id' => null,
             'created_at' => now(),
             'updated_at' => now(),
@@ -49,6 +50,7 @@ class CategorySeeder extends Seeder
         $furnitureId = DB::table('categories')->insertGetId([
             'name' => 'Furniture',
             'description' => 'Garden furniture to enhance your outdoor space.',
+            'image_path' => 'images/GardenEssentialsFurniture.jpg',
             'parent_id' => $gardenEssentialsId,
             'created_at' => now(),
             'updated_at' => now(),
@@ -57,6 +59,7 @@ class CategorySeeder extends Seeder
         $gardeningId = DB::table('categories')->insertGetId([
             'name' => 'Gardening',
             'description' => 'Tools and supplies for gardening.',
+            'image_path' => 'images/GardenEssentialsGardening.jpg',
             'parent_id' => $gardenEssentialsId,
             'created_at' => now(),
             'updated_at' => now(),
@@ -65,6 +68,7 @@ class CategorySeeder extends Seeder
         $outdoorCookingId = DB::table('categories')->insertGetId([
             'name' => 'OutdoorCooking',
             'description' => 'Equipment for outdoor cooking and barbecues.',
+            'image_path' => 'images/GardenEssentialsCooking.jpg',
             'parent_id' => $gardenEssentialsId,
             'created_at' => now(),
             'updated_at' => now(),
@@ -73,6 +77,7 @@ class CategorySeeder extends Seeder
         $decorAndLightingId = DB::table('categories')->insertGetId([
             'name' => 'Decor and Lighting',
             'description' => 'Decorative items and lighting for your garden.',
+            'image_path' => 'images/GardenEssentialsLighting.jpg',
             'parent_id' => $gardenEssentialsId,
             'created_at' => now(),
             'updated_at' => now(),
