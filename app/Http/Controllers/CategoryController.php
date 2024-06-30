@@ -88,8 +88,7 @@ class CategoryController extends Controller
                 'image_url' => $subcategory->image_url,
             ];
         });
-
-        // Return the response
+        
         return response()->json($subcategories);
     }
 }
