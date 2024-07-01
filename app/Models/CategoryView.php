@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class CategoryView extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['category_id', 'views'];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }
