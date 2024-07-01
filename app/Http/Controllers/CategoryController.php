@@ -134,4 +134,41 @@ class CategoryController extends Controller
             ], 500);
         }
     }
+
+    /**
+     * Fetch 4 random popular categories based on view counts.
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getPopularCategories()
+    {
+        try {
+            // Fetch categories ordered by view counts
+            $popularCategories = Category::with('views')
+                ->join('category_views', 'categories.id', '=', 'category_views.category_id')
+                ->orderBy('category_views.views', 'desc')
+                ->select('categories.*')
+                ->limit(4)
+                ->get();
+
+            // Transform the categories to include the full image URL
+            $popularCategories = $popularCategories->map(function ($category) {
+                return [
+                    'name' => $category->name,
+                    'image_url' => $category->image_url,
+                ];
+            });
+
+            return response()->json([
+                'message' => 'Popular categories fetched successfully',
+                'data' => $popularCategories
+            ], 200);
+
+        } catch (\Exception $e) {
+            return response()->json([
+                'message' => 'An error occurred while fetching popular categories',
+                'error' => $e->getMessage()
+            ], 500);
+        }
+    }
 }
