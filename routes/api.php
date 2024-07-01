@@ -90,8 +90,11 @@ Route::middleware('auth:sanctum')->group(function () {
 });
 
 // Route to get popular categories, available to all users
-Route::get('/popular-categories', [CategoryController::class, 'index']);
+Route::get('/popular-categories', [CategoryController::class, 'getPopularCategories']);
+// Route to increment a category with 1 view
+Route::post('/categories/{id}/view', [CategoryController::class, 'incrementCategoryView']);
 // Route to get today's deals
 Route::get('/today-deals', [DealController::class, 'todayDeals']);
 // Route to get Garden-essentials Sub Categories
 Route::get('/garden-essentials-subcategories', [CategoryController::class, 'getGardenEssentialsSubcategories']);
+
