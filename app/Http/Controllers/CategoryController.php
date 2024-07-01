@@ -110,4 +110,28 @@ class CategoryController extends Controller
             ], 500);
         }
     }
+
+     /**
+     * Increment the view count for a category.
+     *
+     * @param int $id
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function incrementCategoryView($id)
+    {
+        try {
+            $category = Category::findOrFail($id);
+            $category->incrementViews();
+
+            return response()->json([
+                'message' => 'Category view count incremented successfully',
+            ], 200);
+
+        } catch (\Exception $e) {
+            return response()->json([
+                'message' => 'An error occurred while incrementing category view count',
+                'error' => $e->getMessage()
+            ], 500);
+        }
+    }
 }
