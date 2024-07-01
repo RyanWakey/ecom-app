@@ -27,8 +27,8 @@ class DealController extends Controller
                 ->where(function($query) use ($browsedProductIds, $userId) {
                     $query->whereIn('product_id', $browsedProductIds)
                           ->orWhere('user_id', $userId)
-                          ->orWhereJsonContains('targeting_criteria->browsing_history', 'electronics') // Example criterion
-                          ->orWhereJsonContains('targeting_criteria->location', 'US'); // Example criterion
+                          ->orWhereJsonContains('targeting_criteria->browsing_history', 'electronics') 
+                          ->orWhereJsonContains('targeting_criteria->location', 'US'); 
                 })
                 ->get();
         }
@@ -38,7 +38,4 @@ class DealController extends Controller
 
         return response()->json($deals);
     }
-
-
-    
 }

@@ -82,6 +82,7 @@ Route::get('user', [AuthController::class, 'user'])->middleware('auth:sanctum');
 
 // Routes that require user authentication for their browsing history and
 // both global and user-specific deals and recommended products
+
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/browsing-history', [BrowsingHistoryController::class, 'index']);
     Route::get('/deals', [DealController::class, 'userDeals']);
