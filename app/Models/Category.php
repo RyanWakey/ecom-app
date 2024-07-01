@@ -26,4 +26,19 @@ class Category extends Model
         return url('storage/' . $this->image_path);
     }
 
+    public function views()
+    {
+        return $this->hasOne(CategoryView::class);
+    }
+
+    public function incrementViews()
+    {
+        if ($this->views) {
+            $this->views->increment('views');
+        } else {
+            $this->views()->create(['views' => 1]);
+        }
+    }
+
+
 }
