@@ -9,7 +9,7 @@ class Category extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'description', 'parent_id'];
+    protected $fillable = ['name', 'description', 'image_path', 'parent_id'];
 
     public function products() 
     {
@@ -23,7 +23,7 @@ class Category extends Model
     
     public function getImageUrlAttribute()
     {
-        return url('storage/' . $this->image_path);
+        return url('images/' . $this->image_path);
     }
 
     public function views()

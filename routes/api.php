@@ -89,6 +89,9 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/recommended-products', [RecommendedProductsController::class, 'index']);
 });
 
+
+// Routes that cover fetching categories or products for the homepage
+
 // Route to get popular categories, available to all users
 Route::get('/popular-categories', [CategoryController::class, 'getPopularCategories']);
 // Route to increment a category with 1 view
