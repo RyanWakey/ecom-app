@@ -76,8 +76,10 @@ class CategoryController extends Controller
     public function getGardenEssentialsSubcategories()
     {
         try {
+            // Fetch the Garden-Essentials category
             $gardenEssentials = Category::where('name', 'Garden-Essentials')->first();
-
+            
+            // Ensure the category exists
             if (!$gardenEssentials) {
                 return response()->json([
                     'message' => 'Garden-Essentials category not found',
@@ -85,12 +87,14 @@ class CategoryController extends Controller
                 ], 404);
             }
 
+            // Fetch the subcategories
             $subcategories = $gardenEssentials->subcategories()->get(['name', 'image_path']);
 
+            // Transform the subcategories to include the image URL
             $subcategories = $subcategories->map(function ($subcategory) {
                 return [
                     'name' => $subcategory->name,
-                    'image_url' => $subcategory->image_path,
+                    'image_url' => url($subcategory->image_path),
                 ];
             });
 
