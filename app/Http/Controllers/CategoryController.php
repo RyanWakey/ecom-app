@@ -94,7 +94,7 @@ class CategoryController extends Controller
             $subcategories = $subcategories->map(function ($subcategory) {
                 return [
                     'name' => $subcategory->name,
-                    'image_url' => url('images/' . $subcategory->image_path),
+                    'image_url' => $subcategory->image_path,
                 ];
             });
 
