@@ -19,6 +19,7 @@ class CategorySeeder extends Seeder
         $category1 = new Category;
         $category1->name = "Electronics";
         $category1->description = "All electronic items";
+        $category1->image_path = ""
         $category1->save(); 
 
         $category2 = new Category;
