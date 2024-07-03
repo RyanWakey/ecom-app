@@ -19,12 +19,13 @@ class CategorySeeder extends Seeder
         $category1 = new Category;
         $category1->name = "Electronics";
         $category1->description = "All electronic items";
-        $category1->image_path = ""
+        $category1->image_path = "images/Fitbit.jpg";
         $category1->save(); 
 
         $category2 = new Category;
         $category2->name = "Sportswear";
         $category2->description = "Athletic clothing and accessories";
+        $category2->image_path = "images/Fitbit.jpg";
         $category2->save(); 
 
         $category3 = new Category;
