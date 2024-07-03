@@ -31,12 +31,13 @@ class CategorySeeder extends Seeder
         $category3 = new Category;
         $category3->name = "Books";
         $category3->description = "Range of books from various genres";
-        $category3->image_path = "images/IECCPWomensGymTopsLongSleeve.jpg";
+        $category3->image_path = "images/MunichWolfBook.jpg";
         $category3->save(); 
 
         $category4 = new Category;
         $category4->name = "Kitchenware";
         $category4->description = "Kitchen appliances and utensils";
+        $category3->image_path = "images/MunichWolfBook.jpg";
         $category4->save(); 
 
          // Create Garden-Essentials as the main category
