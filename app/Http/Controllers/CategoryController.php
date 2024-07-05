@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Log; // Import the Log facade
+
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
 use App\Models\Category;
+
 
 class CategoryController extends Controller
 {
@@ -159,7 +162,7 @@ class CategoryController extends Controller
             $popularCategories = $popularCategories->map(function ($category) {
                 return [
                     'name' => $category->name,
-                    'image_url' => $category->image_url,
+                    'image_url' => url($category->image_path),
                 ];
             });
 
@@ -176,4 +179,5 @@ class CategoryController extends Controller
             ], 500);
         }
     }
+
 }
