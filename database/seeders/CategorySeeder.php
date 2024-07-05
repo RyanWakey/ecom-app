@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\Category;
+use App\Models\CategoryView;
 
 class CategorySeeder extends Seeder
 {
@@ -198,6 +199,27 @@ class CategorySeeder extends Seeder
                     'created_at' => now(),
                     'updated_at' => now(),
                 ],
+            ]);
+
+            // Create views
+            CategoryView::create([
+                'category_id' => $gardenEssentialsId,
+                'views' => 100,
+            ]);
+
+            CategoryView::create([
+                'category_id' => $furnitureId,
+                'views' => 50,
+            ]);
+
+            CategoryView::create([
+                'category_id' => $gardenEssentialsId,
+                'views' => 75,
+            ]);
+
+            CategoryView::create([
+                'category_id' => $decorAndLightingId,
+                'views' => 85,
             ]);
         
         /**
