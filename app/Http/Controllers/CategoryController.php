@@ -143,6 +143,8 @@ class CategoryController extends Controller
     public function getPopularCategories()
     {
         try {
+            \Log::info('Fetching popular categories...'); // Add logging
+
             // Fetch categories ordered by view counts
             $popularCategories = Category::with('views')
                 ->join('category_views', 'categories.id', '=', 'category_views.category_id')
@@ -150,7 +152,9 @@ class CategoryController extends Controller
                 ->select('categories.*')
                 ->limit(4)
                 ->get();
-    
+
+            \Log::info('Popular categories fetched: ', $popularCategories->toArray()); // Log the fetched categories
+
             // Transform the categories to include the full image URL
             $popularCategories = $popularCategories->map(function ($category) {
                 return [
@@ -158,16 +162,14 @@ class CategoryController extends Controller
                     'image_url' => $category->image_url,
                 ];
             });
-    
-            // Debug output
-            Log::info('Popular Categories:', $popularCategories->toArray());
-    
+
             return response()->json([
                 'message' => 'Popular categories fetched successfully',
                 'data' => $popularCategories
             ], 200);
-    
+
         } catch (\Exception $e) {
+            \Log::error('Error fetching popular categories: ' . $e->getMessage()); // Log the error
             return response()->json([
                 'message' => 'An error occurred while fetching popular categories',
                 'error' => $e->getMessage()
