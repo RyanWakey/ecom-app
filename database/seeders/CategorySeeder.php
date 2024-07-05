@@ -38,7 +38,7 @@ class CategorySeeder extends Seeder
         $category4 = new Category;
         $category4->name = "Kitchenware";
         $category4->description = "Kitchen appliances and utensils";
-        $category3->image_path = "images/KitchenWare.jpg";
+        $category4->image_path = "images/KitchenWare.jpg";
         $category4->save(); 
 
          // Create Garden-Essentials as the main category
