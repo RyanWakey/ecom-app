@@ -201,7 +201,7 @@ class CategorySeeder extends Seeder
                 ],
             ]);
 
-            // Create views
+            // Created views
             CategoryView::create([
                 'category_id' => $gardenEssentialsId,
                 'views' => 100,
@@ -213,7 +213,7 @@ class CategorySeeder extends Seeder
             ]);
 
             CategoryView::create([
-                'category_id' => $gardenEssentialsId,
+                'category_id' => $gardeningId,
                 'views' => 75,
             ]);
 
