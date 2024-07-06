@@ -45,7 +45,7 @@ class CategorySeeder extends Seeder
          $gardenEssentialsId = DB::table('categories')->insertGetId([
             'name' => 'Garden-Essentials',
             'description' => 'Essential tools and products for garden care',
-            'image_path' => null,
+            'image_path' => 'images/SubCategoryGardenFurnitureSets.jpg',
             'parent_id' => null,
             'created_at' => now(),
             'updated_at' => now(),
